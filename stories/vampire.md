@@ -26,12 +26,12 @@ Explain in Perl terms
 -->
 ```pl
 %vampire = {
-	title	=>		"Vampire",
-	boy	=>	{
+	title		=>	"Vampire",
+	boy			=>	{
 		name	=>	"Teddy",
 		species	=>	"Human"
 	},
-	girl	=>	{
+	girl		=>	{
 		name	=>	"Melina",
 		species	=>	"Vampire"
 	}

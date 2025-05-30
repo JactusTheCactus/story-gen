@@ -73,12 +73,12 @@ Explain in Perl terms
 -->
 ```pl
 %tick_tock = {
-	title	=>		"Tick Tock",
-	boy	=>	{
+	title		=>	"Tick Tock",
+	boy			=>	{
 		name	=>	"Eli",
 		species	=>	"Human"
 	},
-	girl	=>	{
+	girl		=>	{
 		name	=>	"Vera",
 		species	=>	"Pred"
 	}

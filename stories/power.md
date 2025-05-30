@@ -13,7 +13,7 @@ Characters
 
 Plot
 ----
-- Lia is the Human bard of a party
+- Lia is the Human bard of an adventuring party
 
 Notes
 -----

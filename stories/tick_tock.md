@@ -71,14 +71,14 @@ Explain in Perl terms
 <!--Because I find Perl hashes the most readable at a glance-->
 ```pl
 my %tick_tock = {
-	title		=>	"Tick Tock",
-	boy			=>	{
-		name	=>	"Eli",
-		species	=>	"Human"
+	title => "Tick Tock",
+	boy => {
+		name => "Eli",
+		species => "Human"
 	},
-	girl		=>	{
-		name	=>	"Vera",
-		species	=>	"Pred"
+	girl => {
+		name => "Vera",
+		species => "Pred"
 	}
 };
 ```

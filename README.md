@@ -28,27 +28,29 @@ This will generate all defined stories and save them into the `stories/` directo
 ### Add Your Own Story
 Edit `script.js` and add your own `Story` instance like this:
 ```js
-const myStory = new Story(
-	"Magical Cats",
-	{
-		girl: {
-			name: "Luna",
-			species: "Cat-Witch"
-		},
-		boy: {
-			name: "Theo",
-			species: "Talking Owl"
-		}
-	}
-);
 {
-	const { girl: g, boy: b } = myStory;
-	myStory.plot = `
+	const myStory = new Story(
+		"Magical Cats",
+		{
+			girl: {
+				name: "Luna",
+				species: "Cat-Witch"
+			},
+			boy: {
+				name: "Theo",
+				species: "Talking Owl"
+			}
+		}
+	);
+	{
+		const { girl: g, boy: b } = myStory;
+		myStory.plot = `
 A feline sorceress, ${g.name}, and her feathered sidekick, ${b.name}, must reverse a cursed moonbeam.
 `;
-	myStory.notes = `
+		myStory.notes = `
 Inspired by my neighbor's cat and a very loud owl.
 `;
+	};
 };
 ```
 Then re-run the script!
@@ -79,14 +81,14 @@ Each story is output as a Markdown file like this:
 > `<!--Because I find Perl hashes the most readable at a glance-->`
 > ```pl
 > my %tick_tock = {
->	title		=>	"Tick Tock",
->	boy			=>	{
->		name	=>	"Marcus",
->		species	=>	"Time Sprite"
+>	title => "Tick Tock",
+>	boy => {
+>		name => "Marcus",
+>		species => "Time Sprite"
 >	},
->	girl		=>	{
->		name	=>	"Ellie",
->		species	=>	"Human"
+>	girl => {
+>		name => "Ellie",
+>		species => "Human"
 >	}
 > }
 >```

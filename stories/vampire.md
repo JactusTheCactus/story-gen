@@ -24,14 +24,14 @@ Explain in Perl terms
 <!--Because I find Perl hashes the most readable at a glance-->
 ```pl
 my %vampire = {
-	title		=>	"Vampire",
-	boy			=>	{
-		name	=>	"Teddy",
-		species	=>	"Human"
+	title => "Vampire",
+	boy => {
+		name => "Teddy",
+		species => "Human"
 	},
-	girl		=>	{
-		name	=>	"Melina",
-		species	=>	"Vampire"
+	girl => {
+		name => "Melina",
+		species => "Vampire"
 	}
 };
 ```

@@ -9,7 +9,6 @@ Characters
 - Lia
 	- Human
 
-
 Plot
 ----
 - Lia is the Human bard of an adventuring party

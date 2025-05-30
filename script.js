@@ -93,6 +93,7 @@ ${perlScript}
 			.replace(/COMMENT-START/g, "<!--")
 			.replace(/COMMENT-END/g, "-->")
 			.replace(/([\t {4}]?)- (.)/g, (match, p1, p2) => `${p1}- ${p2.toUpperCase()}`)
+			.replace(/\n{3,}/g, "\n".repeat(2))
 		fs.writeFile(
 			path.join(
 				"stories",
@@ -239,7 +240,7 @@ ${g.name} was going to get him out on her own -- not like she was ever going to 
 Story.instances.forEach(story => {
 	story.write();
 });
-// /*
+/*
 console.log(
 	Story.instances.at(-1).output
 		.replace(/Write Me A Story\n\*+\n+/g, "")
@@ -247,4 +248,12 @@ console.log(
 		.replace(/\s*Explain[\s\S]+/g, "")
 		.replace(/\t/g, " ".repeat(4))
 );
-// */
+*/
+{
+	const { title, plot } = Story.instances.at(-1)
+	console.log(
+		title,
+		plot
+			.replace(/\t/g, "    ")
+	);
+};

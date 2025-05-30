@@ -34,7 +34,7 @@ class Story {
 	};
 	get perl() {
 		const perlScript = `
-%${fileName(this.title)} = {
+my %${fileName(this.title)} = {
 \ttitle\t\t=>\t"${this.title}",
 \tboy\t\t\t=>\t{
 \t\tname\t=>\t"${this.boy.name}",

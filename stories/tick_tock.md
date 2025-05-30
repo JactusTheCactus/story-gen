@@ -72,7 +72,7 @@ Explain in Perl terms
 	Because I find Perl hashes the most readable at a glance
 -->
 ```pl
-%tick_tock = {
+my %tick_tock = {
 	title		=>	"Tick Tock",
 	boy			=>	{
 		name	=>	"Eli",

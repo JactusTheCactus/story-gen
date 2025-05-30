@@ -4,7 +4,7 @@
 	"description": "",
 	"main": "script.js",
 	"scripts": {
-		"script": "node script.js"
+		"main": "node script.js"
 	},
 	"repository": {
 		"type": "git",

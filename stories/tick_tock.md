@@ -7,15 +7,15 @@ Write Me A Story
 Characters
 ----------
 - Vera
-	- Pred
+    - Pred
 - Eli
-	- Human
+    - Human
 
 Plot
 ----
 - Eli is kissing a really cute girl; Vera (he doesn't know she's a Pred)
-- suddenly, Vera swallows Eli whole
-- naturally, Eli pleads and struggles in Vera's stomach
+- Suddenly, Vera swallows Eli whole
+- Naturally, Eli pleads and struggles in Vera's stomach
 ***
 > you know what?
 >
@@ -72,14 +72,14 @@ Explain In Perl Terms
 <!--Because I find Perl hashes the most readable at a glance-->
 ```pl
 my %tick_tock = {
-	title => "Tick Tock",
-	boy => {
-		name => "Eli",
-		species => "Human"
-	},
-	girl => {
-		name => "Vera",
-		species => "Pred"
-	}
+    title => "Tick Tock",
+    boy => {
+        name => "Eli",
+        species => "Human"
+    },
+    girl => {
+        name => "Vera",
+        species => "Pred"
+    }
 };
 ```

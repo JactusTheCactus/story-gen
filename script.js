@@ -67,7 +67,8 @@ ${perlScript}
 	- ${this.girl.species}
 - ${this.boy.name}
 	- ${this.boy.species}
-`;
+`
+			.replace(/- name\n\t- species/gi, "");
 	};
 	write() {
 		this.output = `${this.labels.header}\n${"*".repeat(this.labels.header.length)}`;
@@ -90,7 +91,9 @@ ${perlScript}
 			.replace(/-->/g, "COMMENT-END")
 			.replace(/([^\-])\-{2}([^\-])/g, "$1&mdash;$2")
 			.replace(/COMMENT-START/g, "<!--")
-			.replace(/COMMENT-END/g, "-->");
+			.replace(/COMMENT-END/g, "-->")
+			.replace(/([\t {4}]?)- (.)/g, (match, p1, p2) => `${p1}- ${p2.toUpperCase()}`)
+			.replace(/\t/g, " ".repeat(4));
 		fs.writeFile(
 			path.join(
 				"stories",
@@ -106,7 +109,6 @@ ${perlScript}
 			}
 		);
 	};
-	//console.log(this.output);
 };
 {
 	const vore = new Story(
@@ -225,6 +227,10 @@ ${g.name} was going to get him out on her own -- not like she was ever going to 
 		const { girl: g } = power;
 		power.plot = `
 - ${g.name} is the ${g.species} bard of an adventuring party
+- she always avoids fighting
+	- her party assumes this is because she is scared of getting hurt
+		- the _real_ reason is that ${g.name} is worried about collateral damage
+			- à la the Pistol Shrimp scene of "Project Power"
 `;
 		power.notes = `
 - Inspired by "Project Power" (2020)
@@ -234,4 +240,11 @@ ${g.name} was going to get him out on her own -- not like she was ever going to 
 Story.instances.forEach(story => {
 	story.write();
 });
-console.log(Story.instances.at(-1).output);
+// /*
+console.log(
+	Story.instances.at(-1).output
+		.replace(/Write Me A Story\n\*+\n+/g, "")
+		.replace(/\n+/g, "\n")
+		.replace(/\s*Explain[\s\S]+/g, "")
+);
+// */

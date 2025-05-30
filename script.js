@@ -35,14 +35,14 @@ class Story {
 	get perl() {
 		const perlScript = `
 my %${fileName(this.title)} = {
-\ttitle\t\t=>\t"${this.title}",
-\tboy\t\t\t=>\t{
-\t\tname\t=>\t"${this.boy.name}",
-\t\tspecies\t=>\t"${this.boy.species}"
+\ttitle => "${this.title}",
+\tboy => {
+\t\tname => "${this.boy.name}",
+\t\tspecies => "${this.boy.species}"
 \t},
-\tgirl\t\t=>\t{
-\t\tname\t=>\t"${this.girl.name}",
-\t\tspecies\t=>\t"${this.girl.species}"
+\tgirl => {
+\t\tname => "${this.girl.name}",
+\t\tspecies => "${this.girl.species}"
 \t}
 };
 `.trim();
@@ -102,22 +102,23 @@ ${perlScript}
 	};
 	//console.log(this.output);
 };
-const vore = new Story(
-	"Tick Tock",
-	{
-		girl: {
-			name: "Vera",
-			species: "Pred"
-		},
-		boy: {
-			name: "Eli",
-			species: "Human"
-		}
-	}
-);
 {
-	const { girl: g, boy: b } = vore;
-	vore.plot = `
+	const vore = new Story(
+		"Tick Tock",
+		{
+			girl: {
+				name: "Vera",
+				species: "Pred"
+			},
+			boy: {
+				name: "Eli",
+				species: "Human"
+			}
+		}
+	);
+	{
+		const { girl: g, boy: b } = vore;
+		vore.plot = `
 - ${b.name} is kissing a really cute girl; ${g.name} (he doesn't know she's a ${g.species})
 - suddenly, ${g.name} swallows ${b.name} whole
 - naturally, ${b.name} pleads and struggles in ${g.name}'s stomach
@@ -172,25 +173,27 @@ But ${g.name}'s hopes weren't high.
 ${b.name} was clearly too weak to move, but still alive.
 ${g.name} was going to get him out on her own -- not like she was ever going to _struggle_ with that.
 `;
-	vore.notes = `
+		vore.notes = `
 `;
+	};
 };
-const vamp = new Story(
-	"Vampire",
-	{
-		girl: {
-			name: "Melina",
-			species: "Vampire"
-		},
-		boy: {
-			name: "Teddy",
-			species: "Human"
-		}
-	}
-);
 {
-	const { girl: g, boy: b } = vamp;
-	vamp.plot = `
+	const vamp = new Story(
+		"Vampire",
+		{
+			girl: {
+				name: "Melina",
+				species: "Vampire"
+			},
+			boy: {
+				name: "Teddy",
+				species: "Human"
+			}
+		}
+	);
+	{
+		const { girl: g, boy: b } = vamp;
+		vamp.plot = `
 <!--Placeholder-->
 |Name|Species|
 |:-|:-|
@@ -198,9 +201,30 @@ const vamp = new Story(
 |${b.name}|${b.species}|
 <!--Placeholder-->
 `;
-	vamp.notes = `
+		vamp.notes = `
 `;
+	};
+};
+{
+	const power = new Story(
+		"Power",
+		{
+			girl: {
+				name: "Lia",
+				species: "Human(ish)"
+			}
+		}
+	);
+	{
+		const { girl: g } = power;
+		power.plot = `
+`;
+		power.notes = `
+- Inspired by "Project Power" (2020)
+`;
+	};
 };
 Story.instances.forEach(story => {
 	story.write();
 });
+console.log(Story.instances.at(-1).output);

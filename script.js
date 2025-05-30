@@ -93,7 +93,6 @@ ${perlScript}
 			.replace(/COMMENT-START/g, "<!--")
 			.replace(/COMMENT-END/g, "-->")
 			.replace(/([\t {4}]?)- (.)/g, (match, p1, p2) => `${p1}- ${p2.toUpperCase()}`)
-			.replace(/\t/g, " ".repeat(4));
 		fs.writeFile(
 			path.join(
 				"stories",
@@ -246,5 +245,6 @@ console.log(
 		.replace(/Write Me A Story\n\*+\n+/g, "")
 		.replace(/\n+/g, "\n")
 		.replace(/\s*Explain[\s\S]+/g, "")
+		.replace(/\t/g, " ".repeat(4))
 );
 // */

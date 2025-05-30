@@ -7,16 +7,16 @@ Write Me A Story
 Characters
 ----------
 - Lia
-    - Human
+	- Human
 
 
 Plot
 ----
 - Lia is the Human bard of an adventuring party
 - She always avoids fighting
-    - Her party assumes this is because she is scared of getting hurt
-        - The _real_ reason is that Lia is worried about collateral damage
-            - À la the Pistol Shrimp scene of "Project Power"
+	- Her party assumes this is because she is scared of getting hurt
+		- The _real_ reason is that Lia is worried about collateral damage
+			- À la the Pistol Shrimp scene of "Project Power"
 
 Notes
 -----
@@ -27,14 +27,14 @@ Explain In Perl Terms
 <!--Because I find Perl hashes the most readable at a glance-->
 ```pl
 my %power = {
-    title => "Power",
-    boy => {
-        name => "Name",
-        species => "Species"
-    },
-    girl => {
-        name => "Lia",
-        species => "Human"
-    }
+	title => "Power",
+	boy => {
+		name => "Name",
+		species => "Species"
+	},
+	girl => {
+		name => "Lia",
+		species => "Human"
+	}
 };
 ```

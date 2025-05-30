@@ -7,9 +7,9 @@ Write Me A Story
 Characters
 ----------
 - Vera
-    - Pred
+	- Pred
 - Eli
-    - Human
+	- Human
 
 Plot
 ----
@@ -72,14 +72,14 @@ Explain In Perl Terms
 <!--Because I find Perl hashes the most readable at a glance-->
 ```pl
 my %tick_tock = {
-    title => "Tick Tock",
-    boy => {
-        name => "Eli",
-        species => "Human"
-    },
-    girl => {
-        name => "Vera",
-        species => "Pred"
-    }
+	title => "Tick Tock",
+	boy => {
+		name => "Eli",
+		species => "Human"
+	},
+	girl => {
+		name => "Vera",
+		species => "Pred"
+	}
 };
 ```

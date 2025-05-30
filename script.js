@@ -21,15 +21,21 @@ class Story {
 				name: "Name",
 				species: "Species"
 			}
-		} = {},
-		plot = "",
-		notes = ""
+		} = {}
 	) {
 		this.title = title;
 		this.girl = { ...girl };
 		this.boy = { ...boy };
-		this.plot = plot;
-		this.notes = notes;
+		this.plot = "";
+		this.notes = "";
+		this.labels = {
+			header: "Write Me A Story",
+			title: this.title,
+			characters: "Characters",
+			plot: "Plot",
+			notes: "Notes",
+			perl: "Explain In Perl Terms"
+		};
 		Story.instances.push(this);
 	};
 	get perl() {
@@ -47,8 +53,8 @@ my %${fileName(this.title)} = {
 };
 `.trim();
 		return `
-Explain in Perl terms
-${"-".repeat(10)}
+${this.labels.perl}
+${"-".repeat(this.labels.perl.length)}
 <!--Because I find Perl hashes the most readable at a glance-->
 \`\`\`pl
 ${perlScript}
@@ -64,18 +70,18 @@ ${perlScript}
 `;
 	};
 	write() {
-		this.output = `Write Me A Story`;
+		this.output = `${this.labels.header}\n${"*".repeat(this.labels.header.length)}`;
 		if (this.title.replace(/\s/g, "")) {
-			this.output += `\n\n"${this.title.replace(/\n/g, "")}"\n${"=".repeat(10)}\n`;
+			this.output += `\n\n"${this.labels.title}"\n${"=".repeat(this.labels.title.length + 2)}\n`;
 		};
 		if (this.characters.replace(/\s/g, "")) {
-			this.output += `\nCharacters\n${"-".repeat(10)}${this.characters}`;
+			this.output += `\n${this.labels.characters}\n${"-".repeat(this.labels.characters.length)}${this.characters}`;
 		};
 		if (this.plot.replace(/\s/g, "")) {
-			this.output += `\nPlot\n${"-".repeat(10)}${this.plot}`;
+			this.output += `\n${this.labels.plot}\n${"-".repeat(this.labels.plot.length)}${this.plot}`;
 		};
 		if (this.notes.replace(/\s/g, "")) {
-			this.output += `\nNotes\n${"-".repeat(10)}${this.notes}`;
+			this.output += `\n${this.labels.notes}\n${"-".repeat(this.labels.notes.length)}${this.notes}`;
 		};
 		this.output += this.perl
 		this.output = this.output
@@ -211,13 +217,14 @@ ${g.name} was going to get him out on her own -- not like she was ever going to 
 		{
 			girl: {
 				name: "Lia",
-				species: "Human(ish)"
+				species: "Human"
 			}
 		}
 	);
 	{
 		const { girl: g } = power;
 		power.plot = `
+- ${g.name} is the ${g.species} bard of an adventuring party
 `;
 		power.notes = `
 - Inspired by "Project Power" (2020)

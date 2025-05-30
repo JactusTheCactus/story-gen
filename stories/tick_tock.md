@@ -1,7 +1,8 @@
 Write Me A Story
+****************
 
 "Tick Tock"
-==========
+===========
 
 Characters
 ----------
@@ -11,7 +12,7 @@ Characters
 	- Human
 
 Plot
-----------
+----
 - Eli is kissing a really cute girl; Vera (he doesn't know she's a Pred)
 - suddenly, Vera swallows Eli whole
 - naturally, Eli pleads and struggles in Vera's stomach
@@ -66,8 +67,8 @@ But Vera's hopes weren't high.
 Eli was clearly too weak to move, but still alive.
 Vera was going to get him out on her own &mdash; not like she was ever going to _struggle_ with that.
 
-Explain in Perl terms
-----------
+Explain In Perl Terms
+---------------------
 <!--Because I find Perl hashes the most readable at a glance-->
 ```pl
 my %tick_tock = {

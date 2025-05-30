@@ -1,7 +1,8 @@
 Write Me A Story
+****************
 
 "Vampire"
-==========
+=========
 
 Characters
 ----------
@@ -11,7 +12,7 @@ Characters
 	- Human
 
 Plot
-----------
+----
 <!--Placeholder-->
 |Name|Species|
 |:-|:-|
@@ -19,8 +20,8 @@ Plot
 |Teddy|Human|
 <!--Placeholder-->
 
-Explain in Perl terms
-----------
+Explain In Perl Terms
+---------------------
 <!--Because I find Perl hashes the most readable at a glance-->
 ```pl
 my %vampire = {

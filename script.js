@@ -224,13 +224,20 @@ ${g.name} was going to get him out on her own -- not like she was ever going to 
 		}
 	);
 	{
-		const { girl: g } = power;
+		const { girl: { name, species } } = power;
 		power.plot = `
-- ${g.name} is the ${g.species} bard of an adventuring party
+- ${name} is the ${species} bard of an adventuring party
 - she always avoids fighting
 	- her party assumes this is because she is scared of getting hurt
-		- the _real_ reason is that ${g.name} is worried about collateral damage
-			- à la the Pistol Shrimp scene of "Project Power"
+		- the _real_ reason is that ${name} is worried about collateral damage
+			- à la the __Pistol Shrimp__ scene of "Project Power"
+- when ${name} uses her power:
+	- eyes turn gold
+		- the _metal_, not the _colour_
+	- a whisper shakes the earth
+	- the movement of her jaw during speach causes shockwaves
+	- speed almost looks like teleportation
+		- each step causes a _thundercrack_
 `;
 		power.notes = `
 - Inspired by "Project Power" (2020)
@@ -252,8 +259,12 @@ console.log(
 {
 	const { title, plot } = Story.instances.at(-1)
 	console.log(
-		title,
+		`\t\x1b[35m\x1b[4m\x1b[1m${title}\x1b[0m\n`,
 		plot
 			.replace(/\t/g, "    ")
+			.replace(/__(.+?)__/g, "\x1b[31m\x1b[1m$1\x1b[0m")
+			.replace(/_(.+?)_/g, "\x1b[32m\x1b[3m$1\x1b[0m")
+			.replace(/"(.+?)"/g, "\x1b[36m\"$1\"\x1b[0m")
+			.replace(/(Lia)/g, "\x1b[33m\x1b[4m$1\x1b[0m")
 	);
 };

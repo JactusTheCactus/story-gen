@@ -35,18 +35,17 @@ class Story {
 	get perl() {
 		const perlScript = `
 %${fileName(this.title)} = {
-\ttitle\t=>\t\t"${this.title}",
-\tboy\t=>\t{
+\ttitle\t\t=>\t"${this.title}",
+\tboy\t\t\t=>\t{
 \t\tname\t=>\t"${this.boy.name}",
 \t\tspecies\t=>\t"${this.boy.species}"
 \t},
-\tgirl\t=>\t{
+\tgirl\t\t=>\t{
 \t\tname\t=>\t"${this.girl.name}",
 \t\tspecies\t=>\t"${this.girl.species}"
 \t}
 };
 `.trim();
-		console.log(perlScript)
 		return `
 Explain in Perl terms
 ${"-".repeat(10)}

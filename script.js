@@ -49,9 +49,7 @@ my %${fileName(this.title)} = {
 		return `
 Explain in Perl terms
 ${"-".repeat(10)}
-<!--
-	Because I find Perl hashes the most readable at a glance
--->
+<!--Because I find Perl hashes the most readable at a glance-->
 \`\`\`pl
 ${perlScript}
 \`\`\`

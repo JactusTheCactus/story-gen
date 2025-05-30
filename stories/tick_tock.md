@@ -68,9 +68,7 @@ Vera was going to get him out on her own &mdash; not like she was ever going to 
 
 Explain in Perl terms
 ----------
-<!--
-	Because I find Perl hashes the most readable at a glance
--->
+<!--Because I find Perl hashes the most readable at a glance-->
 ```pl
 my %tick_tock = {
 	title		=>	"Tick Tock",

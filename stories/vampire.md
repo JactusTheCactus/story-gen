@@ -21,9 +21,7 @@ Plot
 
 Explain in Perl terms
 ----------
-<!--
-	Because I find Perl hashes the most readable at a glance
--->
+<!--Because I find Perl hashes the most readable at a glance-->
 ```pl
 my %vampire = {
 	title		=>	"Vampire",

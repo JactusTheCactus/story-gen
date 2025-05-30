@@ -77,9 +77,7 @@ Each story is output as a Markdown file like this:
 > Explain in Perl terms
 > ----------
 > ```md
-> <!--
->	Because I find Perl hashes the most readable at a glance
-> -->
+> <!--Because I find Perl hashes the most readable at a glance-->
 > ```
 > ```pl
 > my %tick_tock = {

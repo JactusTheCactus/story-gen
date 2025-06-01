@@ -57,43 +57,43 @@ Then re-run the script!
 ## Example Output
 Each story is output as a Markdown file like this:
 ````md
-> Write Me A Story
-> ****************
->
-> "Tick Tock"
-> ===========
->
-> Characters
-> ----------
-> - Ellie
-> 	- Human
-> - Marcus
-> 	- Time Sprite
->
-> Plot
-> ----
-> Ellie discovers a pocket watch that controls time, but Marcus warns her it comes with a cost...
->
-> Notes
-> -----
-> Time-travel theme. Possibly part of a series.
->
-> Explain in Perl terms
-> ---------------------
-> <!--Because I find Perl hashes the most readable at a glance-->
-> ```pl
-> my %tick_tock = {
->	title => "Tick Tock",
->	boy => {
->		name => "Marcus",
->		species => "Time Sprite"
->	},
->	girl => {
->		name => "Ellie",
->		species => "Human"
->	}
-> }
-> ```
+Write Me A Story
+****************
+
+"Tick Tock"
+===========
+
+Characters
+----------
+- Ellie
+	- Human
+- Marcus
+	- Time Sprite
+
+Plot
+----
+- Ellie discovers a pocket watch that controls time, but Marcus warns her it comes with a cost...
+
+Notes
+-----
+- Time-travel theme. Possibly part of a series.
+
+Explain in Perl terms
+---------------------
+<!--Because I find Perl hashes the most readable at a glance-->
+```pl
+my %tick_tock = {
+title => "Tick Tock",
+boy => {
+	name => "Marcus",
+	species => "Time Sprite"
+},
+girl => {
+	name => "Ellie",
+	species => "Human"
+}
+}
+```
 ````
 ## Future Ideas
 * CLI for adding stories interactively

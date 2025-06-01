@@ -7,15 +7,13 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    strategy:
-      node-version: "lts/*"
     steps:
-    - uses: actions/checkout@v4
-    - name: Use Node.js ${{ node-version }}
-      uses: actions/setup-node@v4
-      with:
-        node-version: ${{ node-version }}
-        cache: 'npm'
-    - run: npm ci
-    - run: npm run build --if-present
-    - run: npm run main
+      - uses: actions/checkout@v4
+      - name: Use Node.js LTS
+        uses: actions/setup-node@v4
+        with:
+          node-version: 'lts/*'
+          cache: 'npm'
+      - run: npm ci
+      - run: npm run build --if-present
+      - run: npm run main

@@ -56,10 +56,12 @@ Inspired by my neighbor's cat and a very loud owl.
 Then re-run the script!
 ## Example Output
 Each story is output as a Markdown file like this:
+````md
 > Write Me A Story
+> ****************
 >
 > "Tick Tock"
-> ==========
+> ===========
 >
 > Characters
 > ----------
@@ -69,16 +71,16 @@ Each story is output as a Markdown file like this:
 > 	- Time Sprite
 >
 > Plot
-> ----------
+> ----
 > Ellie discovers a pocket watch that controls time, but Marcus warns her it comes with a cost...
 >
 > Notes
-> ----------
+> -----
 > Time-travel theme. Possibly part of a series.
 >
 > Explain in Perl terms
-> ----------
-> `<!--Because I find Perl hashes the most readable at a glance-->`
+> ---------------------
+> <!--Because I find Perl hashes the most readable at a glance-->
 > ```pl
 > my %tick_tock = {
 >	title => "Tick Tock",
@@ -91,7 +93,8 @@ Each story is output as a Markdown file like this:
 >		species => "Human"
 >	}
 > }
->```
+> ```
+> ````
 ## Future Ideas
 * CLI for adding stories interactively
 * Support for multiple formats (e.g., JSON, plain text)

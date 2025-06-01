@@ -302,7 +302,7 @@ ${g.name} was going to get him out on her own -- not like she was ever going to 
 				species: "Human"
 			},
 			boy: {
-				name: "Roommate",
+				name: "Roommates",
 				species: "Pred"
 			}
 		},
@@ -318,22 +318,21 @@ ${g.name} was going to get him out on her own -- not like she was ever going to 
 		} = dorm;
 		dorm.plot = `
 - ${name} moves into a __College Dorm__
-	- All her roommates are _Female_
+	- All her ${roommate.name} are _Female_
 		- And _very_ __Hot__
 			- curvy in all the right ways
-		- And _very_ __Horny__
-	- by the end of __Week 1__, ${name} has realized that __All 5 Of Her ${roommate.name}s Are ${roommate.species}s__
+	- by the end of __Week 1__, ${name} has realized that __All 5 Of Her ${roommate.name} Are ${roommate.species}s__
 		- ${roommate.species}s:
 			- identical to ${species}s
 			- eat a diet of exclusivley ${species}s
 				- swallow ${species}s whole
 					- no chewing
 					- full digestion, to a flat / empty tummy, in 1 hour
-		- there are rules against ${roommate.species}s eating their ${roommate.name}s, so ${name} is _safe_
-			- however, the punishment for eating a roommate is __A Light Warning__ + a _$10 Fine_
+		- there are rules against ${roommate.species}s eating their ${roommate.name}, so ${name} is _safe_
+			- however, the punishment for eating ${roommate.name} is __A Light Warning__ + a _$10 Fine_
 				- due to a concerning amount of ${roommate.species}s in politics, __Vore__ is not legally __Homicide__ or __Cannibalism__
 			- there are __no such rules__ for the people in _other dorm rooms_
-		- Plus, ${name}'s roommates seem to _like_ her, so she doesn't think they'd eat her anyways
+		- Plus, ${name}'s ${roommate.name} seem to _like_ her, so she doesn't think they'd eat her anyways
 `;
 		dorm.notes = `
 `;

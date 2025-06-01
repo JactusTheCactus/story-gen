@@ -96,10 +96,11 @@ girl => {
 ```
 ````
 ## Future Ideas
-* CLI for adding stories interactively
-* Support for multiple formats (e.g., JSON, plain text)
-* Random story generator mode!
+- Support for multiple formats
+    - `JSON`
+    - `YAML`
+    - Etc.
 ## License
 ISC License. Go wild—just don’t forget to give Ellie and Marcus a happy ending once in a while.
 ***
-*Built with ✨ creativity and a touch of JavaScript.*
+_Built with ✨ creativity and a touch of JavaScript._

@@ -7,7 +7,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    node-version: "lts/*"
+    strategy:
+      node-version: "lts/*"
     steps:
     - uses: actions/checkout@v4
     - name: Use Node.js ${{ node-version }}

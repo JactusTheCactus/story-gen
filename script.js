@@ -8,6 +8,33 @@ function fileName(text) {
 		.toLowerCase();
 	return text;
 }
+function reverse(text) {
+	const replacements = [
+		["<", ">"],
+		["(", ")"],
+		["[", "]"],
+		["{", "}"]
+	]
+	let output = "";
+	for (let i = -1; i >= -text.length; i--) {
+		output += text.at(i);
+	};
+	const pattern = [
+		"!^", "$!"
+	];
+	const replacementsLength = replacements.length
+	for (let i = 0; i < replacementsLength; i++) {
+		replacements[i].forEach(item => {
+			item = `${pattern[0]}${replacements[i][1]}${pattern[1]}`
+		});
+		const replacementList = [replacements[i][0], `${pattern[0]}${i}${pattern[1]}`, replacements[i][1]]
+		output = output
+			.replace(replacementList[0], replacementList[1])
+			.replace(replacementList[2], replacementList[0])
+			.replace(replacementList[1], replacementList[2])
+	};
+	return output;
+};
 class Story {
 	static instances = [];
 	constructor(
@@ -21,11 +48,28 @@ class Story {
 				name: "Name",
 				species: "Species"
 			}
-		} = {}
+		} = {},
+		ifPerl = true
 	) {
 		this.title = title;
 		this.girl = { ...girl };
 		this.boy = { ...boy };
+		[this.girl, this.boy].forEach(char => {
+			if (char) {
+				if (!char.name) {
+					char.name = "Name"
+				};
+				if (!char.species) {
+					char.species = "Species"
+				};
+			} else {
+				char = {
+					name: "Name",
+					species: "Species"
+				};
+			};
+		});
+		this.ifPerl = ifPerl;
 		this.plot = "";
 		this.notes = "";
 		this.labels = {
@@ -41,17 +85,20 @@ class Story {
 	get perl() {
 		const perlScript = `
 my %${fileName(this.title)} = {
-\ttitle => "${this.title}",
-\tboy => {
-\t\tname => "${this.boy.name}",
-\t\tspecies => "${this.boy.species}"
-\t},
-\tgirl => {
-\t\tname => "${this.girl.name}",
-\t\tspecies => "${this.girl.species}"
-\t}
+	title => "${this.title}",
+	boy => {
+		name => "${this.boy.name}",
+		species => "${this.boy.species}"
+	},
+	girl => {
+		name => "${this.girl.name}",
+		species => "${this.girl.species}"
+	}
 };
-`.trim();
+`
+			.replace(/(?:name|species) => "(?:name|species)",?\n\t+/gi, "")
+			.replace(/,?\n\t+(?:boy|girl) => {\n\t+}/g, "")
+			.trim();
 		return `
 ${this.labels.perl}
 ${"-".repeat(this.labels.perl.length)}
@@ -84,7 +131,9 @@ ${perlScript}
 		if (this.notes.replace(/\s/g, "")) {
 			this.output += `\n${this.labels.notes}\n${"-".repeat(this.labels.notes.length)}${this.notes}`;
 		};
-		this.output += this.perl
+		if (this.ifPerl) {
+			this.output += this.perl
+		};
 		this.output = this.output
 			.replace(/(?:^\s+|\s+$)/g, "")
 			.replace(/<!--/g, "COMMENT-START")
@@ -244,27 +293,65 @@ ${g.name} was going to get him out on her own -- not like she was ever going to 
 `;
 	};
 };
+{
+	const dorm = new Story(
+		"Dorm Life",
+		{
+			girl: {
+				name: "Bella",
+				species: "Human"
+			},
+			boy: {
+				name: "Roommate",
+				species: "Pred"
+			}
+		},
+		false
+	);
+	{
+		const {
+			girl: {
+				name,
+				species
+			},
+			boy: roommate
+		} = dorm;
+		dorm.plot = `
+- ${name} moves into a __College Dorm__
+	- All her roommates are _Female_
+		- And _very_ __Hot__
+			- curvy in all the right ways
+		- And _very_ __Horny__
+	- by the end of __Week 1__, ${name} has realized that __All 5 Of Her ${roommate.name}s Are ${roommate.species}s__
+		- ${roommate.species}s:
+			- identical to ${species}s
+			- eat a diet of exclusivley ${species}s
+				- swallow ${species}s whole
+					- no chewing
+					- full digestion, to a flat / empty tummy, in 1 hour
+		- there are rules against ${roommate.species}s eating their ${roommate.name}s, so ${name} is _safe_
+			- however, the punishment for eating a roommate is __A Light Warning__ + a _$10 Fine_
+				- due to a concerning amount of ${roommate.species}s in politics, __Vore__ is not legally __Homicide__ or __Cannibalism__
+			- there are __no such rules__ for the people in _other dorm rooms_
+		- Plus, ${name}'s roommates seem to _like_ her, so she doesn't think they'd eat her anyways
+`;
+		dorm.notes = `
+`;
+	};
+};
 Story.instances.forEach(story => {
 	story.write();
 });
-/*
-console.log(
-	Story.instances.at(-1).output
-		.replace(/Write Me A Story\n\*+\n+/g, "")
-		.replace(/\n+/g, "\n")
-		.replace(/\s*Explain[\s\S]+/g, "")
-		.replace(/\t/g, " ".repeat(4))
-);
-*/
 {
-	const { title, plot } = Story.instances.at(-1)
-	console.log(
-		`\t\x1b[35m\x1b[4m\x1b[1m${title}\x1b[0m\n`,
-		plot
-			.replace(/\t/g, "    ")
-			.replace(/__(.+?)__/g, "\x1b[31m\x1b[1m$1\x1b[0m")
-			.replace(/_(.+?)_/g, "\x1b[32m\x1b[3m$1\x1b[0m")
-			.replace(/"(.+?)"/g, "\x1b[36m\"$1\"\x1b[0m")
-			.replace(/(Lia)/g, "\x1b[33m\x1b[4m$1\x1b[0m")
+	const { title, plot, girl: g, boy: b } = Story.instances.at(-1)
+	const titlePadding = "-=:|";
+	console.log(`\n\t\x1b[1m\x1b[35m${titlePadding}\x1b[4m"${title}"\x1b[0m\x1b[1m\x1b[35m${reverse(titlePadding)}\x1b[0m\n${plot}`
+		.replace(/\t/g, " ".repeat(4))
+		.replace(/__(.+?)__/g, "\x1b[31m\x1b[1m$1\x1b[0m")
+		.replace(/_(.+?)_/g, "\x1b[32m\x1b[3m$1\x1b[0m")
+		.replace(/"(.+?)"/g, "\x1b[36m\"$1\"\x1b[0m")
+		.replace(new RegExp(`((?:${g.name}|${b.name})['s]*)`, "gi"), "\x1b[33m\x1b[4m$1\x1b[0m")
+		.replace(new RegExp(`((?:${g.species}|${b.species})['s]*)`, "gi"), "\x1b[32m\x1b[3m$1\x1b[0m")
+		.replace(/\s+\n/g, "\n")
 	);
 };

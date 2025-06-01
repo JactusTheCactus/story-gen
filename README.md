@@ -40,7 +40,8 @@ Edit `script.js` and add your own `Story` instance like this:
 				name: "Theo",
 				species: "Talking Owl"
 			}
-		}
+		},
+    true
 	);
 	{
 		const { girl: g, boy: b } = myStory;

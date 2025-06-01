@@ -34,10 +34,6 @@ Explain In Perl Terms
 ```pl
 my %power = {
 	title => "Power",
-	boy => {
-		name => "Name",
-		species => "Species"
-	},
 	girl => {
 		name => "Lia",
 		species => "Human"

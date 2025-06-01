@@ -94,7 +94,7 @@ Each story is output as a Markdown file like this:
 >	}
 > }
 > ```
-> ````
+````
 ## Future Ideas
 * CLI for adding stories interactively
 * Support for multiple formats (e.g., JSON, plain text)

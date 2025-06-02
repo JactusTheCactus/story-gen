@@ -344,11 +344,11 @@ const wakeUp = new Story(
 {
 girl: {
 name: "F1",
-species: null
+species: "Pred"
 },
 boy: {
-name: "F2",
-species: null
+name: "Lola",
+species: "Human"
 }
 },
 false

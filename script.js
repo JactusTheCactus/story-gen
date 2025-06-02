@@ -371,6 +371,7 @@ wakeUp.plot = `
 - ${pred.name} wakes up next to ${prey.name}
     - ${pred.name} just considers ${prey.name} her "Breakfast In Bed"
         - ${prey.name} has to negotiate her __survival__
+            - ${prey.name} has to be more likeable / useful than she would be as ${pred.name}'s meal
 `;
 wakeUp.notes = `
 `;
@@ -387,7 +388,7 @@ Story.instances.forEach(story => {
 		.replace(/__(.+?)__/g, "\x1b[31m\x1b[1m$1\x1b[0m")
 		.replace(/_(.+?)_/g, "\x1b[32m\x1b[3m$1\x1b[0m")
 		.replace(/"(.+?)"/g, "\x1b[36m\"$1\"\x1b[0m")
-		.replace(new RegExp(`((?:${g.name}|${b.name}|${g.species}|${b.species})['s]*)`, "gi"), "\x1b[33m\x1b[4m$1\x1b[0m")
+		.replace(new RegExp(`((?:${g.name}|${b.name}|${g.species}|${b.species})\S*)`, "gi"), "\x1b[33m\x1b[4m$1\x1b[0m")
 		.replace(/\s+\n/g, "\n"),
 "=".repeat(50),"\n",
 "Write Me A Story","\n",

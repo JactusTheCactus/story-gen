@@ -354,12 +354,15 @@ species: "Human"
 false
 );
 {
-const {girl: f1, boy: f2} = wakeUp;
+const {
+girl: pred,
+boy: prey
+} = wakeUp;
 wakeUp.plot = `
-- ${f1.name} is hungover
-    - she wakes up next to ${f2.name}
-    - ${f1.name} just considers ${f2.name} her "Breakfast In Bed"
-    - ${f2.name} has to negotiate her survival
+- ${pred.name} is _hungover_
+    - she wakes up next to ${prey.name}
+    - ${pred.name} just considers ${prey.name} her "Breakfast In Bed"
+    - ${prey.name} has to negotiate her __survival__
 `;
 wakeUp.notes = `
 `;

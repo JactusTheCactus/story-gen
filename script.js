@@ -338,6 +338,33 @@ ${g.name} was going to get him out on her own -- not like she was ever going to 
 `;
 	};
 };
+{
+const wakeUp = new Story(
+"Wakeup Call",
+{
+girl: {
+name: "F1",
+species: null
+},
+boy: {
+name: "F2",
+species: null
+}
+},
+false
+);
+{
+const {girl: f1, boy: f2} = wakeUp;
+wakeUp.plot = `
+- ${f1.name} is hungover
+    - she wakes up next to ${f2.name}
+    - ${f1.name} just considers ${f2.name} her "Breakfast In Bed"
+    - ${f2.name} has to negotiate her survival
+`;
+wakeUp.notes = `
+`;
+};
+};
 Story.instances.forEach(story => {
 	story.write();
 });

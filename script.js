@@ -388,7 +388,7 @@ Story.instances.forEach(story => {
 		.replace(/__(.+?)__/g, "\x1b[31m\x1b[1m$1\x1b[0m")
 		.replace(/_(.+?)_/g, "\x1b[32m\x1b[3m$1\x1b[0m")
 		.replace(/"(.+?)"/g, "\x1b[36m\"$1\"\x1b[0m")
-		.replace(new RegExp(`((?:${g.name}|${b.name}|${g.species}|${b.species})[\w']+?)`, "gi"), "\x1b[33m\x1b[4m$1\x1b[0m")
+		.replace(new RegExp(`((?:${g.name}|${b.name}|${g.species}|${b.species})[^ ]*)`, "gi"), "\x1b[33m\x1b[4m$1\x1b[0m")
 		.replace(/\s+\n/g, "\n"),
 "=".repeat(50),"\n",
 "Write Me A Story","\n",

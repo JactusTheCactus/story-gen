@@ -361,7 +361,11 @@ boy: prey
 wakeUp.plot = `
 - ${pred.name} is:
     - a ${pred.species}
+    - _very_ hot
     - _hungover_
+- ${prey.name} is:
+    - a ${prey.species}
+    - _very_ cute
 - ${pred.name} wakes up next to ${prey.name}
     - ${pred.name} just considers ${prey.name} her "Breakfast In Bed"
         - ${prey.name} has to negotiate her __survival__

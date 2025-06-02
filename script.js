@@ -364,6 +364,7 @@ wakeUp.plot = `
     - Female
     - _very_ hot
     - _hungover_
+    - shameless
 - ${prey.name} is:
     - a ${prey.species}
     - Female

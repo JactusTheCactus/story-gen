@@ -359,10 +359,12 @@ girl: pred,
 boy: prey
 } = wakeUp;
 wakeUp.plot = `
-- ${pred.name} is _hungover_
-    - she wakes up next to ${prey.name}
+- ${pred.name} is:
+    - a ${pred.species}
+    - _hungover_
+- ${pred.name} wakes up next to ${prey.name}
     - ${pred.name} just considers ${prey.name} her "Breakfast In Bed"
-    - ${prey.name} has to negotiate her __survival__
+        - ${prey.name} has to negotiate her __survival__
 `;
 wakeUp.notes = `
 `;

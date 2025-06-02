@@ -343,7 +343,7 @@ const wakeUp = new Story(
 "Wakeup Call",
 {
 girl: {
-name: "F1",
+name: "Ashley",
 species: "Pred"
 },
 boy: {

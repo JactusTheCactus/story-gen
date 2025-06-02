@@ -391,6 +391,7 @@ Story.instances.forEach(story => {
 		.replace(/\s+\n/g, "\n"),
 "=".repeat(50),"\n",
 "Write Me A Story","\n",
+"***","\n",
 "#",title,
 plot
 	);

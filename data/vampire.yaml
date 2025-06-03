@@ -1,0 +1,14 @@
+title: Vampire
+girl:
+  name: Melina
+  species: Vampire
+boy:
+  name: Teddy
+  species: Human
+plot: |
+  <!--Placeholder-->
+  |Name|Species|
+  |:-|:-|
+  |${g.name}|${g.species}|
+  |${b.name}|${b.species}|
+  <!--Placeholder-->

@@ -128,258 +128,6 @@ class Story {
 		);
 	};
 };
-// Tick Tock
-{
-	const vore = new Story(
-		"Tick Tock",
-		{
-			girl: {
-				name: "Vera",
-				species: "Pred"
-			},
-			boy: {
-				name: "Eli",
-				species: "Human"
-			}
-		}
-	);
-	{
-		const {
-			girl: g,
-			boy: b
-		} = vore;
-		vore.plot = `
-- ${b.name} is kissing a really cute girl; ${g.name} (he doesn't know she's a ${g.species})
-- suddenly, ${g.name} swallows ${b.name} whole
-- naturally, ${b.name} pleads and struggles in ${g.name}'s stomach
-***
-> you know what?
->
-> You're actually pretty cute,
-> so I'll make you a deal;\\
-> if you're still alive and undigested by morning,
-> I'll let you out.
->
-> If not?
-> Well...
-> You get to be my breakfast!~
-### _MORNING_
-${g.name}'s belly was a little softer, a little rounder.
-${b.name} _might've_ survived, sure.
-But ${g.name}'s hopes weren't high.
-> Hey!
->
-> ${b.name}?
->
-> You still alive in there?
->
-> Hello?
->
-> Aww...
-> Guess not...
->
-> Shame...
-> He'd've made a pretty good boyfriend...
-> A _cute_ one too...
->
-> _Stupid metabolism_...
-
-> w-wha-?\\
-> _cough_
-> _cough_
-> _wheeze_
->
-> ${g.name[0]}-${g.name}?
->
-> Am I...
-> D-Dead...?
-
-> Oh, you're _not_ dead?
->
-> __Perfect!__
->
-> I can't exactly date _buttfat_~
-
-${b.name} was clearly too weak to move, but still alive.
-${g.name} was going to get him out on her own -- not like she was ever going to _struggle_ with that.
-`;
-		vore.notes = `
-`;
-	};
-};
-// Vampire
-{
-	const vamp = new Story(
-		"Vampire",
-		{
-			girl: {
-				name: "Melina",
-				species: "Vampire"
-			},
-			boy: {
-				name: "Teddy",
-				species: "Human"
-			}
-		}
-	);
-	{
-		const {
-			girl: g,
-			boy: b
-		} = vamp;
-		vamp.plot = `
-<!--Placeholder-->
-|Name|Species|
-|:-|:-|
-|${g.name}|${g.species}|
-|${b.name}|${b.species}|
-<!--Placeholder-->
-`;
-		vamp.notes = `
-`;
-	};
-};
-// Power
-{
-	const power = new Story(
-		"Power",
-		{
-			girl: {
-				name: "Lia",
-				species: "Human"
-			}
-		}
-	);
-	{
-		const {
-			girl: {
-				name,
-				species
-			}
-		} = power;
-		power.plot = `
-- ${name} is the ${species} bard of an adventuring party
-- she always avoids fighting
-	- her party assumes this is because she is scared of getting hurt
-		- the _real_ reason is that ${name} is worried about collateral damage
-			- à la the __Pistol Shrimp__ scene of "Project Power"
-- when ${name} uses her power:
-	- eyes turn gold
-		- the _metal_, not the _colour_
-	- a whisper shakes the earth
-	- the movement of her jaw during speach causes shockwaves
-	- speed almost looks like teleportation
-		- each step causes a _thundercrack_
-`;
-		power.notes = `
-- Inspired by "Project Power" (2020)
-`;
-	};
-};
-// Dorm Life
-{
-	const dorm = new Story(
-		"Dorm Life",
-		{
-			girl: {
-				name: "Bella",
-				species: "Human"
-			},
-			boy: {
-				name: "Roommates",
-				species: "Pred"
-			}
-		},
-		false
-	);
-	{
-		const {
-			girl: {
-				name,
-				species
-			},
-			boy: roommate
-		} = dorm;
-		dorm.plot = `
-- ${name} moves into a __College Dorm__
-	- All her ${roommate.name} are _Female_
-		- And _very_ __Hot__
-			- curvy in all the right ways
-	- by the end of __Week 1__, ${name} has realized that __All 5 Of Her ${roommate.name} Are ${roommate.species}s__
-		- ${roommate.species}s:
-			- identical to ${species}s
-			- eat a diet of exclusivley ${species}s
-				- swallow ${species}s whole
-					- no chewing
-					- full digestion, to a flat / empty tummy, in 1 hour
-		- there are rules against ${roommate.species}s eating their ${roommate.name}, so ${name} is _safe_
-			- however, the punishment for eating ${roommate.name} is __A Light Warning__ + a _$10 Fine_
-				- due to a concerning amount of ${roommate.species}s in politics, __Vore__ is not legally __Homicide__ or __Cannibalism__
-			- there are __no such rules__ for the people in _other dorm rooms_
-		- Plus, ${name}'s ${roommate.name} seem to _like_ her, so she doesn't think they'd eat her anyways
-`;
-		dorm.notes = `
-`;
-	};
-};
-// Wakeup Call
-{
-	const wakeUp = new Story(
-		"Wakeup Call",
-		{
-			girl: {
-				name: "Ashley",
-				species: "Pred"
-			},
-			boy: {
-				name: "Lola",
-				species: "Human"
-			}
-		},
-		false
-	);
-	{
-		const {
-			girl: pred,
-			boy: prey
-		} = wakeUp;
-		wakeUp.plot = `
-- ${pred.name} is:
-	- a ${pred.species}
-	- Female
-	- _very_ hot
-	- _hungover_
-	- shameless
-- ${prey.name} is:
-	- a ${prey.species}
-	- Female
-	- _very_ cute
-- ${pred.name} wakes up next to ${prey.name}
-	- ${pred.name} just considers ${prey.name} her "Breakfast In Bed"
-		- ${prey.name} has to negotiate her __survival__
-			- ${prey.name} has to be more likeable / useful than she would be as ${pred.name}'s meal
-`;
-		wakeUp.notes = `
-`;
-	};
-};
-/*
-Story.instances.forEach(story => {
-	story.write();
-});
-{
-	const { title, plot, girl: g, boy: b } = Story.instances.at(-1)
-	const titlePadding = "-=:|";
-	console.log(`\n\t\x1b[1m\x1b[35m${titlePadding}\x1b[4m"${title}"\x1b[0m\x1b[1m\x1b[35m${reverse(titlePadding)}\x1b[0m\n${plot}`
-		.replace(/\t/g, " ".repeat(4))
-		.replace(/__(.+?)__/g, "\x1b[31m\x1b[1m$1\x1b[0m")
-		.replace(/_(.+?)_/g, "\x1b[32m\x1b[3m$1\x1b[0m")
-		.replace(/"(.+?)"/g, "\x1b[36m\"$1\"\x1b[0m")
-		.replace(new RegExp(`((?:${g.name}|${b.name}|${g.species}|${b.species})[^ ]*)`, "gi"), "\x1b[33m\x1b[4m$1\x1b[0m")
-		.replace(/\s+\n/g, "\n")
-	);
-};
-*/
 // Simple template filler
 function fillTemplate(template, context) {
 	return template.replace(/\$\{([^}]+)\}/g, (_, expr) => {
@@ -404,10 +152,22 @@ for (const file of yamlFiles) {
 		}
 	);
 	const context = {
-		girl: yamlData.girl,
-		boy: yamlData.boy
+		g: yamlData.girl,
+		b: yamlData.boy
 	};
 	story.plot = fillTemplate(yamlData.plot || "", context);
 	story.notes = fillTemplate(yamlData.notes || "", context);
 	story.write();
+	if (story.title === "Power") {
+		const { title, plot, girl: g, boy: b } = story;
+		const titlePadding = "-=:|";
+		console.log(`\n\t\x1b[1m\x1b[35m${titlePadding}\x1b[4m"${title}"\x1b[0m\x1b[1m\x1b[35m${reverse(titlePadding)}\x1b[0m\n${plot}`
+			.replace(/\t/g, " ".repeat(4))
+			.replace(/__(.+?)__/g, "\x1b[31m\x1b[1m$1\x1b[0m")
+			.replace(/_(.+?)_/g, "\x1b[32m\x1b[3m$1\x1b[0m")
+			.replace(/"(.+?)"/g, "\x1b[36m\"$1\"\x1b[0m")
+			.replace(new RegExp(`((?:${g.name}|${b.name}|${g.species}|${b.species})[^ ]*)`, "gi"), "\x1b[33m\x1b[4m$1\x1b[0m")
+			.replace(/\s+\n/g, "\n")
+		);
+	};
 };

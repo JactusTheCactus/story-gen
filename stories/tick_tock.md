@@ -20,7 +20,7 @@ Plot
 > you know what?
 >
 > You're actually pretty cute,
-> so I'll make you a deal;\
+> so I'll make you a deal;\\
 > if you're still alive and undigested by morning,
 > I'll let you out.
 >
@@ -48,12 +48,12 @@ But Vera's hopes weren't high.
 >
 > _Stupid metabolism_...
 
-> w-wha-?\
+> w-wha-?\\
 > _cough_
 > _cough_
 > _wheeze_
 >
-> V-Vera?
+> undefined-Vera?
 >
 > Am I...
 > D-Dead...?
@@ -66,20 +66,3 @@ But Vera's hopes weren't high.
 
 Eli was clearly too weak to move, but still alive.
 Vera was going to get him out on her own &mdash; not like she was ever going to _struggle_ with that.
-
-Explain In Perl Terms
----------------------
-<!--Because I find Perl hashes the most readable at a glance-->
-```pl
-my %tick_tock = {
-	title => "Tick Tock",
-	boy => {
-		name => "Eli",
-		species => "Human"
-	},
-	girl => {
-		name => "Vera",
-		species => "Pred"
-	}
-};
-```

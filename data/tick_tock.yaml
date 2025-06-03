@@ -1,0 +1,61 @@
+title: Tick Tock
+girl:
+  name: Vera
+  species: Pred
+boy:
+  name: Eli
+  species: Human
+plot: |
+  - ${b.name} is kissing a really cute girl; ${g.name} (he doesn't know she's a ${g.species})
+  - suddenly, ${g.name} swallows ${b.name} whole
+  - naturally, ${b.name} pleads and struggles in ${g.name}'s stomach
+  ***
+  > you know what?
+  >
+  > You're actually pretty cute,
+  > so I'll make you a deal;\\
+  > if you're still alive and undigested by morning,
+  > I'll let you out.
+  >
+  > If not?
+  > Well...
+  > You get to be my breakfast!~
+  ### _MORNING_
+  ${g.name}'s belly was a little softer, a little rounder.
+  ${b.name} _might've_ survived, sure.
+  But ${g.name}'s hopes weren't high.
+  > Hey!
+  >
+  > ${b.name}?
+  >
+  > You still alive in there?
+  >
+  > Hello?
+  >
+  > Aww...
+  > Guess not...
+  >
+  > Shame...
+  > He'd've made a pretty good boyfriend...
+  > A _cute_ one too...
+  >
+  > _Stupid metabolism_...
+
+  > w-wha-?\\
+  > _cough_
+  > _cough_
+  > _wheeze_
+  >
+  > ${g.name[0]}-${g.name}?
+  >
+  > Am I...
+  > D-Dead...?
+
+  > Oh, you're _not_ dead?
+  >
+  > __Perfect!__
+  >
+  > I can't exactly date _buttfat_~
+
+  ${b.name} was clearly too weak to move, but still alive.
+  ${g.name} was going to get him out on her own -- not like she was ever going to _struggle_ with that.

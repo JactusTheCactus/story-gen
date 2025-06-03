@@ -339,44 +339,44 @@ ${g.name} was going to get him out on her own -- not like she was ever going to 
 	};
 };
 {
-const wakeUp = new Story(
-"Wakeup Call",
-{
-girl: {
-name: "Ashley",
-species: "Pred"
-},
-boy: {
-name: "Lola",
-species: "Human"
-}
-},
-false
-);
-{
-const {
-girl: pred,
-boy: prey
-} = wakeUp;
-wakeUp.plot = `
+	const wakeUp = new Story(
+		"Wakeup Call",
+		{
+			girl: {
+				name: "Ashley",
+				species: "Pred"
+			},
+			boy: {
+				name: "Lola",
+				species: "Human"
+			}
+		},
+		false
+	);
+	{
+		const {
+			girl: pred,
+			boy: prey
+		} = wakeUp;
+		wakeUp.plot = `
 - ${pred.name} is:
-    - a ${pred.species}
-    - Female
-    - _very_ hot
-    - _hungover_
-    - shameless
+	- a ${pred.species}
+	- Female
+	- _very_ hot
+	- _hungover_
+	- shameless
 - ${prey.name} is:
-    - a ${prey.species}
-    - Female
-    - _very_ cute
+	- a ${prey.species}
+	- Female
+	- _very_ cute
 - ${pred.name} wakes up next to ${prey.name}
-    - ${pred.name} just considers ${prey.name} her "Breakfast In Bed"
-        - ${prey.name} has to negotiate her __survival__
-            - ${prey.name} has to be more likeable / useful than she would be as ${pred.name}'s meal
+	- ${pred.name} just considers ${prey.name} her "Breakfast In Bed"
+		- ${prey.name} has to negotiate her __survival__
+			- ${prey.name} has to be more likeable / useful than she would be as ${pred.name}'s meal
 `;
-wakeUp.notes = `
+		wakeUp.notes = `
 `;
-};
+	};
 };
 Story.instances.forEach(story => {
 	story.write();
@@ -390,11 +390,6 @@ Story.instances.forEach(story => {
 		.replace(/_(.+?)_/g, "\x1b[32m\x1b[3m$1\x1b[0m")
 		.replace(/"(.+?)"/g, "\x1b[36m\"$1\"\x1b[0m")
 		.replace(new RegExp(`((?:${g.name}|${b.name}|${g.species}|${b.species})[^ ]*)`, "gi"), "\x1b[33m\x1b[4m$1\x1b[0m")
-		.replace(/\s+\n/g, "\n"),
-"=".repeat(50),"\n",
-"Write Me A Story","\n",
-"***","\n",
-"#",title,
-plot
+		.replace(/\s+\n/g, "\n")
 	);
 };

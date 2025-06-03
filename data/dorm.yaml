@@ -1,0 +1,25 @@
+title: Dorm Life
+girl:
+  name: Bella
+  species: Human
+boy:
+  name: Roommates
+  species: Pred
+plot: |
+  - ${girl.name} moves into a __College Dorm__
+    - All her ${boy.name} are _Female_
+      - And _very_ __Hot__
+        - curvy in all the right ways
+    - by the end of __Week 1__, ${girl.name} has realized that __All 5 Of Her ${boy.name} Are ${boy.species}s__
+      - ${boy.species}s:
+        - identical to ${girl.species}s
+        - eat a diet of exclusivley ${girl.species}s
+          - swallow ${girl.species}s whole
+            - no chewing
+            - full digestion, to a flat / empty tummy, in 1 hour
+      - there are rules against ${boy.species}s eating their ${boy.name}, so ${girl.name} is _safe_
+        - however, the punishment for eating ${boy.name} is __A Light Warning__ + a _$10 Fine_
+          - due to a concerning amount of ${boy.species}s in politics, __Vore__ is not legally __Homicide__ or __Cannibalism__
+        - there are __no such rules__ for the people in _other dorm rooms_
+      - Plus, ${girl.name}'s ${boy.name} seem to _like_ her, so she doesn't think they'd eat her anyways
+notes: ""

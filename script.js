@@ -1,5 +1,6 @@
 const fs = require("fs");
 const path = require("path");
+const YAML = require("yaml");
 function fileName(text) {
 	text = text
 		.replace(/[^\w\s]/g, "")
@@ -48,8 +49,7 @@ class Story {
 				name: "Name",
 				species: "Species"
 			}
-		} = {},
-		ifPerl = true
+		} = {}
 	) {
 		this.title = title;
 		this.girl = { ...girl };
@@ -69,7 +69,6 @@ class Story {
 				};
 			};
 		});
-		this.ifPerl = ifPerl;
 		this.plot = "";
 		this.notes = "";
 		this.labels = {
@@ -77,37 +76,10 @@ class Story {
 			title: this.title,
 			characters: "Characters",
 			plot: "Plot",
-			notes: "Notes",
-			perl: "Explain In Perl Terms"
+			notes: "Notes"
 		};
 		Story.instances.push(this);
 	};
-	get perl() {
-		const perlScript = `
-my %${fileName(this.title)} = {
-	title => "${this.title}",
-	boy => {
-		name => "${this.boy.name}",
-		species => "${this.boy.species}"
-	},
-	girl => {
-		name => "${this.girl.name}",
-		species => "${this.girl.species}"
-	}
-};
-`
-			.replace(/(?:name|species) => "(?:name|species)",?\n\t+/gi, "")
-			.replace(/,?\n\t+(?:boy|girl) => {\n\t+}/g, "")
-			.trim();
-		return `
-${this.labels.perl}
-${"-".repeat(this.labels.perl.length)}
-<!--Because I find Perl hashes the most readable at a glance-->
-\`\`\`pl
-${perlScript}
-\`\`\`
-`;
-	}
 	get characters() {
 		return `
 - ${this.girl.name}
@@ -126,13 +98,10 @@ ${perlScript}
 			this.output += `\n${this.labels.characters}\n${"-".repeat(this.labels.characters.length)}${this.characters}`;
 		};
 		if (this.plot.replace(/\s/g, "")) {
-			this.output += `\n${this.labels.plot}\n${"-".repeat(this.labels.plot.length)}${this.plot}`;
+			this.output += `\n${this.labels.plot}\n${"-".repeat(this.labels.plot.length)}\n${this.plot}`;
 		};
 		if (this.notes.replace(/\s/g, "")) {
-			this.output += `\n${this.labels.notes}\n${"-".repeat(this.labels.notes.length)}${this.notes}`;
-		};
-		if (this.ifPerl) {
-			this.output += this.perl
+			this.output += `\n${this.labels.notes}\n${"-".repeat(this.labels.notes.length)}\n${this.notes}`;
 		};
 		this.output = this.output
 			.replace(/(?:^\s+|\s+$)/g, "")
@@ -159,6 +128,7 @@ ${perlScript}
 		);
 	};
 };
+// Tick Tock
 {
 	const vore = new Story(
 		"Tick Tock",
@@ -174,7 +144,10 @@ ${perlScript}
 		}
 	);
 	{
-		const { girl: g, boy: b } = vore;
+		const {
+			girl: g,
+			boy: b
+		} = vore;
 		vore.plot = `
 - ${b.name} is kissing a really cute girl; ${g.name} (he doesn't know she's a ${g.species})
 - suddenly, ${g.name} swallows ${b.name} whole
@@ -234,6 +207,7 @@ ${g.name} was going to get him out on her own -- not like she was ever going to 
 `;
 	};
 };
+// Vampire
 {
 	const vamp = new Story(
 		"Vampire",
@@ -249,7 +223,10 @@ ${g.name} was going to get him out on her own -- not like she was ever going to 
 		}
 	);
 	{
-		const { girl: g, boy: b } = vamp;
+		const {
+			girl: g,
+			boy: b
+		} = vamp;
 		vamp.plot = `
 <!--Placeholder-->
 |Name|Species|
@@ -262,6 +239,7 @@ ${g.name} was going to get him out on her own -- not like she was ever going to 
 `;
 	};
 };
+// Power
 {
 	const power = new Story(
 		"Power",
@@ -273,7 +251,12 @@ ${g.name} was going to get him out on her own -- not like she was ever going to 
 		}
 	);
 	{
-		const { girl: { name, species } } = power;
+		const {
+			girl: {
+				name,
+				species
+			}
+		} = power;
 		power.plot = `
 - ${name} is the ${species} bard of an adventuring party
 - she always avoids fighting
@@ -293,6 +276,7 @@ ${g.name} was going to get him out on her own -- not like she was ever going to 
 `;
 	};
 };
+// Dorm Life
 {
 	const dorm = new Story(
 		"Dorm Life",
@@ -338,6 +322,7 @@ ${g.name} was going to get him out on her own -- not like she was ever going to 
 `;
 	};
 };
+// Wakeup Call
 {
 	const wakeUp = new Story(
 		"Wakeup Call",
@@ -378,6 +363,7 @@ ${g.name} was going to get him out on her own -- not like she was ever going to 
 `;
 	};
 };
+/*
 Story.instances.forEach(story => {
 	story.write();
 });
@@ -392,4 +378,36 @@ Story.instances.forEach(story => {
 		.replace(new RegExp(`((?:${g.name}|${b.name}|${g.species}|${b.species})[^ ]*)`, "gi"), "\x1b[33m\x1b[4m$1\x1b[0m")
 		.replace(/\s+\n/g, "\n")
 	);
+};
+*/
+// Simple template filler
+function fillTemplate(template, context) {
+	return template.replace(/\$\{([^}]+)\}/g, (_, expr) => {
+		try {
+			return expr.split(".").reduce((acc, key) => acc[key], context);
+		} catch {
+			return `\${${expr}}`;
+		}
+	});
+}
+// Read all .yaml files in the data directory
+const dataDir = path.join(__dirname, "data");
+const yamlFiles = fs.readdirSync(dataDir).filter(file => file.endsWith(".yaml"));
+for (const file of yamlFiles) {
+	const yamlRaw = fs.readFileSync(path.join(dataDir, file), "utf-8");
+	const yamlData = YAML.parse(yamlRaw);
+	const story = new Story(
+		yamlData.title,
+		{
+			girl: yamlData.girl,
+			boy: yamlData.boy
+		}
+	);
+	const context = {
+		girl: yamlData.girl,
+		boy: yamlData.boy
+	};
+	story.plot = fillTemplate(yamlData.plot || "", context);
+	story.notes = fillTemplate(yamlData.notes || "", context);
+	story.write();
 };

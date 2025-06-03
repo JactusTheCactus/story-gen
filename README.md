@@ -1,10 +1,10 @@
 # Story Generator
-Ever wanted to whip up whimsical tales with just a few lines of JavaScript? Look no further. **Story Generator** is a simple Node.js script that helps you create short story outlines with characters, plots, notes, and even a little Perl-flavored nostalgia baked in.
+Ever wanted to whip up whimsical tales with just a few lines of JavaScript? Look no further. **Story Generator** is a simple Node.js script that helps you create short story outlines with characters, plots and notes.
 ## Features
 - Define characters with names and species
 - Automatically formats your story into a Markdown file
 - Generates human-readable file names based on story titles
-- Outputs structured stories with sections: Characters, Plot, Notes, and Perl hash-style metadata
+- Outputs structured stories with sections: Characters, Plot, and Notes
 - All stories are saved neatly into the `stories/` folder
 ## Project Structure
 ```
@@ -40,8 +40,7 @@ Edit `script.js` and add your own `Story` instance like this:
 				name: "Theo",
 				species: "Talking Owl"
 			}
-		},
-    true
+		}
 	);
 	{
 		const { girl: g, boy: b } = myStory;
@@ -57,7 +56,7 @@ Inspired by my neighbor's cat and a very loud owl.
 Then re-run the script!
 ## Example Output
 Each story is output as a Markdown file like this:
-````md
+```md
 Write Me A Story
 ****************
 
@@ -78,24 +77,7 @@ Plot
 Notes
 -----
 - Time-travel theme. Possibly part of a series.
-
-Explain in Perl terms
----------------------
-<!--Because I find Perl hashes the most readable at a glance-->
-```pl
-my %tick_tock = {
-title => "Tick Tock",
-boy => {
-	name => "Marcus",
-	species => "Time Sprite"
-},
-girl => {
-	name => "Ellie",
-	species => "Human"
-}
-}
 ```
-````
 ## Future Ideas
 - Support for multiple formats
     - `JSON`

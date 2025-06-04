@@ -3,7 +3,7 @@ girl:
   name: Ashley
   species: Pred
 boy:
-  name: Sam
+  name: Teddy
   species: Human
 plot: |
   - {{ g.name }} considers herself to be {{ b.name }}'s __Best Friend__

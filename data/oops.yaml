@@ -1,0 +1,27 @@
+title: Oops!
+girl:
+  name: Ashley
+  species: Pred
+boy:
+  name: Sam
+  species: Human
+plot: |
+  - ${g.name} considers herself to be ${b.name}'s __Best Friend__
+  - ${g.name} invites ${b.name} over to her place for the night
+      - no sexual pretenses whatsoever
+          - there is nothing sexual or romantic about their relationship
+              - purely platonic
+  - once ${b.name} arrives, ${g.name} is ready with snacks, drinks, and really crampy movies that were __not__ worth what she rented them for
+  ## ~1 Hour In
+  - ${g.name}'s tummy rumbles
+  - she looks at ${b.name}
+      > "Wouldn't you look sooo cute in my tummy?"
+  - she keeps joking about eating him
+      - there is never any intention to __actually__ eat him
+          - even if she _did_, ${g.name} would let him out long before he even __started__ to digest
+  - ${b.name} gets uncomfortable, but she doesn't notice
+  - eventually, ${b.name} leaves, starting to worry that she just sees him as food
+      - ${g.name} _is_ a Pred, afterall
+  ## The Next Day
+  - ${g.name} corners ${b.name} in the school hallway, trying to figure out why he left
+      - _she_ thought they were having __Fun__

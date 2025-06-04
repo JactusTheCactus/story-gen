@@ -171,7 +171,9 @@ boy: b
 const logOutput = [
 `${"●".repeat(50)}
 \t\x1b[1m\x1b[35m${titlePadding}\x1b[4m"${title}"\x1b[0m\x1b[1m\x1b[35m${reverse(titlePadding)}\x1b[0m
+__Plot__
 ${plot}
+__Notes__
 ${notes}`,
 `${"●".repeat(50)}
 \`\`\`md

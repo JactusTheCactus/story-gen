@@ -131,7 +131,7 @@ class Story {
 };
 // Simple template filler
 function fillTemplate(template, context) {
-	return template.replace(/\{\{\s*([^(?: })]+)\s*\}\}/g, (_, expr) => {
+	return template.replace(/\{\{\s*([^(?:\s?})]+)\s*\}\}/g, (_, expr) => {
 		try {
 			return expr.split(".").reduce((acc, key) => acc[key], context);
 		} catch {

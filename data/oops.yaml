@@ -26,7 +26,7 @@ plot: |
               - Plus, she doesn't really attempt to hide it when she sees a cute boy she wants to eat
                   - {{ g.name }} teases {{ b.name }} all throughout her digestion of said "cute boy"
                       - she likes the way {{ b.name }} squirms uncomfortably while her gut turns someone like him into soup
-                          - all in good fun _(but not for whatever unfortunate boy {{ g.name }} ate)_
+                          - all in good fun _(but not for whatever unfortunate boy_ {{ g.name }} _ate)_
   ### The Next Day
   - after avoiding her all day, {{ g.name }} corners {{ b.name }} in the school hallway, trying to figure out why he left
       - _she_ thought they were having __Fun__

@@ -9,6 +9,6 @@ plot: |
   <!--Placeholder-->
   |Name|Species|
   |:-|:-|
-  |${g.name}|${g.species}|
-  |${b.name}|${b.species}|
+  |{{ g.name }}|{{ g.species }}|
+  |{{ b.name }}|{{ b.species }}|
   <!--Placeholder-->

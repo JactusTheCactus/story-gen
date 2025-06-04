@@ -15,7 +15,7 @@ plot: |
   ### ~1 Hour In
   - {{ g.name }}'s tummy rumbles
   - she looks at {{ b.name }}
-      > "Wouldn't you look sooo cute in my tummy?"
+      > "Wouldn't you look _sooo_ cute in my tummy?"
   - she keeps joking about eating him
       - there is never any intention to __actually__ eat him
           - even if she _did_, {{ g.name }} would let him out long before he even __started__ to digest

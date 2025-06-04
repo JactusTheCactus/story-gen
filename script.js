@@ -159,7 +159,7 @@ for (const file of yamlFiles) {
 	story.plot = fillTemplate(yamlData.plot || "", context);
 	story.notes = fillTemplate(yamlData.notes || "", context);
 	story.write();
-	if (story.title === "Dorm Life") {
+	if (story.title === "Oops!") {
 		const {
 title,
 plot,

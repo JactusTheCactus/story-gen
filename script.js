@@ -21,7 +21,8 @@ function reverse(text) {
 		output += text.at(i);
 	};
 	const pattern = [
-		"!^", "$!"
+		"!^",
+"$!"
 	];
 	const replacementsLength = replacements.length
 	for (let i = 0; i < replacementsLength; i++) {

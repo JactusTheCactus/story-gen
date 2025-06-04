@@ -131,11 +131,11 @@ class Story {
 };
 // Simple template filler
 function fillTemplate(template, context) {
-	return template.replace(/\$\{([^}]+)\}/g, (_, expr) => {
+	return template.replace(/\{\{\s*([^}]+)\s*\}\}/g, (_, expr) => {
 		try {
 			return expr.split(".").reduce((acc, key) => acc[key], context);
 		} catch {
-			return `\${${expr}}`;
+			return `\{{ ${expr} }}`;
 		}
 	});
 }

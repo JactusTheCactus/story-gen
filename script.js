@@ -135,7 +135,7 @@ function fillTemplate(template, context) {
 		try {
 			return expr.split(".").reduce((acc, key) => acc[key], context);
 		} catch {
-			return `\{{ ${expr} }}`;
+			return `{{ ${expr} }}`;
 		}
 	});
 }

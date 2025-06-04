@@ -176,14 +176,12 @@ ${plot}
 __Notes__
 ${notes}`,
 `${"●".repeat(50)}
-\`\`\`md
 Write Me A Story
 ${"*".repeat("Write Me A Story".length)}
 # "${title}"
 ## Plot
 ${plot}## Notes
-${notes}\`\`\`
-${"●".repeat(50)}`
+${notes}${"●".repeat(50)}`
 ];
 		console.log(logOutput[0]
 			.replace(/\t/g, " ".repeat(4))

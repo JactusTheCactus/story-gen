@@ -25,7 +25,8 @@ plot: |
           - {{ g.name }} _is_ a Pred, afterall
               - Plus, she doesn't really attempt to hide it when she sees a cute boy she wants to eat
   ### The Next Day
-  - {{ g.name }} corners {{ b.name }} in the school hallway, trying to figure out why he left
+  - after avoiding her all day, {{ g.name }} corners {{ b.name }} in the school hallway, trying to figure out why he left
       - _she_ thought they were having __Fun__
+      - _he_ thought his _Best Friend_ was going to __kill him__
 notes: |
   - {{ g.name }} is _super_ __Gay__

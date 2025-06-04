@@ -24,6 +24,7 @@ plot: |
       - {{ b.name }} leaves, starting to fear that she just sees him as food
           - {{ g.name }} _is_ a Pred, afterall
               - Plus, she doesn't really attempt to hide it when she sees a cute boy she wants to eat
+                  - {{ g.name }} teases {{ b.name }} all throughout her digestion of said "cute boy"
   ### The Next Day
   - after avoiding her all day, {{ g.name }} corners {{ b.name }} in the school hallway, trying to figure out why he left
       - _she_ thought they were having __Fun__

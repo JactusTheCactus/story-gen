@@ -4,7 +4,7 @@
 		{
 			"type": "node",
 			"request": "launch",
-			"name": "Run script.js",
+			"name": "Run",
 			"skipFiles": [
 				"<node_internals>/**"
 			],

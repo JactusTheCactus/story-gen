@@ -179,8 +179,7 @@ Write Me A Story
 ${"*".repeat("Write Me A Story".length)}
 # "${title}"
 ## Plot
-${plot}
-## Notes
+${plot}## Notes
 ${notes}\`\`\`
 ${"●".repeat(50)}`
 ];

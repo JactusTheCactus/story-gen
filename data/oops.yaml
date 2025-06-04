@@ -23,6 +23,7 @@ plot: |
   - when {{ g.name }} opens her mouth and leans in (jokingly, of course)
       - {{ b.name }} leaves, starting to fear that she just sees him as food
           - {{ g.name }} _is_ a Pred, afterall
+              - Plus, she doesn't really attempt to hide it when she sees a cute boy she wants to eat
   ### The Next Day
   - {{ g.name }} corners {{ b.name }} in the school hallway, trying to figure out why he left
       - _she_ thought they were having __Fun__

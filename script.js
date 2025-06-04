@@ -159,7 +159,12 @@ for (const file of yamlFiles) {
 	story.notes = fillTemplate(yamlData.notes || "", context);
 	story.write();
 	if (story.title === "Oops!") {
-		const { title, plot, girl: g, boy: b } = story;
+		const {
+title,
+plot,
+girl: g,
+boy: b
+} = story;
 		const titlePadding = "-=:|";
 		console.log(`\n\t\x1b[1m\x1b[35m${titlePadding}\x1b[4m"${title}"\x1b[0m\x1b[1m\x1b[35m${reverse(titlePadding)}\x1b[0m\n${plot}`
 			.replace(/\t/g, " ".repeat(4))
@@ -167,7 +172,8 @@ for (const file of yamlFiles) {
 			.replace(/_(.+?)_/g, "\x1b[32m\x1b[3m$1\x1b[0m")
 			.replace(/"(.+?)"/g, "\x1b[36m\"$1\"\x1b[0m")
 			.replace(new RegExp(`((?:${g.name}|${b.name}|${g.species}|${b.species})[^ ]*)`, "gi"), "\x1b[33m\x1b[4m$1\x1b[0m")
-			.replace(/\s+\n/g, "\n")
+			.replace(/\s+\n/g, "\n"),
+`\n# ${title}\n## ${plot}`
 		);
 	};
 };

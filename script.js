@@ -163,6 +163,7 @@ for (const file of yamlFiles) {
 		const {
 title,
 plot,
+notes,
 girl: g,
 boy: b
 } = story;

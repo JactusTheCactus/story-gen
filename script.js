@@ -174,7 +174,7 @@ boy: b
 			.replace(/"(.+?)"/g, "\x1b[36m\"$1\"\x1b[0m")
 			.replace(new RegExp(`((?:${g.name}|${b.name}|${g.species}|${b.species})[^ ]*)`, "gi"), "\x1b[33m\x1b[4m$1\x1b[0m")
 			.replace(/\s+\n/g, "\n"),
-`\n${"*".repeat(50)}\n# "${title}"\n## Plot\n${plot}`
+`\n${"*".repeat(50)}\nWrite Me A Story\n${"*".repeat("Write Me A Story".length)}\n# "${title}"\n## Plot\n${plot}`
 		);
 	};
 };

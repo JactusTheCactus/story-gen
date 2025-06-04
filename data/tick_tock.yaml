@@ -6,9 +6,9 @@ boy:
   name: Eli
   species: Human
 plot: |
-  - ${b.name} is kissing a really cute girl; ${g.name} (he doesn't know she's a ${g.species})
-  - suddenly, ${g.name} swallows ${b.name} whole
-  - naturally, ${b.name} pleads and struggles in ${g.name}'s stomach
+  - {{ b.name }} is kissing a really cute girl; {{ g.name }} (he doesn't know she's a {{ g.species }})
+  - suddenly, {{ g.name }} swallows {{ b.name }} whole
+  - naturally, {{ b.name }} pleads and struggles in {{ g.name }}'s stomach
   ***
   > you know what?
   >
@@ -21,12 +21,12 @@ plot: |
   > Well...
   > You get to be my breakfast!~
   ### _MORNING_
-  ${g.name}'s belly was a little softer, a little rounder.
-  ${b.name} _might've_ survived, sure.
-  But ${g.name}'s hopes weren't high.
+  {{ g.name }}'s belly was a little softer, a little rounder.
+  {{ b.name }} _might've_ survived, sure.
+  But {{ g.name }}'s hopes weren't high.
   > Hey!
   >
-  > ${b.name}?
+  > {{ b.name }}?
   >
   > You still alive in there?
   >
@@ -46,7 +46,7 @@ plot: |
   > _cough_
   > _wheeze_
   >
-  > ${g.name[0]}-${g.name}?
+  > {{ g.name[0] }}-{{ g.name }}?
   >
   > Am I...
   > D-Dead...?
@@ -57,5 +57,5 @@ plot: |
   >
   > I can't exactly date _buttfat_~
 
-  ${b.name} was clearly too weak to move, but still alive.
-  ${g.name} was going to get him out on her own -- not like she was ever going to _struggle_ with that.
+  {{ b.name }} was clearly too weak to move, but still alive.
+  {{ g.name }} was going to get him out on her own -- not like she was ever going to _struggle_ with that.

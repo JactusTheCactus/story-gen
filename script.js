@@ -53,24 +53,11 @@ class Story {
 		} = {}
 	) {
 		this.title = title;
-		this.girl = { ...girl };
-		this.boy = { ...boy };
-		[this.girl, this.boy].forEach(char => {
-			/*if (char) {
-				if (!char.name) {
-					char.name = "Name"
-				};
-				if (!char.species) {
-					char.species = "Species"
-				};
-			} else {
-				char = {
-					name: "Name",
-					species: "Species"
-				};
-			};*/
+		this.girl = { ...girl, this.girl.nameFirst: girl.name[0] };
+		this.boy = { ...boy, this.boy.nameFirst: boy.name[0] };
+		/*[this.girl, this.boy].forEach(char => {
 char.nameFirst = char.name[0];
-		});
+		});*/
 		this.plot = "";
 		this.notes = "";
 		this.labels = {

@@ -162,7 +162,7 @@ for (const file of yamlFiles) {
 	story.write();
 if (/undefined/.test(story.output)) {
 console.error(`ERROR: There are undefined variables in "${story.title}":`);
-Story.output.match(/^.*undefined.*$/gm).forEach(match => {
+story.output.match(/^.*undefined.*$/gm).forEach(match => {
 console.log(`\t${match}`);
 });
 };

@@ -20,7 +20,7 @@ Plot
 > you know what?
 >
 > You're actually pretty cute,
-> so I'll make you a deal;\\
+> so I'll make you a deal;\
 > if you're still alive and undigested by morning,
 > I'll let you out.
 >
@@ -48,7 +48,7 @@ But Vera's hopes weren't high.
 >
 > _Stupid metabolism_...
 
-> w-wha-?\\
+> w-wha-?\
 > _cough_
 > _cough_
 > _wheeze_

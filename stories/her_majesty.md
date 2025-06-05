@@ -21,8 +21,8 @@ Plot
 - Better yet, she seems completely enamoured with him
 ### Later That Night
 - Tess gets _too comfortable_ with Alex and accidentally hints at who she _really_ is; __The Princess__
-- She can tell by his expression that he's going to run
-  - She has a bad track record for having her boyfriends __not__ get eaten by her or her mother
+- She can tell by his expression _(and the noise he made)_ that he's going to run
+  - She has a bad track record for having her boyfriends __not__ get eaten by her or her mother (it's an almost even split between the two, though Tess does currently have the lead)
 
 Notes
 -----

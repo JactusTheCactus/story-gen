@@ -3,7 +3,7 @@ const path = require("path");
 const YAML = require("yaml");
 function fileName(text) {
 	text = text
-		.replace(/[^\w\s]/g, "")
+		//.replace(/[^\w\s]/g, "")
 		.replace(/\s+/g, "_")
 		.replace(/(?:^_|_$)/g, "")
 		.toLowerCase();

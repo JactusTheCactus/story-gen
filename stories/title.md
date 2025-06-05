@@ -5,17 +5,17 @@ Write Me A Story
 
 Characters
 ----------
-- Undefined
+- Girl
 	- Pred
-- Undefined
+- Boy
 	- Human
 
 Plot
 ----
-- Undefined eats undefined
+- Girl eats Boy
 - He actually squirms really well
-  - It makes undefined feel great
-- Undefined decides not to digest undefined
+  - It makes Girl feel great
+- Girl decides not to digest Boy
   > You know,
   > you actually feel _great_ in there,
   > so I __won't__ digest you~

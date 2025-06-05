@@ -53,7 +53,7 @@ But Vera's hopes weren't high.
 > _cough_
 > _wheeze_
 >
-> undefined-Vera?
+> V-Vera?
 >
 > Am I...
 > D-Dead...?

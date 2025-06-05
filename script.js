@@ -54,11 +54,11 @@ class Story {
 		this.title = title;
 		this.girl = {
 ...girl,
-nameFirst: girl.name[0] || "G"
+nameFirst: girl.name ? girl.name[0] : "G"
 };
 		this.boy = {
 ...boy,
-nameFirst: boy.name[0] || "B"
+nameFirst: boy.name ? boy.name[0] : "B"
 };
 		this.plot = "";
 		this.notes = "";

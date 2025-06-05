@@ -17,6 +17,8 @@ plot: |
   - {{ g.name }} gets _too comfortable_ with {{ b.name }} and accidentally hints at who she _really_ is; __The Princess__
   - she can tell by his expression _(and the noise he made)_ that he's going to run
     - she has a bad track record for having her boyfriends __not__ get eaten by her or her mother (it's an almost even split between the two, though {{ g.name }} does currently have the lead)
+    - {{ g.name }} threatens to eat {{ b.name }} if he tries to leave
+      - less of an actual threat; more like a "whatever-gets-you-to-stay"
 notes: |
   - {{ g.name }}'s _mother_ is the __Queen of the Kingdom__
     - __The Queen__ is a very dangerous and vengeful Pred _(public information)_

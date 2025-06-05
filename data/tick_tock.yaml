@@ -28,7 +28,7 @@ plot: |
   {{ b.name }} _might've_ survived, sure.
   But {{ g.name }}'s hopes weren't high.
 
- __Nor were her spirits__
+  __Nor were her spirits__
   > {{ b.name }}?
   >
   > Hey... {{ b.name }}...?

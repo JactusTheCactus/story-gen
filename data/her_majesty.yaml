@@ -6,6 +6,7 @@ boy:
   name: Alex
   species: Human
 plot: |
-  - ""
+  - {{ b.name }} has somehow found himself at a party held by __The Princess__
 notes: |
   - {{ g.name }}'s _mother_ is the __Queen of the Kingdom__
+  - {{ b.name }} is low-middle class

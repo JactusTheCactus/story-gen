@@ -140,8 +140,12 @@ for (const file of yamlFiles) {
 			boy: yamlData.boy
 		}
 	);
-	story.plot = fillTemplate(yamlData.plot || "", story);
-	story.notes = fillTemplate(yamlData.notes || "", story);
+const context = {
+g: story.girl,
+b: story.boy
+};
+	story.plot = fillTemplate(yamlData.plot || "", context);
+	story.notes = fillTemplate(yamlData.notes || "", context);
 	story.write();
 if (/undefined/.test(story.output)) {
 console.error(`ERROR: There are undefined variables in "${story.title}":`);

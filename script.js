@@ -58,8 +58,10 @@ class Story {
 		this.boy = {
 ...boy
 };
-this.girl.nameFirst = girl.name ? girl.name[0] : "G"
-this.boy.nameFirst = boy.name ? boy.name[0] : "B"
+this.girl.name = girl.name ? girl.name : "Girl";
+this.boy.name = boy.name ? boy.name : "Boy";
+this.girl.nameFirst = girl.name ? girl.name[0] : "G";
+this.boy.nameFirst = boy.name ? boy.name[0] : "B";
 		this.plot = "";
 		this.notes = "";
 		this.labels = {

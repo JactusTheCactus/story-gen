@@ -39,7 +39,7 @@ Vera woke up bright and early, _actually_ __excited__ about asking Eli out on a 
 >
 > _oh, no..._
 
-but, when Vera woke up and looked at her belly, it was a little softer, a little rounder.
+but, when Vera looked at her belly, it was a little softer, a little rounder.
 Eli _might've_ survived, sure.
 But Vera's hopes weren't high.
 

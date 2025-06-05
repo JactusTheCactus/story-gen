@@ -56,7 +56,7 @@ class Story {
 		this.girl = { ...girl };
 this.girl.nameFirst = this.girl.name[0];
 		this.boy = { ...boy };
-this.boy.nameFirst = this.boy.nameFirst[0];
+this.boy.nameFirst = this.boy.name[0];
 		[this.girl, this.boy].forEach(char => {
 			if (char) {
 				if (!char.name) {

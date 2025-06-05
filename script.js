@@ -87,18 +87,6 @@ if (this[section].replace(/\s/g, "")) {
 this.output += `\n${section === "title" ? "\"" : ""}${this.labels[section]}${section === "title" ? "\"" : ""}\n${`${section === "title" ? "=" : "-"}`.repeat(this.labels[section].length) + `${section === "title" ? "==" : ""}`}${!["title","characters"].includes(section) ? "\n" : ""}${section !== "title" ? this[section] : "\n"}`
 };
 });
-		/*if (this.title.replace(/\s/g, "")) {
-			this.output += `\n\n"${this.labels.title}"\n${"=".repeat(this.labels.title.length + 2)}\n`;
-		};
-		if (this.characters.replace(/\s/g, "")) {
-			this.output += `\n${this.labels.characters}\n${"-".repeat(this.labels.characters.length)}${this.characters}`;
-		};
-		if (this.plot.replace(/\s/g, "")) {
-			this.output += `\n${this.labels.plot}\n${"-".repeat(this.labels.plot.length)}\n${this.plot}`;
-		};
-		if (this.notes.replace(/\s/g, "")) {
-			this.output += `\n${this.labels.notes}\n${"-".repeat(this.labels.notes.length)}\n${this.notes}`;
-		};*/
 		this.output = this.output
 			.replace(/(?:^\s+|\s+$)/g, "")
 			.replace(/<!--/g, "COMMENT-START")

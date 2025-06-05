@@ -32,7 +32,7 @@ plot: |
   >
   > _oh, no..._
 
-  but, when {{ g.name }} woke up and looked at her belly, it was a little softer, a little rounder.
+  but, when {{ g.name }} looked at her belly, it was a little softer, a little rounder.
   {{ b.name }} _might've_ survived, sure.
   But {{ g.name }}'s hopes weren't high.
 

@@ -11,7 +11,8 @@ Characters
 	- Human
 
 Plot
------ Ashley considers herself to be Teddy's __Best Friend__
+----
+- Ashley considers herself to be Teddy's __Best Friend__
 - Ashley invites Teddy over to her place for the night
     - No sexual pretenses whatsoever
         - There is nothing sexual or romantic about their relationship
@@ -43,4 +44,5 @@ Plot
         - The thought of her "Best Friend" even _thinking_ she might hurt him broke her
 
 Notes
------- Ashley is _super_ __Gay__
+-----
+- Ashley is _super_ __Gay__

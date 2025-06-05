@@ -11,7 +11,8 @@ Characters
 	- Species
 
 Plot
------ Lia is the Human bard of an adventuring party
+----
+- Lia is the Human bard of an adventuring party
 - She always avoids fighting
   - Her party assumes this is because she is scared of getting hurt
     - The _real_ reason is that Lia is worried about collateral damage

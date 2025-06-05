@@ -11,4 +11,5 @@ Characters
 	- Human
 
 Notes
------- Tess's _mother_ is the __Queen of the Kingdom__
+-----
+- Tess's _mother_ is the __Queen of the Kingdom__

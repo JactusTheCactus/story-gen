@@ -11,7 +11,8 @@ Characters
 	- Human
 
 Plot
-----<!--Placeholder-->
+----
+<!--Placeholder-->
 |Name|Species|
 |:-|:-|
 |Melina|Vampire|

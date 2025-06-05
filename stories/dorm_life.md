@@ -11,7 +11,8 @@ Characters
 	- Pred
 
 Plot
------ Bella moves into a __College Dorm__
+----
+- Bella moves into a __College Dorm__
   - All her Roommates are _Female_
     - And _very_ __Hot__
       - Curvy in all the right ways

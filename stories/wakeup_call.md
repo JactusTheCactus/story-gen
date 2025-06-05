@@ -11,7 +11,8 @@ Characters
 	- Human
 
 Plot
------ Ashley is:
+----
+- Ashley is:
   - A Pred
   - Female
   - _very_ hot

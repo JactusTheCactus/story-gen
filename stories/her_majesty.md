@@ -12,7 +12,7 @@ Characters
 
 Plot
 ----
-- Alex has somehow found himself at a party held by __The Princess__
+- Alex has somehow found himself at a party held by __The Royal Family__
 - Obviously, he's been keeping his distance from the _important_ people;
   - Barons, baronesses, dukes, duchess, etc.
   - _especially_ the __Royals__

@@ -44,12 +44,10 @@ class Story {
 		{
 			girl = {
 				name: "Girl",
-nameFirst: "G",
 				species: "Species"
 			},
 			boy = {
 				name: "Boy",
-nameFirst: "B",
 				species: "Species"
 			}
 		} = {}

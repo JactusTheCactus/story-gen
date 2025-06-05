@@ -160,6 +160,9 @@ for (const file of yamlFiles) {
 	story.plot = fillTemplate(yamlData.plot || "", context);
 	story.notes = fillTemplate(yamlData.notes || "", context);
 	story.write();
+if (/undefined/.test(story.output)) {
+console.error(`ERROR: There are undefined variables in "${story.title}"`)
+};
 	if (story.title === "Tick Tock") {
 		const {
 title,

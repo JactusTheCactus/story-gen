@@ -11,8 +11,11 @@ plot: |
     - barons, baronesses, dukes, duchess, etc.
     - _especially_ the __Royals__
   - {{ b.name }} has, however, made a friend at this party, by the name of {{ g.name }}
-  - She's a beautiful girl, and a lovely dancer
+  - She's a _small_, _beautiful_ girl, and a _lovely_ dancer
+  - better yet, she seems completely enamoured with him
 notes: |
   - {{ g.name }}'s _mother_ is the __Queen of the Kingdom__
+    - __The Queen__ is a very dangerous and vengeful Pred
+      - most of {{ g.name }}'s potential suitors have been a meal for __The Queen__
   - {{ b.name }} is low-middle class
   - {{ g.name }} is kept from the public eye, hence why {{ b.name }} didn't recognize her as __The Princess__

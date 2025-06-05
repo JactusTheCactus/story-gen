@@ -19,6 +19,10 @@ Plot
 - Alex has, however, made a friend at this party, by the name of Tess
 - She's a _small_, _beautiful_ girl, and a _lovely_ dancer
 - Better yet, she seems completely enamoured with him
+### Later That Night
+- Tess gets _too comfortable_ with Alex and accidentally let's slip who she _really_ is; __The Princess__
+- She can tell by his expression that he's going to run
+  - She has a bad track record for having her boyfriends __not__ get eaten by her or her mother
 
 Notes
 -----

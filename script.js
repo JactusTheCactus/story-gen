@@ -70,8 +70,6 @@ char.nameFirst = "Name"[0]
 nameFirst: "Name"[0],
 					species: "Species"
 				};
-this.girl.nameFirst = this.girl.name[0];
-this.boy.nameFirst = this.boy.name[0];
 			};
 		});
 		this.plot = "";

@@ -14,16 +14,16 @@ Characters
 Plot
 ----
 - Ashley is:
-  - A Pred
-  - Female
-  - _very_ hot
-  - _hungover_
-  - Shameless
+	- A Pred
+	- Female
+	- _very_ hot
+	- _hungover_
+	- Shameless
 - Lola is:
-  - A Human
-  - Female
-  - _very_ cute
+	- A Human
+	- Female
+	- _very_ cute
 - Ashley wakes up next to Lola
-  - Ashley just considers Lola her "Breakfast In Bed"
-	- Lola has to negotiate her __survival__
-	  - Lola has to be more likeable / useful than she would be as Ashley's meal
+	- Ashley just considers Lola her "Breakfast In Bed"
+		- Lola has to negotiate her __survival__
+			- Lola has to be more likeable / useful than she would be as Ashley's meal

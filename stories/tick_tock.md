@@ -69,8 +69,9 @@ __Nor were her spirits__
 > You're okay!!
 >
 > __Perfect!__
->
-> I can't exactly date _buttfat_~
+> ***
+> To make up for _almost_ digesting you,
+> I'm taking you on a date!
 
 Eli was clearly too weak to move, but still alive.
 Vera was going to have to get him out on her own &mdash; not like she was ever going to _struggle_ with that.

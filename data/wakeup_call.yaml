@@ -7,14 +7,10 @@ boy:
   species: Human
 plot: |
   - {{ g.name }} is:
-    - a {{ g.species }}
-    - Female
     - _very_ hot
     - _hungover_
     - shameless
   - {{ b.name }} is:
-    - a {{ b.species }}
-    - Female
     - _very_ cute
   - {{ g.name }} wakes up next to {{ b.name }}
     - {{ g.name }} just considers {{ b.name }} her "Breakfast In Bed"

@@ -24,8 +24,7 @@ Plot
 - She can tell by his expression _(and the noise he made)_ that he's going to run
   - She has a bad track record for having her boyfriends __not__ get eaten by her or her mother _(it's an almost even split between the two, though_ Tess _does currently have the lead)_
   - Tess threatens to eat Alex if he tries to leave
-    - Not of an actual threat; more like a "whatever-gets-you-to-stay"
-      - She just needs Alex to believe the "threat"
+    - She doesn't plan to follow through; she just needs Alex to believe the "threat" is real
 
 Notes
 -----

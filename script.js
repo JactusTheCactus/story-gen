@@ -82,7 +82,12 @@ nameFirst: boy.name[0]
 	};
 	write() {
 		this.output = `${this.labels.header}\n${"*".repeat(this.labels.header.length)}`;
-		if (this.title.replace(/\s/g, "")) {
+["title","characters","plot","notes"].forEach(section => {
+if (this[section].replace(/\s/g, "")) {
+this.output += `\n${section === "title" ? "\"" : ""}${this.labels[section]}${section === "title" ? "\"" : ""}\n${`${section === title ? "=" : "-"}`.repeat(this.labels[section].length) + `${"==" ? section === title : ""}`}${this[section] ? section !== "title" : "\n"}`
+};
+});
+		/*if (this.title.replace(/\s/g, "")) {
 			this.output += `\n\n"${this.labels.title}"\n${"=".repeat(this.labels.title.length + 2)}\n`;
 		};
 		if (this.characters.replace(/\s/g, "")) {
@@ -93,7 +98,7 @@ nameFirst: boy.name[0]
 		};
 		if (this.notes.replace(/\s/g, "")) {
 			this.output += `\n${this.labels.notes}\n${"-".repeat(this.labels.notes.length)}\n${this.notes}`;
-		};
+		};*/
 		this.output = this.output
 			.replace(/(?:^\s+|\s+$)/g, "")
 			.replace(/<!--/g, "COMMENT-START")

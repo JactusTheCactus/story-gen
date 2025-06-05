@@ -58,8 +58,7 @@ class Story {
 		[this.girl, this.boy].forEach(char => {
 			if (char) {
 				if (!char.name) {
-					char.name = "Name",
-char.nameFirst = "Name"[0]
+					char.name = "Name"
 				};
 				if (!char.species) {
 					char.species = "Species"
@@ -67,10 +66,10 @@ char.nameFirst = "Name"[0]
 			} else {
 				char = {
 					name: "Name",
-nameFirst: "Name"[0],
 					species: "Species"
 				};
 			};
+char.nameFirst = "Name"[0]
 		});
 		this.plot = "";
 		this.notes = "";

@@ -112,6 +112,7 @@ class Story {
 			.replace(/COMMENT-START/g, "<!--")
 			.replace(/COMMENT-END/g, "-->")
 			.replace(/([\t {4}]?)- (.)/g, (match, p1, p2) => `${p1}- ${p2.toUpperCase()}`)
+.replace(/[\t {4}]/g,"\t")
 			.replace(/\n{3,}/g, "\n".repeat(2))
 		fs.writeFile(
 			path.join(

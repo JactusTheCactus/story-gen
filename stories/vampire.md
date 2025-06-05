@@ -16,6 +16,6 @@ Plot
 <!--Placeholder-->
 |Name|Species|
 |:-|:-|
-|Melina|Vampire|
-|Teddy|Human|
+|{{ g.name }}|{{ g.species }}|
+|{{ b.name }}|{{ b.species }}|
 <!--Placeholder-->

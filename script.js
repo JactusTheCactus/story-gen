@@ -84,7 +84,7 @@ nameFirst: boy.name[0]
 		this.output = `${this.labels.header}\n${"*".repeat(this.labels.header.length)}`;
 ["title","characters","plot","notes"].forEach(section => {
 if (this[section].replace(/\s/g, "")) {
-this.output += `\n${"\"" ? section === "title" : ""}${this.labels[section]}${"\"" ? section === "title" : ""}\n${`${"=" ? section === "title" : "-"}`.repeat(this.labels[section].length) + `${"==" ? section === "title" : ""}`}${this[section] ? section !== "title" : "\n"}`
+this.output += `\n${section === "title" ? "\"" : ""}${this.labels[section]}${section === "title" ? "\"" : ""}\n${`${section === "title" ? "=" : "-"}`.repeat(this.labels[section].length) + `${section === "title" ? "==" : ""}`}${section !== "title" ? this[section] : "\n"}`
 };
 });
 		/*if (this.title.replace(/\s/g, "")) {

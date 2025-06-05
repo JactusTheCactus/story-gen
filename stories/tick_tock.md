@@ -28,12 +28,17 @@ Plot
 > Well...
 > You get to be my breakfast!~
 ### _MORNING_
-Vera's belly was a little softer, a little rounder.
+Vera woke up bright and early, _actually_ __excited__ about asking Eli out on a date.
+(she didn’t get much sleep, because she couldn’t stop herself from planning out the date she would take him on the next day)
+
+but, when Vera woke up and looked at her belly, it was a little softer, a little rounder.
 Eli _might've_ survived, sure.
 But Vera's hopes weren't high.
-> Hey!
->
+
+__Nor were her spirits__
 > Eli?
+>
+> Hey... Eli...?
 >
 > You still alive in there?
 >
@@ -46,7 +51,7 @@ But Vera's hopes weren't high.
 > He'd've made a pretty good boyfriend...
 > A _cute_ one too...
 >
-> _Stupid metabolism_...
+> __Stupid__ _metabolism_...
 
 > w-wha-?\
 > _cough_
@@ -58,7 +63,8 @@ But Vera's hopes weren't high.
 > Am I...
 > D-Dead...?
 
-> Oh, you're _not_ dead?
+> Eli!
+> You're okay!!
 >
 > __Perfect!__
 >

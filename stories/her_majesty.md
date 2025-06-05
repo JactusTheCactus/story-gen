@@ -6,7 +6,7 @@ Write Me A Story
 
 Characters
 ----------
-- Girl
-	- Species
-- Boy
-	- Species
+- Tess
+	- Pred
+- Alex
+	- Human

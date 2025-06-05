@@ -69,7 +69,6 @@ class Story {
 					species: "Species"
 				};
 			};
-char.nameFirst = "Name"[0]
 		});
 		this.plot = "";
 		this.notes = "";

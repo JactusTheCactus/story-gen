@@ -119,13 +119,13 @@ char.nameFirst = char.name[0];
 };
 // Simple template filler
 function fillTemplate(template, context) {
-	return template.replace(/\{\{\s*([^(?:\s?})]+)\s*\}\}/g, (_, expr) => {
-		try {
-			return expr.split(".").reduce((acc, key) => acc[key], context);
-		} catch {
-			return `{{ ${expr} }}`;
-		}
-	});
+  return template.replace(/\{\{\s*([^\s}]+)\s*\}\}/g, (_, expr) => {
+    try {
+      return expr.split(".").reduce((acc, key) => acc[key], context);
+    } catch {
+      return `{{ ${expr} }}`;
+    }
+  });
 }
 // Read all .yaml files in the data directory
 const dataDir = path.join(__dirname, "data");

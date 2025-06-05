@@ -13,8 +13,6 @@ Characters
 
 Plot
 ----
-undefined
-
 - Eli is kissing a really cute girl; Vera (he doesn't know she's a Pred)
 - Suddenly, Vera swallows Eli whole
 - Naturally, Eli pleads and struggles in Vera's stomach

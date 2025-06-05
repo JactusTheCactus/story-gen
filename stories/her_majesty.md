@@ -23,7 +23,7 @@ Plot
 Notes
 -----
 - Tess's _mother_ is the __Queen of the Kingdom__
-  - __The Queen__ is a very dangerous and vengeful Pred
+  - __The Queen__ is a very dangerous and vengeful Pred _(public information)_
     - Most of Tess's potential suitors have been a meal for __The Queen__
 - Alex is low-middle class
 - Tess is kept from the public eye, hence why Alex didn't recognize her as __The Princess__

@@ -17,10 +17,13 @@ Plot
   - Barons, baronesses, dukes, duchess, etc.
   - _especially_ the __Royals__
 - Alex has, however, made a friend at this party, by the name of Tess
-- She's a beautiful girl, and a lovely dancer
+- She's a _small_, _beautiful_ girl, and a _lovely_ dancer
+- Better yet, she seems completely enamoured with him
 
 Notes
 -----
 - Tess's _mother_ is the __Queen of the Kingdom__
+  - __The Queen__ is a very dangerous and vengeful Pred
+    - Most of Tess's potential suitors have been a meal for __The Queen__
 - Alex is low-middle class
 - Tess is kept from the public eye, hence why Alex didn't recognize her as __The Princess__

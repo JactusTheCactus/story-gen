@@ -192,6 +192,6 @@ ${notes}${"●".repeat(50)}`
 			.replace(new RegExp(`((?:${g.name}|${b.name}|${g.species}|${b.species})[^ ,]*)`, "gi"), "\x1b[33m\x1b[4m$1\x1b[0m")
 			.replace(/\s+\n/g, "\n")
 		);*/
-console.log(g.nameFirst,b.nameFirst);
+console.log(`${g.nameFirst}: ${g.name}\n${b.nameFirst}: ${b.name}`);
 	};
 };

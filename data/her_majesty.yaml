@@ -6,7 +6,7 @@ boy:
   name: Alex
   species: Human
 plot: |
-  - {{ b.name }} has somehow found himself at a party held by __The Princess__
+  - {{ b.name }} has somehow found himself at a party held by __The Royal Family__
   - obviously, he's been keeping his distance from the _important_ people;
     - barons, baronesses, dukes, duchess, etc.
     - _especially_ the __Royals__

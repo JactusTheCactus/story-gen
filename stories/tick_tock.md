@@ -13,9 +13,9 @@ Characters
 
 Plot
 ----
-- {{ b.name }} is kissing a really cute girl; {{ g.name }} (he doesn't know she's a {{ g.species }})
-- Suddenly, {{ g.name }} swallows {{ b.name }} whole
-- Naturally, {{ b.name }} pleads and struggles in {{ g.name }}'s stomach
+- Eli is kissing a really cute girl; Vera (he doesn't know she's a Pred)
+- Suddenly, Vera swallows Eli whole
+- Naturally, Eli pleads and struggles in Vera's stomach
 ***
 > you know what?
 >
@@ -28,17 +28,17 @@ Plot
 > Well...
 > You get to be my breakfast!~
 ### _MORNING_
-{{ g.name }} woke up bright and early, _actually_ __excited__ about asking {{ b.name }} out on a date.
+Vera woke up bright and early, _actually_ __excited__ about asking Eli out on a date.
 (she didn’t get much sleep, because she couldn’t stop herself from planning out the date she would take him on the next day)
 
-but, when {{ g.name }} woke up and looked at her belly, it was a little softer, a little rounder.
-{{ b.name }} _might've_ survived, sure.
-But {{ g.name }}'s hopes weren't high.
+but, when Vera woke up and looked at her belly, it was a little softer, a little rounder.
+Eli _might've_ survived, sure.
+But Vera's hopes weren't high.
 
 __Nor were her spirits__
-> {{ b.name }}?
+> Eli?
 >
-> H-Hey... {{ b.name }}...?
+> H-Hey... Eli...?
 > Buddy...?
 >
 > You still alive in there?
@@ -49,7 +49,7 @@ __Nor were her spirits__
 >
 > fuck...
 >
-> I'm sorry, {{ b.name }}...
+> I'm sorry, Eli...
 > You would've made a pretty good boyfriend...
 > A _cute_ one too...
 >
@@ -60,12 +60,12 @@ __Nor were her spirits__
 > _cough_
 > _wheeze_
 >
-> {{ g.nameFirst }}-{{ g.name }}?
+> V-Vera?
 >
 > Am I...
 > D-Dead...?
 
-> {{ b.name }}!
+> Eli!
 > You're okay!!
 >
 > __Perfect!__
@@ -73,5 +73,5 @@ __Nor were her spirits__
 > To make up for _almost_ digesting you,
 > I'm taking you on a date!
 
-{{ b.name }} was clearly too weak to move, but still alive.
-{{ g.name }} was going to have to get him out on her own &mdash; not like she was ever going to _struggle_ with that.
+Eli was clearly too weak to move, but still alive.
+Vera was going to have to get him out on her own &mdash; not like she was ever going to _struggle_ with that.

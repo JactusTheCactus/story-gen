@@ -1,8 +1,8 @@
 Write Me A Story
 ****************
-"Dorm Life"
-=========truefalse
-Characters
-----------falsetrue
-Plot
-----falsetrue
+trueDorm Lifetrue
+truetruetruetruetruetruetruetruetruetruefalse
+falseCharactersfalse
+falsefalsefalsefalsefalsefalsefalsefalsefalsefalsefalsetrue
+falsePlotfalse
+falsefalsefalsefalsefalsetrue

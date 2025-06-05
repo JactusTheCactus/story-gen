@@ -1,8 +1,8 @@
 Write Me A Story
 ****************
-"Tick Tock"
-=========truefalse
-Characters
-----------falsetrue
-Plot
-----falsetrue
+trueTick Tocktrue
+truetruetruetruetruetruetruetruetruetruefalse
+falseCharactersfalse
+falsefalsefalsefalsefalsefalsefalsefalsefalsefalsefalsetrue
+falsePlotfalse
+falsefalsefalsefalsefalsetrue

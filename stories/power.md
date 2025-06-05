@@ -1,8 +1,8 @@
 Write Me A Story
 ****************
-"Power"
-=====truefalse
-Characters
-----------falsetrue
-Plot
-----falsetrue
+truePowertrue
+truetruetruetruetruetruefalse
+falseCharactersfalse
+falsefalsefalsefalsefalsefalsefalsefalsefalsefalsefalsetrue
+falsePlotfalse
+falsefalsefalsefalsefalsetrue

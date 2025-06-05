@@ -1,10 +1,10 @@
 Write Me A Story
 ****************
-"Oops!"
-=====truefalse
-Characters
-----------falsetrue
-Plot
-----falsetrue
-Notes
------falsetrue
+trueOops!true
+truetruetruetruetruetruefalse
+falseCharactersfalse
+falsefalsefalsefalsefalsefalsefalsefalsefalsefalsefalsetrue
+falsePlotfalse
+falsefalsefalsefalsefalsetrue
+falseNotesfalse
+falsefalsefalsefalsefalsefalsetrue

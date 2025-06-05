@@ -1,8 +1,8 @@
 Write Me A Story
 ****************
-"Wakeup Call"
-===========truefalse
-Characters
-----------falsetrue
-Plot
-----falsetrue
+trueWakeup Calltrue
+truetruetruetruetruetruetruetruetruetruetruetruefalse
+falseCharactersfalse
+falsefalsefalsefalsefalsefalsefalsefalsefalsefalsefalsetrue
+falsePlotfalse
+falsefalsefalsefalsefalsetrue

@@ -140,12 +140,8 @@ for (const file of yamlFiles) {
 			boy: yamlData.boy
 		}
 	);
-	const context = {
-		g: story.girl,
-		b: story.boy
-	};
-	story.plot = fillTemplate(yamlData.plot || "", context);
-	story.notes = fillTemplate(yamlData.notes || "", context);
+	story.plot = fillTemplate(yamlData.plot || "", story);
+	story.notes = fillTemplate(yamlData.notes || "", story);
 	story.write();
 if (/undefined/.test(story.output)) {
 console.error(`ERROR: There are undefined variables in "${story.title}":`);
@@ -153,7 +149,7 @@ story.output.match(/^.*undefined.*$/gm).forEach(match => {
 console.log(`\t${match}`);
 });
 };
-	/*if (story.title === "Tick Tock") {
+	if (story.title === "Tick Tock") {
 		const {
 title,
 plot,
@@ -185,5 +181,5 @@ ${notes}${"●".repeat(50)}`
 			.replace(new RegExp(`((?:${g.name}|${b.name}|${g.species}|${b.species})[\w']*)`, "gi"), "\x1b[33m\x1b[4m$1\x1b[0m")
 			.replace(/\s+\n/g, "\n")
 		);
-	};*/
+	};
 };

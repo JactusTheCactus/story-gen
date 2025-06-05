@@ -1,4 +1,4 @@
-Write Me A Story
+Write	Me	A	Story
 ****************
 
 "Vampire"
@@ -6,10 +6,10 @@ Write Me A Story
 
 Characters
 ----------
-- Melina
-	- Vampire
-- Teddy
-	- Human
+-	Melina
+	-	Vampire
+-	Teddy
+	-	Human
 
 Plot
 ----

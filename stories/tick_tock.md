@@ -1,68 +1,68 @@
-Write Me A Story
+Write	Me	A	Story
 ****************
 
-"Tick Tock"
+"Tick	Tock"
 ===========
 
 Characters
 ----------
-- Vera
-	- Pred
-- Eli
-	- Human
+-	Vera
+	-	Pred
+-	Eli
+	-	Human
 
 Plot
 ----
-- Eli is kissing a really cute girl; Vera (he doesn't know she's a Pred)
-- Suddenly, Vera swallows Eli whole
-- Naturally, Eli pleads and struggles in Vera's stomach
+-	Eli	is	kissing	a	really	cute	girl;	Vera	(he	doesn't	know	she's	a	Pred)
+-	Suddenly,	Vera	swallows	Eli	whole
+-	Naturally,	Eli	pleads	and	struggles	in	Vera's	stomach
 ***
-> you know what?
+>	you	know	what?
 >
-> You're actually pretty cute,
-> so I'll make you a deal;\\
-> if you're still alive and undigested by morning,
-> I'll let you out.
+>	You're	actually	pretty	cute,
+>	so	I'll	make	you	a	deal;\\
+>	if	you're	still	alive	and	undigested	by	morning,
+>	I'll	let	you	out.
 >
-> If not?
-> Well...
-> You get to be my breakfast!~
-### _MORNING_
-Vera's belly was a little softer, a little rounder.
-Eli _might've_ survived, sure.
-But Vera's hopes weren't high.
-> Hey!
+>	If	not?
+>	Well...
+>	You	get	to	be	my	breakfast!~
+###	_MORNING_
+Vera's	belly	was	a	little	softer,	a	little	rounder.
+Eli	_might've_	survived,	sure.
+But	Vera's	hopes	weren't	high.
+>	Hey!
 >
-> Eli?
+>	Eli?
 >
-> You still alive in there?
+>	You	still	alive	in	there?
 >
-> Hello?
+>	Hello?
 >
-> Aww...
-> Guess not...
+>	Aww...
+>	Guess	not...
 >
-> Shame...
-> He'd've made a pretty good boyfriend...
-> A _cute_ one too...
+>	Shame...
+>	He'd've	made	a	pretty	good	boyfriend...
+>	A	_cute_	one	too...
 >
-> _Stupid metabolism_...
+>	_Stupid	metabolism_...
 
-> w-wha-?\\
-> _cough_
-> _cough_
-> _wheeze_
+>	w-wha-?\\
+>	_cough_
+>	_cough_
+>	_wheeze_
 >
-> undefined-Vera?
+>	undefined-Vera?
 >
-> Am I...
-> D-Dead...?
+>	Am	I...
+>	D-Dead...?
 
-> Oh, you're _not_ dead?
+>	Oh,	you're	_not_	dead?
 >
-> __Perfect!__
+>	__Perfect!__
 >
-> I can't exactly date _buttfat_~
+>	I	can't	exactly	date	_buttfat_~
 
-Eli was clearly too weak to move, but still alive.
-Vera was going to get him out on her own &mdash; not like she was ever going to _struggle_ with that.
+Eli	was	clearly	too	weak	to	move,	but	still	alive.
+Vera	was	going	to	get	him	out	on	her	own	&mdash;	not	like	she	was	ever	going	to	_struggle_	with	that.

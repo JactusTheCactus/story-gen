@@ -7,9 +7,9 @@ Write Me A Story
 Characters
 ----------
 - Melina
-	- Vampire
+    - Vampire
 - Teddy
-	- Human
+    - Human
 
 Plot
 ----

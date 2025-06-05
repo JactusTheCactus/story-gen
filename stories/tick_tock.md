@@ -7,9 +7,9 @@ Write Me A Story
 Characters
 ----------
 - Vera
-	- Pred
+    - Pred
 - Eli
-	- Human
+    - Human
 
 Plot
 ----

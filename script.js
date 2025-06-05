@@ -161,7 +161,10 @@ for (const file of yamlFiles) {
 	story.notes = fillTemplate(yamlData.notes || "", context);
 	story.write();
 if (/undefined/.test(story.output)) {
-console.error(`ERROR: There are undefined variables in "${story.title}"`)
+console.error(`ERROR: There are undefined variables in "${story.title}":`);
+Story.output.match(/^.*undefined.*$/gm).forEach(match => {
+console.log(`\t${match}`);
+});
 };
 	if (story.title === "Tick Tock") {
 		const {

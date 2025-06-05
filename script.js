@@ -141,8 +141,8 @@ for (const file of yamlFiles) {
 		}
 	);
 	const context = {
-		g: yamlData.girl,
-		b: yamlData.boy
+		g: story.girl,
+		b: story.boy
 	};
 	story.plot = fillTemplate(yamlData.plot || "", context);
 	story.notes = fillTemplate(yamlData.notes || "", context);

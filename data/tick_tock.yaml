@@ -46,7 +46,7 @@ plot: |
   > _cough_
   > _wheeze_
   >
-  > {{ g.name[0] }}-{{ g.name }}?
+  > {{ g.nameFirst }}-{{ g.name }}?
   >
   > Am I...
   > D-Dead...?

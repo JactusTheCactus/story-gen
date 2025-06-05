@@ -38,11 +38,14 @@ But Vera's hopes weren't high.
 __Nor were her spirits__
 > Eli?
 >
-> Hey... Eli...?
+> H-Hey... Eli...?
+> Buddy...?
 >
 > You still alive in there?
 >
 > Hello?
+>
+> ...Please...?
 >
 > Aww...
 > Guess not...

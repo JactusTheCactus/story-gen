@@ -6,6 +6,9 @@ boy:
   name: Eli
   species: Human
 plot: |
+  {{ g.nameFirst }}
+
+
   - {{ b.name }} is kissing a really cute girl; {{ g.name }} (he doesn't know she's a {{ g.species }})
   - suddenly, {{ g.name }} swallows {{ b.name }} whole
   - naturally, {{ b.name }} pleads and struggles in {{ g.name }}'s stomach

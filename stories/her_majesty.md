@@ -1,16 +1,8 @@
 Write Me A Story
 ****************
-
 "Her Majesty"
-=============
-
+===========truefalse
 Characters
-----------
-- Tess
-	- Pred
-- Alex
-	- Human
-
+----------falsetrue
 Notes
------
-- Tess's _mother_ is the __Queen of the Kingdom__
+-----falsetrue

@@ -1,21 +1,8 @@
 Write Me A Story
 ****************
-
 "Vampire"
-=========
-
+=======truefalse
 Characters
-----------
-- Melina
-	- Vampire
-- Teddy
-	- Human
-
+----------falsetrue
 Plot
-----
-<!--Placeholder-->
-|Name|Species|
-|:-|:-|
-|Melina|Vampire|
-|Teddy|Human|
-<!--Placeholder-->
+----falsetrue

@@ -182,7 +182,7 @@ ${notes}${"●".repeat(50)}`
 		console.log(logOutput[0]
 			.replace(/\t/g, " ".repeat(4))
 			.replace(/(
-[_\*]{2}(.+?)\1/g, "\x1b[31m\x1b[1m$2\x1b[0m")
+[_\*]{2})(.+?)\1/g, "\x1b[31m\x1b[1m$2\x1b[0m")
 			.replace(/[_\*]{1}(.+?)\1/g, "\x1b[32m\x1b[3m$2\x1b[0m")
 			.replace(/"(.+?)"/g, "\x1b[36m\"$1\"\x1b[0m")
 			.replace(new RegExp(`((?:${g.name}|${b.name}|${g.species}|${b.species})[a-z']*)`, "gi"), "\x1b[33m\x1b[4m$1\x1b[0m")

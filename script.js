@@ -150,7 +150,7 @@ story.output.match(/^.*undefined.*$/gm).forEach(match => {
 console.log(`\t${match}`);
 });
 };
-	if (story.title === "Tick Tock") {
+	if (story.title === "Her Majesty") {
 		const {
 title,
 plot,

@@ -8,6 +8,8 @@ Characters
 ----------
 - Lia
 	- Human
+- Boy
+	- Species
 
 Plot
 ----

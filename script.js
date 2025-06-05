@@ -53,13 +53,13 @@ class Story {
 	) {
 		this.title = title;
 		this.girl = {
-...girl,
-nameFirst: girl.name ? girl.name[0] : "G"
+...girl
 };
 		this.boy = {
-...boy,
-nameFirst: boy.name ? boy.name[0] : "B"
+...boy
 };
+this.girl.nameFirst = girl.name ? girl.name[0] : "G"
+this.boy.nameFirst = boy.name ? boy.name[0] : "B"
 		this.plot = "";
 		this.notes = "";
 		this.labels = {

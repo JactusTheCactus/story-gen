@@ -6,10 +6,8 @@ async function clearDir(dirPath) {
   try {
     // Make sure the directory exists (creates it if not)
     await fsp.mkdir(dirPath, { recursive: true });
-
     // Read contents of the directory
     const files = await fsp.readdir(dirPath);
-
     // Remove each item inside the directory
     await Promise.all(
       files.map(async (file) => {
@@ -22,7 +20,6 @@ async function clearDir(dirPath) {
         }
       })
     );
-
     console.log(`Directory "${dirPath}" is created and cleared!`);
   } catch (err) {
     console.error(`Error creating or clearing directory: ${err.message}`);
@@ -79,12 +76,8 @@ class Story {
 		} = {}
 	) {
 		this.title = title;
-		this.girl = {
-...girl
-};
-		this.boy = {
-...boy
-};
+		this.girl = {...girl};
+		this.boy = {...boy};
 this.girl.name = girl.name ? girl.name : "Girl";
 this.boy.name = boy.name ? boy.name : "Boy";
 this.girl.nameFirst = girl.name ? girl.name[0] : "G";

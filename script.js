@@ -63,7 +63,6 @@ function reverse(text) {
 	};
 	return output;
 };
-(async () => {await clearDir("./stories")})();
 class Story {
 	static instances = [];
 	constructor(
@@ -142,6 +141,8 @@ this.output += `\n${section === "title" ? "\"" : ""}${this.labels[section]}${sec
 		);
 	};
 };
+(async () => {
+await clearDir("./stories")
 // Simple template filler
 function fillTemplate(template, context) {
   return template.replace(/\{\{\s*([^\s}]+)\s*\}\}/g, (_, expr) => {
@@ -212,3 +213,4 @@ ${notes}${"●".repeat(50)}`
 		);
 	};
 };
+})();

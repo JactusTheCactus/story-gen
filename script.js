@@ -131,11 +131,6 @@ this.output += `\n${section === "title" ? "\"" : ""}${this.labels[section]}${sec
 		);
 	};
 };
-(async () => {
-const directory = "./stories";
-await deleteDir(directory);
-await createDir(directory);
-})();
 // Simple template filler
 function fillTemplate(template, context) {
   return template.replace(/\{\{\s*([^\s}]+)\s*\}\}/g, (_, expr) => {
@@ -146,6 +141,11 @@ function fillTemplate(template, context) {
     }
   });
 }
+(async () => {
+const directory = "./stories";
+await deleteDir(directory);
+await createDir(directory);
+})();
 // Read all .yaml files in the data directory
 const dataDir = path.join(__dirname, "data");
 const yamlFiles = fs.readdirSync(dataDir).filter(file => file.endsWith(".yaml"));

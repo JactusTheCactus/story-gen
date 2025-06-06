@@ -1,7 +1,7 @@
 Write Me A Story
 ****************
-"Test"
-======
+"Lucky"
+=======
 
 Characters
 ----------

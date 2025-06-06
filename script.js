@@ -2,27 +2,35 @@ const fs = require("fs");
 const fsp = fs.promises;
 const path = require("path");
 const YAML = require("yaml");
-async function createDir(path) {
+const fsp = require('fs/promises');
+const path = require('path');
+
+async function clearDir(dirPath) {
   try {
-    await fsp.mkdir(path, {
-recursive: true
-});
-    console.log(`Directory "${path}" is ready!`);
+    // Make sure the directory exists (creates it if not)
+    await fsp.mkdir(dirPath, { recursive: true });
+
+    // Read contents of the directory
+    const files = await fsp.readdir(dirPath);
+
+    // Remove each item inside the directory
+    await Promise.all(
+      files.map(async (file) => {
+        const fullPath = path.join(dirPath, file);
+        const stat = await fsp.lstat(fullPath);
+        if (stat.isDirectory()) {
+          await fsp.rm(fullPath, { recursive: true, force: true });
+        } else {
+          await fsp.unlink(fullPath);
+        }
+      })
+    );
+
+    console.log(`Directory "${dirPath}" is created and cleared!`);
   } catch (err) {
-    console.error(`Error creating directory: ${err.message}`);
+    console.error(`Error creating or clearing directory: ${err.message}`);
   }
-};
-async function deleteDir(path) {
-  try {
-    await fsp.rm(path, {
-recursive: true,
-force: true
-});
-    console.log(`Directory "${path}" deleted!`);
-  } catch (err) {
-    console.error(`Error deleting directory: ${err.message}`);
-  }
-};
+}
 function fileName(text) {
 	text = text
 		.replace(/\s+/g, "_")
@@ -146,11 +154,7 @@ function fillTemplate(template, context) {
     }
   });
 }
-(async () => {
-const directory = "./stories";
-await deleteDir(directory);
-await createDir(directory);
-})();
+(async () => {await clearDir("./stories")})();
 // Read all .yaml files in the data directory
 const dataDir = path.join(__dirname, "data");
 const yamlFiles = fs.readdirSync(dataDir).filter(file => file.endsWith(".yaml"));

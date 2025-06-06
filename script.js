@@ -1,4 +1,5 @@
 const fs = require("fs");
+const fsp = fs.promises;
 const path = require("path");
 const YAML = require("yaml");
 function fileName(text) {

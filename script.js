@@ -4,7 +4,9 @@ const path = require("path");
 const YAML = require("yaml");
 async function createDir(path) {
   try {
-    await fsp.mkdir(path, { recursive: true });
+    await fsp.mkdir(path, {
+recursive: true
+});
     console.log(`Directory "${path}" is ready!`);
   } catch (err) {
     console.error(`Error creating directory: ${err.message}`);
@@ -12,7 +14,10 @@ async function createDir(path) {
 };
 async function deleteDir(path) {
   try {
-    await fsp.rm(path, { recursive: true, force: true });
+    await fsp.rm(path, {
+recursive: true,
+force: false
+});
     console.log(`Directory "${path}" deleted!`);
   } catch (err) {
     console.error(`Error deleting directory: ${err.message}`);
@@ -143,7 +148,7 @@ function fillTemplate(template, context) {
 }
 (async () => {
 const directory = "./stories";
-//await deleteDir(directory);
+await deleteDir(directory);
 await createDir(directory);
 })();
 // Read all .yaml files in the data directory

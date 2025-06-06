@@ -2,9 +2,6 @@ const fs = require("fs");
 const fsp = fs.promises;
 const path = require("path");
 const YAML = require("yaml");
-const fsp = require('fs/promises');
-const path = require('path');
-
 async function clearDir(dirPath) {
   try {
     // Make sure the directory exists (creates it if not)

@@ -16,7 +16,7 @@ async function deleteDir(path) {
   try {
     await fsp.rm(path, {
 recursive: true,
-force: false
+force: true
 });
     console.log(`Directory "${path}" deleted!`);
   } catch (err) {

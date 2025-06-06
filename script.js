@@ -63,6 +63,7 @@ function reverse(text) {
 	};
 	return output;
 };
+(async () => {await clearDir("./stories")})();
 class Story {
 	static instances = [];
 	constructor(
@@ -151,7 +152,6 @@ function fillTemplate(template, context) {
     }
   });
 }
-(async () => {await clearDir("./stories")})();
 // Read all .yaml files in the data directory
 const dataDir = path.join(__dirname, "data");
 const yamlFiles = fs.readdirSync(dataDir).filter(file => file.endsWith(".yaml"));

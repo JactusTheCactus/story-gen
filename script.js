@@ -100,6 +100,11 @@ this.boy.nameFirst = boy.name ? boy.name[0] : "B";
 			.replace(/- name\n\t- species/gi, "");
 	};
 	write() {
+(async () => {
+const directory = "./stories";
+await deleteDir(directory);
+await creatDir(directory);
+})();
 		this.output = `${this.labels.header}\n${"*".repeat(this.labels.header.length)}`;
 ["title","characters","plot","notes"].forEach(section => {
 if (this[section].replace(/[^a-z]/gi, "")) {

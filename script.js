@@ -143,7 +143,7 @@ function fillTemplate(template, context) {
 }
 (async () => {
 const directory = "./stories";
-await deleteDir(directory);
+//await deleteDir(directory);
 await createDir(directory);
 })();
 // Read all .yaml files in the data directory

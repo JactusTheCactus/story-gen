@@ -103,7 +103,7 @@ this.boy.nameFirst = boy.name ? boy.name[0] : "B";
 (async () => {
 const directory = "./stories";
 await deleteDir(directory);
-await creatDir(directory);
+await createDir(directory);
 })();
 		this.output = `${this.labels.header}\n${"*".repeat(this.labels.header.length)}`;
 ["title","characters","plot","notes"].forEach(section => {

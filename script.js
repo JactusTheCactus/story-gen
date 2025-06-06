@@ -2,6 +2,22 @@ const fs = require("fs");
 const fsp = fs.promises;
 const path = require("path");
 const YAML = require("yaml");
+async function createDir(path) {
+  try {
+    await fsp.mkdir(path, { recursive: true });
+    console.log(`Directory "${path}" is ready!`);
+  } catch (err) {
+    console.error(`Error creating directory: ${err.message}`);
+  }
+};
+async function deleteDir(path) {
+  try {
+    await fsp.rm(path, { recursive: true, force: true });
+    console.log(`Directory "${path}" deleted!`);
+  } catch (err) {
+    console.error(`Error deleting directory: ${err.message}`);
+  }
+}
 function fileName(text) {
 	text = text
 		.replace(/\s+/g, "_")

@@ -22,3 +22,7 @@ Plot
   >
   > I'm going to keep you around,
   > so I can eat you again whenever I want~
+  >
+  > _Lucky boy~_
+  >
+  > Most _snacks_ get __digested__~

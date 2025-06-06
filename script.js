@@ -22,7 +22,7 @@ force: false
   } catch (err) {
     console.error(`Error deleting directory: ${err.message}`);
   }
-}
+};
 function fileName(text) {
 	text = text
 		.replace(/\s+/g, "_")

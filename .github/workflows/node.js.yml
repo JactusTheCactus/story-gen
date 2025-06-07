@@ -33,7 +33,7 @@ jobs:
       - run: npm ci
       - run: |
           FILE_INPUT=${{ github.event.inputs.file || 'shifter' }}
-          npm run main -- ${{ github.event.inputs.file }}
+          npm run main -- "$FILE_INPUT"
       - name: Configure Git
         run: |
           git config --global user.name "github-actions[bot]"

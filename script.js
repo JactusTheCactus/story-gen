@@ -174,7 +174,7 @@ class Story {
 				console.log(`\t${match}`);
 			});
 		};
-		if (new RegExp(`${args}\.ya?ml`, "").test(file)) {
+		if (new RegExp(`${args}\.ya?ml`).test(file)) {
 			const {
 				title,
 				plot,

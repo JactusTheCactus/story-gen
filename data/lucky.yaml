@@ -1,7 +1,9 @@
 title: Lucky
 girl:
+  name: Girl
   species: Pred
 boy:
+  name: Boy
   species: Human
 plot: |
   - {{ g.name }} eats {{ b.name }}

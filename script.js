@@ -28,8 +28,8 @@ async function clearDir(dirPath) {
 }
 function fileName(text) {
 	text = text
-		.replace(/\s/g, "-")
-		.replace(/(?:^-|-$)/g, "")
+		.replace(/\s/g, "_")
+		.replace(/(?:^_|_$)/g, "")
 		.toLowerCase();
 	return text;
 }

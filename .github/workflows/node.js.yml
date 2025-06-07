@@ -36,8 +36,8 @@ jobs:
           npm run main -- "$FILE_INPUT"
       - name: Configure Git
         run: |
-          git config --global user.name "github-actions[gremlin]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-gremlin"
+          git config --global user.email "github-gremlin@users.noreply.github.com"
       - name: Commit changes
         run: |
           git add .

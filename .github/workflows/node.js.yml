@@ -32,7 +32,7 @@ jobs:
           cache: "npm"
       - run: npm ci
       - run: |
-          FILE_INPUT = ${{ github.event.inputs.file || 'shifter' }}
+          FILE_INPUT=${{ github.event.inputs.file || 'shifter' }}
           npm run main -- ${{ github.event.inputs.file }}
       - name: Configure Git
         run: |

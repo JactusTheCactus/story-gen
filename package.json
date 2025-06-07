@@ -4,7 +4,7 @@
 	"description": "",
 	"main": "script.js",
 	"scripts": {
-		"main": "node script.js ${github.event.inputs.file}"
+		"main": "node script.js"
 	},
 	"repository": {
 		"type": "git",

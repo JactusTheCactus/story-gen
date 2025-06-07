@@ -1,0 +1,10 @@
+title: Shapeshifter
+girl:
+  name: Girl
+  species: Changeling
+boy:
+  name: Boy
+  species: Human
+plot: |
+notes: |
+  - A {{ g.species }} must kill a {{ b.species }} to copy their form

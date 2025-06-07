@@ -31,7 +31,7 @@ jobs:
           node-version: "lts/*"
           cache: "npm"
       - run: npm ci
-      - run: npm run main ${{ github.event.inputs.file }}
+      - run: npm run main
       - name: Configure Git
         run: |
           git config --global user.name "github-actions[bot]"

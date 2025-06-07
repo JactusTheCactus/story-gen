@@ -28,8 +28,8 @@ async function clearDir(dirPath) {
 }
 function fileName(text) {
 	text = text
-		.replace(/\s+/g, "_")
-		.replace(/(?:^_|_$)/g, "")
+		.replace(/\s/g, "-")
+		.replace(/(?:^-|-$)/g, "")
 		.toLowerCase();
 	return text;
 }
@@ -38,20 +38,21 @@ function reverse(text) {
 		["<", ">"],
 		["(", ")"],
 		["[", "]"],
-		["{", "}"]
+		["{", "}"],
+		["\\", "/"]
 	]
 	let output = "";
 	for (let i = -1; i >= -text.length; i--) {
 		output += text.at(i);
 	};
 	const pattern = [
-		"!^",
-		"$!"
+		"^|!|^",
+		"$|!|$"
 	];
 	const replacementsLength = replacements.length
 	for (let i = 0; i < replacementsLength; i++) {
 		replacements[i].forEach(item => {
-			item = `${pattern[0]}${replacements[i][1]}${pattern[1]}`
+			item = `${pattern[0]}${replacements[i][1]}${pattern[1]}`;
 		});
 		const replacementList = [replacements[i][0], `${pattern[0]}${i}${pattern[1]}`, replacements[i][1]]
 		output = output
@@ -185,9 +186,9 @@ class Story {
 			const logOutput = [
 				`${"●".repeat(50)}
 \t\x1b[1m\x1b[35m${titlePadding}\x1b[4m"${title}"\x1b[0m\x1b[1m\x1b[35m${reverse(titlePadding)}\x1b[0m
-${plot.replace(/\s/g,"") ? `__Plot__
+${plot.replace(/\s/g, "") ? `__Plot__
 ${plot}` : ""}
-${notes.replace(/\s/g,"") ? `__Notes__
+${notes.replace(/\s/g, "") ? `__Notes__
 ${notes}` : ""}
 ${"●".repeat(50)}`,
 				`Write Me A Story

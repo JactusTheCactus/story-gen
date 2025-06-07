@@ -5,11 +5,21 @@ Write Me A Story
 
 Characters
 ----------
-- Girl
+- Kira
 	- Changeling
-- Boy
+- `Boy`
 	- Human
+
+Plot
+----
+- Kira has a crush on `Boy`
+- She keeps killing girls he likes
+	- So she can shapeshift into them
+		- To look like his "type"
+			- Each form is never good enough
 
 Notes
 -----
 - A Changeling must kill a Human to copy their form
+	- The Changeling absorbs the victim, leaving no evidence
+	- Changelings are _psychologically incapable_ of feeling remorse for their victims

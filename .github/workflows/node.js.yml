@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
     inputs:
       file:
-        description: test
+        description: "Choose A File To Run"
         type: choice
         options:
           - dorm_life
@@ -14,11 +14,11 @@ on:
           - lucky
           - oops
           - power
-          - shifter
+          - return
+          - shapeshifter
           - tick_tock
           - vampire
           - wakeup_call
-        default: shifter
 jobs:
   main:
     runs-on: ubuntu-latest

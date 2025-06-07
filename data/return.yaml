@@ -1,0 +1,30 @@
+title: Return
+girl:
+  name: Mera
+  species: Pred
+boy:
+  name: Dani
+  species: Human
+plot: |
+  - {{g.name}} is {{b.name}}'s "Best Friend"
+  - {{g.name}} was a small, petite girl
+    - absolutely adorable
+  - {{g.name}} just returned from college
+  - _Apparently_, {{g.name}} discovered she's a {{g.species}}
+  - Now, {{g.name}}:
+    - is taller
+    - is more apathetic
+      - but not to {{b.name}}, who she still considers her "Best Friend"
+    - is a {{g.species}}
+    - eats people
+      - swallows them whole
+        - {{g.name}} is scarily efficient with swallowing and digesting people
+    - __Scares {{b.name}}__
+      - he keeps his distance from her
+  - it takes a week for her to notice something's wrong
+    - it takes her a few minutes for her to realize _how wrong_
+  - her best friend is __Afraid of Her__
+    - {{g.name}} has to take several minutes to process
+  - as it would turn out, {{g.name}} had a crush on {{b.name}} when she left for college
+    - in 4 years, her feelings haven't changed
+      - but now {{b.name}} is __scared__ of {{g.name}}

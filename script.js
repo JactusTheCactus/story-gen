@@ -106,12 +106,18 @@ class Story {
 	};
 	write() {
 		this.output = `${this.labels.header}\n${"*".repeat(this.labels.header.length)}`;
-		["title", "characters", "plot", "notes"].forEach(section => {
+		[
+			"title",
+			"characters",
+			"plot",
+			"notes"
+		].forEach(section => {
 			if (this[section].replace(/[^a-z]/gi, "")) {
 				this.output += `\n${section === "title" ? "\"" : ""}${this.labels[section]}${section === "title" ? "\"" : ""}\n${`${section === "title" ? "=" : "-"}`.repeat(this.labels[section].length) + `${section === "title" ? "==" : ""}`}${!["title", "characters"].includes(section) ? "\n" : ""}${section !== "title" ? this[section] : "\n"}`
 			};
 		});
 		this.output = this.output
+			.replace(/ {2}/g, "\t")
 			.replace(/(?:^\s+|\s+$)/g, "")
 			.replace(/<!--/g, "COMMENT-START")
 			.replace(/-->/g, "COMMENT-END")
@@ -174,7 +180,7 @@ class Story {
 				console.log(`\t${match}`);
 			});
 		};
-		if (new RegExp(`${args}\.ya?ml`).test(file)) {
+		if (new RegExp(`(?:${args.join("|")})\.ya?ml`).test(file)) {
 			const {
 				title,
 				plot,
@@ -183,28 +189,24 @@ class Story {
 				boy: b
 			} = story;
 			const titlePadding = "-=:|";
-			const logOutput = [
-				`${"●".repeat(50)}
-\t\x1b[1m\x1b[35m${titlePadding}\x1b[4m"${title}"\x1b[0m\x1b[1m\x1b[35m${reverse(titlePadding)}\x1b[0m
-${plot.replace(/\s/g, "") ? `__Plot__
+			const logOutput = `${"●".repeat(50)}
+
+\x1b[1m\x1b[35m${titlePadding}\x1b[4m"${title}"\x1b[0m\x1b[1m\x1b[35m${reverse(titlePadding)}\x1b[0m
+${plot.replace(/\s/g, "") ? `
+__Plot__
 ${plot}` : ""}
-${notes.replace(/\s/g, "") ? `__Notes__
+${notes.replace(/\s/g, "") ? `
+__Notes__
 ${notes}` : ""}
-${"●".repeat(50)}`,
-				`Write Me A Story
-${"*".repeat("Write Me A Story".length)}
-# "${title}"
-## Plot
-${plot}## Notes
-${notes}${"●".repeat(50)}`
-			];
-			console.log(logOutput[0]
-				.replace(/\t/g, " ".repeat(4))
+${"●".repeat(50)}`;
+			console.log(logOutput
+				.replace(/(?:\t| {2})/g, " ".repeat(4))
 				.replace(/([_\*]{2})(.+?)\1/g, "\x1b[31m\x1b[1m$2\x1b[0m")
 				.replace(/([_\*]{1})(.+?)\1/g, "\x1b[32m\x1b[3m$2\x1b[0m")
 				.replace(/"(.+?)"/g, "\x1b[36m\"$1\"\x1b[0m")
-				.replace(new RegExp(`((?:${g.name}|${b.name}|${g.species}|${b.species})[a-z']*)`, "gi"), "\x1b[33m\x1b[4m$1\x1b[0m")
-				.replace(/\s+\n/g, "\n")
+				.replace(new RegExp(`((?:${g.name}|${b.name}|${g.species}|${b.species})[a-z':,]*)`, "gi"), "\x1b[33m\x1b[4m$1\x1b[0m")
+				.replace(/\s+\n{2,}/g, "\n".repeat(2))
+				.replace(/\s*$/g, "")
 			);
 		};
 	};

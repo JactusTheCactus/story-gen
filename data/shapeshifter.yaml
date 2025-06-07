@@ -1,0 +1,17 @@
+title: Shapeshifter
+girl:
+  name: Kira
+  species: Changeling
+boy:
+  name: '`Boy`'
+  species: Human
+plot: |
+  - {{ g.name }} has a crush on {{ b.name }}
+  - she keeps killing girls he likes
+    - so she can shapeshift into them
+      - to look like his "type"
+        - each form is never good enough
+notes: |
+  - A {{ g.species }} must kill a {{ b.species }} to copy their form
+    - The {{ g.species }} absorbs the victim, leaving no evidence
+    - {{ g.species }}s are _psychologically incapable_ of feeling remorse for their victims

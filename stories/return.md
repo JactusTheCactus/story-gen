@@ -61,10 +61,12 @@ Plot
 	
 	__Can't.__
 - Mera felt like her entire world was crumbling around her
-- The one certainty in her life,
-	that Dani would always be there to tell her that evrything's okay,
-	is gone
-	- The love of her life is __terrified__ of her
+	- The one certainty in her life,
+		that Dani would always be there to tell her that everything's okay,
+		is gone
+		- The love of her life is __terrified__ of her
 - Mera couldn't keep herself upright
 	- She collapsed into his arms,
 		crying
+- Mera begged Dani to "give [her] a chance"
+	- She looked like that tiny girl that left 4 years ago

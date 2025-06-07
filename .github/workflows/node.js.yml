@@ -4,6 +4,21 @@ on:
     branches:
       - main
   workflow_dispatch:
+    inputs:
+      file:
+        description: test
+        type: choice
+        options:
+          - dorm_life
+          - her_majesty
+          - lucky
+          - oops
+          - power
+          - shifter
+          - tick_tock
+          - vampire
+          - wakeup_call
+        default: shifter
 jobs:
   main:
     runs-on: ubuntu-latest

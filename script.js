@@ -207,6 +207,7 @@ ${"●".repeat(50)}`;
 				.replace(new RegExp(`((?:${g.name}|${b.name}|${g.species}|${b.species})[a-z':,]*)`, "gi"), "\x1b[33m\x1b[4m$1\x1b[0m")
 				.replace(/\s+\n{2,}/g, "\n".repeat(2))
 				.replace(/\s*$/g, "")
+				.replace(/\s*\n+/g, "\n")
 			);
 		};
 	};

@@ -21,7 +21,6 @@ async function clearDir(dirPath) {
 				}
 			})
 		);
-		console.log(`Directory "${dirPath}" is created and cleared!`);
 	} catch (err) {
 		console.error(`Error creating or clearing directory: ${err.message}`);
 	}

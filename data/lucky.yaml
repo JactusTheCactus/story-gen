@@ -6,10 +6,10 @@ boy:
   name: Boy
   species: Human
 plot: |
-  - {{ g.name }} eats {{ b.name }}
+  - {{g.name}} eats {{b.name}}
   - he actually squirms really well
-    - it makes {{ g.name }} feel great
-  - {{ g.name }} decides not to digest {{ b.name }}
+    - it makes {{g.name}} feel great
+  - {{g.name}} decides not to digest {{b.name}}
     > You know,
     > you actually feel _great_ in there,
     > so I __won't__ digest you~

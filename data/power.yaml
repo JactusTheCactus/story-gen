@@ -3,12 +3,12 @@ girl:
   name: Lia
   species: Human
 plot: |
-  - {{ g.name }} is the {{ g.species }} bard of an adventuring party
+  - {{g.name}} is the {{g.species}} bard of an adventuring party
   - she always avoids fighting
     - her party assumes this is because she is scared of getting hurt
-      - the _real_ reason is that {{ g.name }} is worried about collateral damage
+      - the _real_ reason is that {{g.name}} is worried about collateral damage
         - à la the __Pistol Shrimp__ scene of "Project Power"
-  - when {{ g.name }} uses her power:
+  - when {{g.name}} uses her power:
     - eyes turn gold
       - the _metal_, not the _colour_
     - a whisper shakes the earth

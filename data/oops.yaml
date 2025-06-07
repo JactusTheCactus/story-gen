@@ -6,35 +6,35 @@ boy:
   name: Teddy
   species: Human
 plot: |
-  - {{ g.name }} considers herself to be {{ b.name }}'s __Best Friend__
-  - {{ g.name }} invites {{ b.name }} over to her place for the night
+  - {{g.name}} considers herself to be {{b.name}}'s __Best Friend__
+  - {{g.name}} invites {{b.name}} over to her place for the night
       - no sexual pretenses whatsoever
           - there is nothing sexual or romantic about their relationship
               - purely platonic
-  - once {{ b.name }} arrives, {{ g.name }} is ready with snacks, drinks, and really crappy movies that were __not__ worth what she rented them for
+  - once {{b.name}} arrives, {{g.name}} is ready with snacks, drinks, and really crappy movies that were __not__ worth what she rented them for
   ### ~1 Hour In
-  - {{ g.name }}'s tummy rumbles
-  - she looks at {{ b.name }}
+  - {{g.name}}'s tummy rumbles
+  - she looks at {{b.name}}
       > "Wouldn't you look sooo cute in my tummy?"
   - she keeps joking about eating him
       - there is never any intention to __actually__ eat him
-          - even if she _did_, {{ g.name }} would let him out long before he even __started__ to digest
-  - {{ b.name }} gets uncomfortable, but she doesn't notice
-  - when {{ g.name }} opens her mouth and leans in (jokingly, of course)
-      - {{ b.name }} leaves, starting to fear that she just sees him as food
-          - {{ g.name }} _is_ a {{ g.species }}, afterall
+          - even if she _did_, {{g.name}} would let him out long before he even __started__ to digest
+  - {{b.name}} gets uncomfortable, but she doesn't notice
+  - when {{g.name}} opens her mouth and leans in (jokingly, of course)
+      - {{b.name}} leaves, starting to fear that she just sees him as food
+          - {{g.name}} _is_ a {{g.species}}, afterall
               - Plus, she doesn't really attempt to hide it when she sees a cute boy she wants to eat
-                  - {{ g.name }} teases {{ b.name }} all throughout her digestion of said "cute boy"
-                      - she likes the way {{ b.name }} squirms uncomfortably while her gut turns someone like him into soup
-                          - all in good fun _(but not for whatever unfortunate boy_ {{ g.name }} _ate)_
+                  - {{g.name}} teases {{b.name}} all throughout her digestion of said "cute boy"
+                      - she likes the way {{b.name}} squirms uncomfortably while her gut turns someone like him into soup
+                          - all in good fun _(but not for whatever unfortunate boy_ {{g.name}} _ate)_
   ### The Next Day
-  - after avoiding her all day, {{ g.name }} corners {{ b.name }} in the school hallway, trying to figure out why he left
+  - after avoiding her all day, {{g.name}} corners {{b.name}} in the school hallway, trying to figure out why he left
       - _she_ thought they were having __Fun__
       - _he_ __genuinely__ thought his "Best Friend" was going to __kill him__
-          - {{ b.name }} was fearing for his life
+          - {{b.name}} was fearing for his life
           - he thought he was going to die
-  - when she finds out why he left, {{ g.name }} starts to __cry__
-      - she couldn’t even look {{ b.name }} in the eye
+  - when she finds out why he left, {{g.name}} starts to __cry__
+      - she couldn’t even look {{b.name}} in the eye
           - the thought of her "Best Friend" even _thinking_ she might hurt him broke her
 notes: |
-  - {{ g.name }} is _super_ __Gay__
+  - {{g.name}} is _super_ __Gay__

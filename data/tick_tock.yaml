@@ -6,9 +6,9 @@ boy:
   name: Eli
   species: Human
 plot: |
-  - {{ b.name }} is kissing a really cute girl; {{ g.name }} (he doesn't know she's a {{ g.species }})
-  - suddenly, {{ g.name }} swallows {{ b.name }} whole
-  - naturally, {{ b.name }} pleads and struggles in {{ g.name }}'s stomach
+  - {{b.name}} is kissing a really cute girl; {{g.name}} (he doesn't know she's a {{g.species}})
+  - suddenly, {{g.name}} swallows {{b.name}} whole
+  - naturally, {{b.name}} pleads and struggles in {{g.name}}'s stomach
 
   ***
 
@@ -25,22 +25,22 @@ plot: |
 
   ### _MORNING_
 
-  {{ g.name }} woke up bright and early, _actually_ __excited__ about asking {{ b.name }} out on a date.
+  {{g.name}} woke up bright and early, _actually_ __excited__ about asking {{b.name}} out on a date.
   (she didn’t get much sleep, because she couldn’t stop herself from planning out the date she would take him on the next day)
 
-  > Hey, {{ b.name }}-...
+  > Hey, {{b.name}}-...
   >
   > _oh, no..._
 
-  but, when {{ g.name }} looked at her belly, it was a little softer, a little rounder.
-  {{ b.name }} _might've_ survived, sure.
-  But {{ g.name }}'s hopes weren't high.
+  but, when {{g.name}} looked at her belly, it was a little softer, a little rounder.
+  {{b.name}} _might've_ survived, sure.
+  But {{g.name}}'s hopes weren't high.
 
   __Nor were her spirits__
 
-  > {{ b.name }}?
+  > {{b.name}}?
   >
-  > H-Hey... {{ b.name }}...?
+  > H-Hey... {{b.name}}...?
   > Buddy...?
   >
   > You still alive in there?
@@ -51,7 +51,7 @@ plot: |
   >
   > fuck...
   >
-  > I'm sorry, {{ b.name }}...
+  > I'm sorry, {{b.name}}...
   > You would've made a pretty good boyfriend...
   > A _cute_ one too...
   >
@@ -62,12 +62,12 @@ plot: |
   > _cough_
   > _wheeze_
   >
-  > {{ g.nameFirst }}-{{ g.name }}?
+  > {{g.nameFirst}}-{{g.name}}?
   >
   > Am I...
   > D-Dead...?
 
-  > {{ b.name }}!
+  > {{b.name}}!
   > You're okay!!
   >
   > __Perfect!__
@@ -77,5 +77,5 @@ plot: |
   >
   > You'll love this, I __Promise__!~
 
-  {{ b.name }} was clearly too weak to move, but still alive.
-  {{ g.name }} was going to have to get him out on her own -- not like she was ever going to _struggle_ with that.
+  {{b.name}} was clearly too weak to move, but still alive.
+  {{g.name}} was going to have to get him out on her own -- not like she was ever going to _struggle_ with that.

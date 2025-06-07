@@ -7,14 +7,22 @@ boy:
   species: Human
 plot: |
   - {{g.name}} is {{b.name}}'s "Best Friend"
-  - {{g.name}} was a small, petite girl
+  - {{g.name}} was a small,
+    petite girl
     - absolutely adorable
   - {{g.name}} just returned from college
-  - _Apparently_, {{g.name}} discovered she's a {{g.species}}
-  - Now, {{g.name}}:
+  - _Apparently_,
+    {{g.name}} discovered she's a {{g.species}}
+  - Now,
+    {{g.name}}:
     - is taller
+      - just by a few inches
+        - almost as tall as {{b.name}}
+          previously,
+            he towered over her
     - is more apathetic
-      - but not to {{b.name}}, who she still considers her "Best Friend"
+      - but not to {{b.name}},
+        who she still considers her "Best Friend"
     - is a {{g.species}}
     - eats people
       - swallows them whole
@@ -25,6 +33,32 @@ plot: |
     - it takes her a few minutes for her to realize _how wrong_
   - her best friend is __Afraid of Her__
     - {{g.name}} has to take several minutes to process
-  - as it would turn out, {{g.name}} had a crush on {{b.name}} when she left for college
-    - in 4 years, her feelings haven't changed
+  - as it would turn out,
+    {{g.name}} had a crush on {{b.name}} when she left for college
+    - in 4 years,
+      her feelings haven't changed
+      - she would consistently daydream with flushed cheeks of her lips touching {{b.name}}'s
       - but now {{b.name}} is __scared__ of {{g.name}}
+  - she showed up at his front door
+    > You're scared of me...
+
+    {{g.name}} secretly hoped she was wrong.
+
+    > You're...
+    > __scared__ of me...
+
+    her legs were shaky.
+    {{g.name}} was on the verge of tears.
+
+    {{g.name}} is in love with {{b.name}}.
+    And he _can't_ feel safe with her.
+    
+    __Can't.__
+  - {{g.name}} felt like her entire world was crumbling around her
+  - the one certainty in her life,
+    that {{b.name}} would always be there to tell her that evrything's okay,
+    is gone
+    - the love of her life is __terrified__ of her
+  - {{g.name}} couldn't keep herself upright
+    - she collapsed into his arms,
+      crying

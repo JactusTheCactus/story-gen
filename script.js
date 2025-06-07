@@ -2,28 +2,29 @@ const fs = require("fs");
 const fsp = fs.promises;
 const path = require("path");
 const YAML = require("yaml");
+const args = process.argv.slice(2);
 async function clearDir(dirPath) {
-  try {
-    // Make sure the directory exists (creates it if not)
-    await fsp.mkdir(dirPath, { recursive: true });
-    // Read contents of the directory
-    const files = await fsp.readdir(dirPath);
-    // Remove each item inside the directory
-    await Promise.all(
-      files.map(async (file) => {
-        const fullPath = path.join(dirPath, file);
-        const stat = await fsp.lstat(fullPath);
-        if (stat.isDirectory()) {
-          await fsp.rm(fullPath, { recursive: true, force: true });
-        } else {
-          await fsp.unlink(fullPath);
-        }
-      })
-    );
-    console.log(`Directory "${dirPath}" is created and cleared!`);
-  } catch (err) {
-    console.error(`Error creating or clearing directory: ${err.message}`);
-  }
+	try {
+		// Make sure the directory exists (creates it if not)
+		await fsp.mkdir(dirPath, { recursive: true });
+		// Read contents of the directory
+		const files = await fsp.readdir(dirPath);
+		// Remove each item inside the directory
+		await Promise.all(
+			files.map(async (file) => {
+				const fullPath = path.join(dirPath, file);
+				const stat = await fsp.lstat(fullPath);
+				if (stat.isDirectory()) {
+					await fsp.rm(fullPath, { recursive: true, force: true });
+				} else {
+					await fsp.unlink(fullPath);
+				}
+			})
+		);
+		console.log(`Directory "${dirPath}" is created and cleared!`);
+	} catch (err) {
+		console.error(`Error creating or clearing directory: ${err.message}`);
+	}
 }
 function fileName(text) {
 	text = text
@@ -45,7 +46,7 @@ function reverse(text) {
 	};
 	const pattern = [
 		"!^",
-"$!"
+		"$!"
 	];
 	const replacementsLength = replacements.length
 	for (let i = 0; i < replacementsLength; i++) {
@@ -76,12 +77,12 @@ class Story {
 		} = {}
 	) {
 		this.title = title;
-		this.girl = {...girl};
-		this.boy = {...boy};
-this.girl.name = girl?.name || "Girl";
-this.boy.name = boy?.name || "Boy";
-this.girl.nameFirst = girl?.name[0] || "G";
-this.boy.nameFirst = boy?.name[0] || "B";
+		this.girl = { ...girl };
+		this.boy = { ...boy };
+		this.girl.name = girl?.name || "Girl";
+		this.boy.name = boy?.name || "Boy";
+		this.girl.nameFirst = girl?.name[0] || "G";
+		this.boy.nameFirst = boy?.name[0] || "B";
 		this.plot = "";
 		this.notes = "";
 		this.labels = {
@@ -104,11 +105,11 @@ this.boy.nameFirst = boy?.name[0] || "B";
 	};
 	write() {
 		this.output = `${this.labels.header}\n${"*".repeat(this.labels.header.length)}`;
-["title","characters","plot","notes"].forEach(section => {
-if (this[section].replace(/[^a-z]/gi, "")) {
-this.output += `\n${section === "title" ? "\"" : ""}${this.labels[section]}${section === "title" ? "\"" : ""}\n${`${section === "title" ? "=" : "-"}`.repeat(this.labels[section].length) + `${section === "title" ? "==" : ""}`}${!["title","characters"].includes(section) ? "\n" : ""}${section !== "title" ? this[section] : "\n"}`
-};
-});
+		["title", "characters", "plot", "notes"].forEach(section => {
+			if (this[section].replace(/[^a-z]/gi, "")) {
+				this.output += `\n${section === "title" ? "\"" : ""}${this.labels[section]}${section === "title" ? "\"" : ""}\n${`${section === "title" ? "=" : "-"}`.repeat(this.labels[section].length) + `${section === "title" ? "==" : ""}`}${!["title", "characters"].includes(section) ? "\n" : ""}${section !== "title" ? this[section] : "\n"}`
+			};
+		});
 		this.output = this.output
 			.replace(/(?:^\s+|\s+$)/g, "")
 			.replace(/<!--/g, "COMMENT-START")
@@ -135,75 +136,75 @@ this.output += `\n${section === "title" ? "\"" : ""}${this.labels[section]}${sec
 	};
 };
 (async () => {
-await clearDir("./stories")
-// Simple template filler
-function fillTemplate(template, context) {
-  return template.replace(/\{\{\s*([^\s}]+)\s*\}\}/g, (_, expr) => {
-    try {
-      return expr.split(".").reduce((acc, key) => acc[key], context);
-    } catch {
-      return `{{ ${expr} }}`;
-    }
-  });
-}
-// Read all .yaml files in the data directory
-const dataDir = path.join(__dirname, "data");
-const yamlFiles = fs.readdirSync(dataDir).filter(file => file.endsWith(".yaml"));
-for (const file of yamlFiles) {
-	const yamlRaw = fs.readFileSync(path.join(dataDir, file), "utf-8");
-	const yamlData = YAML.parse(yamlRaw);
-	const story = new Story(
-		yamlData.title,
-		{
-			girl: yamlData.girl,
-			boy: yamlData.boy
-		}
-	);
-const context = {
-g: story.girl,
-b: story.boy
-};
-	story.plot = fillTemplate(yamlData.plot || "", context);
-	story.notes = fillTemplate(yamlData.notes || "", context);
-	story.write();
-if (/undefined/.test(story.output)) {
-console.error(`ERROR: There are undefined variables in "${story.title}":`);
-story.output.match(/^.*undefined.*$/gm).forEach(match => {
-console.log(`\t${match}`);
-});
-};
-	if (story.title === "Lucky") {
-		const {
-title,
-plot,
-notes,
-girl: g,
-boy: b
-} = story;
-		const titlePadding = "-=:|";
-const logOutput = [
-`${"●".repeat(50)}
+	await clearDir("./stories")
+	// Simple template filler
+	function fillTemplate(template, context) {
+		return template.replace(/\{\{\s*([^\s}]+)\s*\}\}/g, (_, expr) => {
+			try {
+				return expr.split(".").reduce((acc, key) => acc[key], context);
+			} catch {
+				return `{{ ${expr} }}`;
+			}
+		});
+	}
+	// Read all .yaml files in the data directory
+	const dataDir = path.join(__dirname, "data");
+	const files = fs.readdirSync(dataDir).filter(file => /\.ya?ml$/.test(file));
+	for (const file of files) {
+		const fileRaw = fs.readFileSync(path.join(dataDir, file), "utf-8");
+		const fileData = YAML.parse(fileRaw);
+		const story = new Story(
+			fileData.title,
+			{
+				girl: fileData.girl,
+				boy: fileData.boy
+			}
+		);
+		const context = {
+			g: story.girl,
+			b: story.boy
+		};
+		story.plot = fillTemplate(fileData.plot || "", context);
+		story.notes = fillTemplate(fileData.notes || "", context);
+		story.write();
+		if (/undefined/.test(story.output)) {
+			console.error(`ERROR: There are undefined variables in "${story.title}":`);
+			story.output.match(/^.*undefined.*$/gm).forEach(match => {
+				console.log(`\t${match}`);
+			});
+		};
+		if (new RegExp(`${args}\.ya?ml`, "").test(file)) {
+			const {
+				title,
+				plot,
+				notes,
+				girl: g,
+				boy: b
+			} = story;
+			const titlePadding = "-=:|";
+			const logOutput = [
+				`${"●".repeat(50)}
 \t\x1b[1m\x1b[35m${titlePadding}\x1b[4m"${title}"\x1b[0m\x1b[1m\x1b[35m${reverse(titlePadding)}\x1b[0m
-__Plot__
-${plot}
-__Notes__
-${notes}`,
-`${"●".repeat(50)}
-Write Me A Story
+${plot.replace(/\s/g,"") ? `__Plot__
+${plot}` : ""}
+${notes.replace(/\s/g,"") ? `__Notes__
+${notes}` : ""}
+${"●".repeat(50)}`,
+				`Write Me A Story
 ${"*".repeat("Write Me A Story".length)}
 # "${title}"
 ## Plot
 ${plot}## Notes
 ${notes}${"●".repeat(50)}`
-];
-		console.log(logOutput[0]
-			.replace(/\t/g, " ".repeat(4))
-			.replace(/([_\*]{2})(.+?)\1/g, "\x1b[31m\x1b[1m$2\x1b[0m")
-			.replace(/([_\*]{1})(.+?)\1/g, "\x1b[32m\x1b[3m$2\x1b[0m")
-			.replace(/"(.+?)"/g, "\x1b[36m\"$1\"\x1b[0m")
-			.replace(new RegExp(`((?:${g.name}|${b.name}|${g.species}|${b.species})[a-z']*)`, "gi"), "\x1b[33m\x1b[4m$1\x1b[0m")
-			.replace(/\s+\n/g, "\n")
-		);
+			];
+			console.log(logOutput[0]
+				.replace(/\t/g, " ".repeat(4))
+				.replace(/([_\*]{2})(.+?)\1/g, "\x1b[31m\x1b[1m$2\x1b[0m")
+				.replace(/([_\*]{1})(.+?)\1/g, "\x1b[32m\x1b[3m$2\x1b[0m")
+				.replace(/"(.+?)"/g, "\x1b[36m\"$1\"\x1b[0m")
+				.replace(new RegExp(`((?:${g.name}|${b.name}|${g.species}|${b.species})[a-z']*)`, "gi"), "\x1b[33m\x1b[4m$1\x1b[0m")
+				.replace(/\s+\n/g, "\n")
+			);
+		};
 	};
-};
 })();

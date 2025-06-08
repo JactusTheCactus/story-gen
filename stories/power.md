@@ -19,8 +19,14 @@ Plot
 			- À la the __Pistol Shrimp__ scene of "Project Power"
 - When Lia uses her power:
 	- Eyes turn gold
-		- The _metal_, not the _colour_
-	- A whisper shakes the earth
-	- The movement of her jaw during speach causes shockwaves
+		- The _metal_,
+			not the _colour_
 	- Speed almost looks like teleportation
 		- Each step causes a _thundercrack_
+
+Notes
+-----
+- Shortly prior to the start of the story,
+	the party entered a defiled church
+	- Lia seemed reluctant to enter
+		- _odd_

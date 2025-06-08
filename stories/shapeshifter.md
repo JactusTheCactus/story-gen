@@ -7,12 +7,12 @@ Characters
 ----------
 - Kira
 	- Changeling
-- `Boy`
+- Charlie
 	- Human
 
 Plot
 ----
-- Kira has a crush on `Boy`
+- Kira has a crush on Charlie
 - She keeps killing girls he likes
 	- So she can shapeshift into them
 		- To look like his "type"

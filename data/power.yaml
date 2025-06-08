@@ -10,8 +10,12 @@ plot: |
         - à la the __Pistol Shrimp__ scene of "Project Power"
   - when {{g.name}} uses her power:
     - eyes turn gold
-      - the _metal_, not the _colour_
-    - a whisper shakes the earth
-    - the movement of her jaw during speach causes shockwaves
+      - the _metal_,
+        not the _colour_
     - speed almost looks like teleportation
       - each step causes a _thundercrack_
+notes: |
+  - shortly prior to the start of the story,
+    the party entered a defiled church
+    - {{g.name}} seemed reluctant to enter
+      - _odd_

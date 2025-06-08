@@ -3,7 +3,7 @@ girl:
   name: Kira
   species: Changeling
 boy:
-  name: '`Boy`'
+  name: Charlie
   species: Human
 plot: |
   - {{g.name}} has a crush on {{b.name}}

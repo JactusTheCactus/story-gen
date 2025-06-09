@@ -26,7 +26,9 @@ function createPerson(
 async function clearDir(dirPath) {
 	try {
 		// Make sure the directory exists (creates it if not)
-		await fsp.mkdir(dirPath, { recursive: true });
+		await fsp.mkdir(dirPath, {
+			recursive: true
+		});
 		// Read contents of the directory
 		const files = await fsp.readdir(dirPath);
 		// Remove each item inside the directory
@@ -35,7 +37,10 @@ async function clearDir(dirPath) {
 				const fullPath = path.join(dirPath, file);
 				const stat = await fsp.lstat(fullPath);
 				if (stat.isDirectory()) {
-					await fsp.rm(fullPath, { recursive: true, force: true });
+					await fsp.rm(fullPath, {
+						recursive: true,
+						force: true
+					});
 				} else {
 					await fsp.unlink(fullPath);
 				}
@@ -231,7 +236,13 @@ ${"●".repeat(50)}`;
 				.replace(/([_\*]{2})(.+?)\1/g, "\x1b[31m\x1b[1m$2\x1b[0m")
 				.replace(/([_\*]{1})(.+?)\1/g, "\x1b[32m\x1b[3m$2\x1b[0m")
 				.replace(/"(.+?)"/g, "\x1b[36m\"$1\"\x1b[0m")
-				.replace(new RegExp(`((?:${g.name}|${b.name}|${g.species}|${b.species})[a-z':]*)`, "gi"), "\x1b[33m\x1b[4m$1\x1b[0m")
+				.replace(new RegExp(`((?:\\b${[
+					g.name,
+					g.species,
+					b.name,
+					b.species
+				].map(item => item.replace(/\s/g, "")).join("|")
+					})\\b[a-z'!.,]*)`, "gi"), "\x1b[33m\x1b[4m$1\x1b[0m")
 				.replace(/\s+\n{2,}/g, "\n".repeat(2))
 				.replace(/\s*$/g, "")
 			);

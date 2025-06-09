@@ -1,0 +1,70 @@
+title: Surprise!
+girl:
+  name: Lily
+  species: Pred
+boy:
+  name: Iris
+plot: |
+  - {{g.name}} and her best friend,
+    {{b.name}},
+    are enjoying a movie late at night
+  - {{b.name}} doesn't know that {{g.name}} is a {{g.species}}
+    - _(yet)_
+  - {{g.name}} slowly leans into {{b.name}}
+    > _(God,_
+      {{b.name}},
+      _why do you smell_ __so good__*???)*
+    - {{b.name}} hasn't noticed yet
+  - {{g.name}} slowly opens her mouth,
+    drool slowly dripping onto the {{g.species}}'s shirt
+  - {{b.name}} turns to {{g.name}}
+    - {{b.name}} sees that {{g.name}} is about to eat her
+      - {{b.name}} slaps {{g.name}}
+      > __OW!!__
+
+      > {{g.nameUpper}}!!
+      >
+      > Were you about to __Eat Me__!?
+
+      > Wha-!?
+      >
+      > No,
+        I-...!
+      >
+      > You just looked so tasty,
+        and I-...
+
+      > Since when are you a __{{g.speciesUpper}}__!?
+
+      > . . .
+      >
+      > It's been _a few months_...
+      >
+      > I didn't want you to find out...
+      >
+      > Especially not like _this_...
+
+      > You're not gonna...
+        _Eat Me_,
+        right?
+
+      > __NO!!__
+      >
+      > That was just...
+        a _moment of weakness_...
+      >
+      > I could never eat my best friend...
+        _even if you do smell..._
+        __delicious...__
+
+      > {{g.nameUpper}}!
+      >
+      > Stop it!
+
+      > sorry...
+      >
+      > you just smell so-
+
+      > {{g.name}}.
+
+      > s-sorry.

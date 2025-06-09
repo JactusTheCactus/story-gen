@@ -3,6 +3,26 @@ const fsp = fs.promises;
 const path = require("path");
 const YAML = require("yaml");
 const args = process.argv.slice(2);
+function createPerson(
+	person = {
+		name: defName,
+		species: defSpecies
+	},
+	defName = "Name",
+	defSpecies = "Human"
+) {
+	const normalized = {
+		...person,
+		name: person?.name || defName,
+		species: person?.species || defSpecies,
+	};
+	["name", "species"].forEach(type => {
+		normalized[`${type}First`] = normalized[type][0];
+		normalized[`${type}Upper`] = normalized[type].toUpperCase();
+		normalized[`${type}Lower`] = normalized[type].toLowerCase();
+	});
+	return normalized;
+}
 async function clearDir(dirPath) {
 	try {
 		// Make sure the directory exists (creates it if not)
@@ -77,17 +97,13 @@ class Story {
 		} = {}
 	) {
 		this.title = title;
-		this.girl = { ...girl };
-		this.boy = { ...boy };
-		this.girl.name = girl?.name || "Girl";
-		this.boy.name = boy?.name || "Boy";
-		this.girl.nameFirst = girl?.name[0] || "G";
-		this.boy.nameFirst = boy?.name[0] || "B";
+		this.girl = createPerson(girl, "Girl");
+		this.boy = createPerson(boy, "Boy");
 		this.plot = "";
 		this.notes = "";
 		this.labels = {
 			header: "Write Me A Story",
-			title: this.title,
+			title: this.title || "Title",
 			characters: "Characters",
 			plot: "Plot",
 			notes: "Notes"
@@ -112,7 +128,19 @@ class Story {
 			"notes"
 		].forEach(section => {
 			if (this[section].replace(/[^a-z]/gi, "")) {
-				this.output += `\n${section === "title" ? "\"" : ""}${this.labels[section]}${section === "title" ? "\"" : ""}\n${`${section === "title" ? "=" : "-"}`.repeat(this.labels[section].length) + `${section === "title" ? "==" : ""}`}${!["title", "characters"].includes(section) ? "\n" : ""}${section !== "title" ? this[section] : "\n"}`
+				this.output += `\n${section === "title" ? "\"" : ""
+					}${this.labels[section]
+					}${section === "title" ? "\"" : ""
+					}
+${`${section === "title" ? "=" : "-"
+						}`.repeat(this.labels[section].length) + `${section === "title" ? "==" : ""
+						}`
+					}${![
+						"title",
+						"characters"
+					].includes(section) ? `
+` : ""
+					}${section !== "title" ? this[section] : `\n`}`
 			};
 		});
 		this.output = this.output
@@ -203,10 +231,9 @@ ${"●".repeat(50)}`;
 				.replace(/([_\*]{2})(.+?)\1/g, "\x1b[31m\x1b[1m$2\x1b[0m")
 				.replace(/([_\*]{1})(.+?)\1/g, "\x1b[32m\x1b[3m$2\x1b[0m")
 				.replace(/"(.+?)"/g, "\x1b[36m\"$1\"\x1b[0m")
-				.replace(new RegExp(`((?:${g.name}|${b.name}|${g.species}|${b.species})[a-z':,]*)`, "gi"), "\x1b[33m\x1b[4m$1\x1b[0m")
+				.replace(new RegExp(`((?:${g.name}|${b.name}|${g.species}|${b.species})[a-z':]*)`, "gi"), "\x1b[33m\x1b[4m$1\x1b[0m")
 				.replace(/\s+\n{2,}/g, "\n".repeat(2))
 				.replace(/\s*$/g, "")
-				.replace(/\s*\n+/g, "\n")
 			);
 		};
 	};

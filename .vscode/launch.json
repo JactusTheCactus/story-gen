@@ -10,7 +10,8 @@
 			],
 			"program": "script.js",
 			"args": [
-				"power"
+				//"power"
+				"surprise"
 			]
 		}
 	]

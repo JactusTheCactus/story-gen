@@ -1,7 +1,7 @@
 title: UNNAMED
 girl:
   name: Head Maids
-  species: Anthro (Pred)
+  species: Anthro (Pred) [Wolfgirl, Catgirl, Foxgirl]
 boy:
   species: Human
 plot: |
@@ -13,7 +13,16 @@ plot: |
 notes: |
   - {{b.name}} was raised in an orphanage
   - The {{g.name}} are __{{g.species}}s__
-    1. A _Wolf_
-    1. A _Cat_
-    1. A _Fox_
+    1. A _{{g.speciesList[0]}}_
+      - Bold
+      - Protective
+      - Loyal
+        - _Ride-Or-Die_
+    2. A _{{g.speciesList[1]}}_
+      - Laid-back
+      - Flirty
+    3. A _{{g.speciesList[2]}}_
+      - Chaotic
+      - Playful
+      - Impulsive
   - _{{g.species}}s_ are a subspecies of _{{g.speciesEnd}}s_

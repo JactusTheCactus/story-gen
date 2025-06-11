@@ -13,27 +13,42 @@ function createPerson(
 ) {
 	const normalized = {
 		...person,
-		name: person?.name || defName,
+		nameLong: person?.name || defName,
 		speciesLong: person?.species || defSpecies,
 	};
-	normalized.species = normalized.speciesLong.replace(/(.*) \(.*\)/g, "$1");
-	normalized.speciesEnd = normalized.speciesLong.replace(/.* \((.*)\)/g, "$1");
 	["name", "species"].forEach(type => {
-		normalized[`${type}First`] = normalized[type][0];
+		const patterns = [
+			/^([^(\[\]]+)/,
+			/\(([^)]+)\)/,
+			/\[([^\]]+)\]/
+		];
+		normalized[`${type}Parts`] = {
+			simple: (normalized[`${type}Long`].match(patterns[0]) || [])[1].trim(),
+			special: (normalized[`${type}Long`].match(patterns[1]) || [])[1] || null,
+			list: (normalized[`${type}Long`].match(patterns[2]) || [])[1] || null
+		};
+		const test = normalized[`${type}Parts`].list ? normalized[`${type}Parts`].list.split(/\s*,\s*/).map(item => item.trim()) : [];
+		normalized[`${type}`] = normalized[`${type}Parts`].simple;
+		normalized[`${type}First`] = normalized[`${type}Parts`].simple[0];
 		normalized[`${type}Upper`] = normalized[type].toUpperCase();
 		normalized[`${type}Lower`] = normalized[type].toLowerCase();
+		normalized[`${type}End`] = normalized[`${type}Parts`].special;
+		if (test) {
+			for (i = 0; i < test.length; i++) {
+				normalized[`${type}List[${i}]`] = `${test[i]}`
+			}
+		};
+		normalized[`${type}Specific`] = `${normalized[`${type}Parts`].simple} (${normalized[`${type}Parts`].special})`.replace(/ \(null\)/, "")
+			.replace(/ \[.*\]/g, "")
 	});
 	return normalized;
 }
 async function clearDir(dirPath) {
 	try {
-		// Make sure the directory exists (creates it if not)
 		await fsp.mkdir(dirPath, {
 			recursive: true
 		});
-		// Read contents of the directory
 		const files = await fsp.readdir(dirPath);
-		// Remove each item inside the directory
 		await Promise.all(
 			files.map(async (file) => {
 				const fullPath = path.join(dirPath, file);
@@ -125,9 +140,9 @@ body {
 	get characters() {
 		return `
 - ${this.girl.name}
-	- ${this.girl.speciesLong}
+	- ${this.girl.speciesSpecific}
 - ${this.boy.name}
-	- ${this.boy.speciesLong}
+	- ${this.boy.speciesSpecific}
 `
 			.replace(/- name\n\t- species/gi, "");
 	};
@@ -186,7 +201,6 @@ ${`${section === "title" ? "=" : "-"
 const lineBreak = "●".repeat(30);
 (async () => {
 	await clearDir("./stories")
-	// Simple template filler
 	function fillTemplate(template, context) {
 		return template.replace(/\{\{\s*([^\s}]+)\s*\}\}/g, (_, expr) => {
 			try {
@@ -196,7 +210,6 @@ const lineBreak = "●".repeat(30);
 			}
 		});
 	}
-	// Read all .yaml files in the data directory
 	const dataDir = path.join(__dirname, "data");
 	const files = fs.readdirSync(dataDir).filter(file => /\.ya?ml$/.test(file));
 	for (const file of files) {
@@ -217,8 +230,9 @@ const lineBreak = "●".repeat(30);
 		story.notes = fillTemplate(fileData.notes || "", context);
 		story.write();
 		if (/undefined/.test(story.output)) {
-			console.error(`ERROR: There are undefined variables in "${story.title}":`);
-			story.output.match(/^.*undefined.*$/gm).forEach(match => {
+			errorRegex = /^.*(?:undefined|null).*$/gmi;
+			console.error(`ERROR: There are ${story.output.match(errorRegex).length} undefined variables in "${story.title}":`);
+			story.output.match(errorRegex).forEach(match => {
 				console.log(`\t${match}`);
 			});
 		};
@@ -241,7 +255,7 @@ ${notes.replace(/\s/g, "") ? `
 __Notes__
 ${notes}` : ""}
 ${lineBreak}`;
-			console.log(logOutput
+			/*console.log(logOutput
 				.replace(/(?:\t| {2})/g, " ".repeat(4))
 				.replace(/([_\*]{2})(.+?)\1/g, "\x1b[31m\x1b[1m$2\x1b[0m")
 				.replace(/([_\*]{1})(.+?)\1/g, "\x1b[32m\x1b[3m$2\x1b[0m")
@@ -255,7 +269,7 @@ ${lineBreak}`;
 					})\\b[a-z'!.,]*)`, "gi"), "\x1b[33m\x1b[4m$1\x1b[0m")
 				.replace(/\s+\n{2,}/g, "\n".repeat(2))
 				.replace(/\s*$/g, "")
-			);
+			);*/
 		};
 	};
 })();

@@ -28,7 +28,16 @@ Notes
 -----
 - Boy was raised in an orphanage
 - The Head Maids are __Anthros__
-	1. A _Wolf_
-	1. A _Cat_
-	1. A _Fox_
+	1. A _Wolfgirl_
+		- Bold
+		- Protective
+		- Loyal
+			- _Ride-Or-Die_
+	2. A _Catgirl_
+		- Laid-back
+		- Flirty
+	3. A _Foxgirl_
+		- Chaotic
+		- Playful
+		- Impulsive
 - _Anthros_ are a subspecies of _Preds_

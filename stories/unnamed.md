@@ -11,7 +11,7 @@ Write Me A Story
 
 Characters
 ----------
-- Head Maid
+- Head Maids
 	- Anthro (Pred)
 - Boy
 	- Human
@@ -20,8 +20,9 @@ Plot
 ----
 - Boy's grandfather dies
 	- Boy inherits a massive manor,
-		the accompanying wealth
-		& __The 3 Head Maids__
+		the accompanying wealth,
+		__The 3 Head Maids__,
+		& the other maids
 
 Notes
 -----
@@ -30,4 +31,4 @@ Notes
 	1. A _Wolf_
 	1. A _Cat_
 	1. A _Fox_
-- Anthros are a subspecies of Preds
+- _Anthros_ are a subspecies of _Preds_

@@ -1,18 +1,19 @@
 title: UNNAMED
 girl:
-  name: Head Maid
+  name: Head Maids
   species: Anthro (Pred)
 boy:
   species: Human
 plot: |
   - {{b.name}}'s grandfather dies
     - {{b.name}} inherits a massive manor,
-      the accompanying wealth
-      & __The 3 {{g.name}}s__
+      the accompanying wealth,
+      __The 3 {{g.name}}__,
+      & the other maids
 notes: |
   - {{b.name}} was raised in an orphanage
-  - The {{g.name}}s are __{{g.species}}s__
+  - The {{g.name}} are __{{g.species}}s__
     1. A _Wolf_
     1. A _Cat_
     1. A _Fox_
-  - {{g.species}}s are a subspecies of {{g.speciesEnd}}s
+  - _{{g.species}}s_ are a subspecies of _{{g.speciesEnd}}s_

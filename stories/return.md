@@ -1,3 +1,9 @@
+<style>
+body {
+	font: 15px Verdana
+};
+</style>
+
 Write Me A Story
 ****************
 "Return"

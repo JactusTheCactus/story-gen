@@ -14,8 +14,10 @@ function createPerson(
 	const normalized = {
 		...person,
 		name: person?.name || defName,
-		species: person?.species || defSpecies,
+		speciesLong: person?.species || defSpecies,
 	};
+	normalized.species = normalized.speciesLong.replace(/(.*) \(.*\)/g, "$1");
+	normalized.speciesEnd = normalized.speciesLong.replace(/.* \((.*)\)/g, "$1");
 	["name", "species"].forEach(type => {
 		normalized[`${type}First`] = normalized[type][0];
 		normalized[`${type}Upper`] = normalized[type].toUpperCase();
@@ -113,19 +115,26 @@ class Story {
 			plot: "Plot",
 			notes: "Notes"
 		};
+		this.style = `<style>
+body {
+	font: 15px Verdana
+};
+</style>`;
 		Story.instances.push(this);
 	};
 	get characters() {
 		return `
 - ${this.girl.name}
-	- ${this.girl.species}
+	- ${this.girl.speciesLong}
 - ${this.boy.name}
-	- ${this.boy.species}
+	- ${this.boy.speciesLong}
 `
 			.replace(/- name\n\t- species/gi, "");
 	};
 	write() {
-		this.output = `${this.labels.header}\n${"*".repeat(this.labels.header.length)}`;
+		this.output = `${this.style}
+
+${this.labels.header}\n${"*".repeat(this.labels.header.length)}`;
 		[
 			"title",
 			"characters",
@@ -174,6 +183,7 @@ ${`${section === "title" ? "=" : "-"
 		);
 	};
 };
+const lineBreak = "●".repeat(30);
 (async () => {
 	await clearDir("./stories")
 	// Simple template filler
@@ -221,7 +231,7 @@ ${`${section === "title" ? "=" : "-"
 				boy: b
 			} = story;
 			const titlePadding = "-=:|";
-			const logOutput = `${"●".repeat(50)}
+			const logOutput = `${lineBreak}
 
 \x1b[1m\x1b[35m${titlePadding}\x1b[4m"${title}"\x1b[0m\x1b[1m\x1b[35m${reverse(titlePadding)}\x1b[0m
 ${plot.replace(/\s/g, "") ? `
@@ -230,7 +240,7 @@ ${plot}` : ""}
 ${notes.replace(/\s/g, "") ? `
 __Notes__
 ${notes}` : ""}
-${"●".repeat(50)}`;
+${lineBreak}`;
 			console.log(logOutput
 				.replace(/(?:\t| {2})/g, " ".repeat(4))
 				.replace(/([_\*]{2})(.+?)\1/g, "\x1b[31m\x1b[1m$2\x1b[0m")

@@ -22,11 +22,17 @@ function createPerson(
 			/\(([^)]+)\)/,
 			/\[([^\]]+)\]/
 		];
-		normalized[`${type}Parts`] = {
-			simple: (normalized[`${type}Long`].match(patterns[0]) || [])[1].trim(),
-			special: (normalized[`${type}Long`].match(patterns[1]) || [])[1] || null,
-			list: (normalized[`${type}Long`].match(patterns[2]) || [])[1] || null
-		};
+		normalized[`${type}Parts`] = {};
+		[
+			"simple",
+			"special",
+			"list"
+		].forEach(
+			(item, i) => {
+				normalized[`${type}Parts`][item] = (
+					normalized[`${type}Long`].match(patterns[i]) || []
+				)[1]?.trim() || null
+			});
 		const test = normalized[`${type}Parts`].list ? normalized[`${type}Parts`].list.split(/\s*,\s*/).map(item => item.trim()) : [];
 		normalized[`${type}`] = normalized[`${type}Parts`].simple;
 		normalized[`${type}First`] = normalized[`${type}Parts`].simple[0];
@@ -198,7 +204,7 @@ ${`${section === "title" ? "=" : "-"
 		);
 	};
 };
-const lineBreak = "●".repeat(30);
+const lineBreak = "●".repeat(40);
 (async () => {
 	await clearDir("./stories")
 	function fillTemplate(template, context) {
@@ -255,21 +261,26 @@ ${notes.replace(/\s/g, "") ? `
 __Notes__
 ${notes}` : ""}
 ${lineBreak}`;
-			/*console.log(logOutput
-				.replace(/(?:\t| {2})/g, " ".repeat(4))
-				.replace(/([_\*]{2})(.+?)\1/g, "\x1b[31m\x1b[1m$2\x1b[0m")
-				.replace(/([_\*]{1})(.+?)\1/g, "\x1b[32m\x1b[3m$2\x1b[0m")
-				.replace(/"(.+?)"/g, "\x1b[36m\"$1\"\x1b[0m")
-				.replace(new RegExp(`((?:\\b${[
-					g.name,
-					g.species,
-					b.name,
-					b.species
-				].map(item => item.replace(/\s/g, "")).join("|")
-					})\\b[a-z'!.,]*)`, "gi"), "\x1b[33m\x1b[4m$1\x1b[0m")
-				.replace(/\s+\n{2,}/g, "\n".repeat(2))
-				.replace(/\s*$/g, "")
-			);*/
+			if (
+				//true
+				false
+			) {
+				console.log(logOutput
+					.replace(/(?:\t| {2})/g, " ".repeat(4))
+					.replace(/([_\*]{2})(.+?)\1/g, "\x1b[31m\x1b[1m$2\x1b[0m")
+					.replace(/([_\*]{1})(.+?)\1/g, "\x1b[32m\x1b[3m$2\x1b[0m")
+					.replace(/"(.+?)"/g, "\x1b[36m\"$1\"\x1b[0m")
+					.replace(new RegExp(`((?:\\b${[
+						g.name,
+						g.species,
+						b.name,
+						b.species
+					].map(item => item.replace(/\s/g, "")).join("|")
+						})\\b[a-z'!.,]*)`, "gi"), "\x1b[33m\x1b[4m$1\x1b[0m")
+					.replace(/\s+\n{2,}/g, "\n".repeat(2))
+					.replace(/\s*$/g, "")
+				);
+			}
 		};
 	};
 })();

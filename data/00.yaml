@@ -1,14 +1,23 @@
-title: UNNAMED00
+title: "00"
 girl:
-  name: Head Maids
+  name: |
+    Head Maids
+    [
+      Lua
+      Mei
+      Inola
+    ]
+    {
+      Latin:(French/Italian/Portuguese/Spanish/Romanian)
+      Japanese
+      Indigenous
+    }
   species: |
     Anthro
-    (
-      Pred
-    )
+    (Pred)
     [
-      Wolfgirl,
-      Catgirl,
+      Wolfgirl
+      Catgirl
       Foxgirl
     ]
 boy:
@@ -24,16 +33,16 @@ notes: |
   - The {{g.name}} are __{{g.species}}s__
     - _{{g.species}}s_ are a subspecies of _{{g.speciesEnd}}s_
   ### The {{g.name}}:
-  #### A _{{g.speciesList[0]}}_
+  #### A {{g.speciesList[0]}}: {{g.nameList[0]}}; {{g.nameDetail[0]}}
   - Bold
   - Protective
   - Loyal (_Ride Or Die_)
   - Blunt
-  #### A _{{g.speciesList[1]}}_
+  #### A {{g.speciesList[1]}}: {{g.nameList[1]}}; {{g.nameDetail[1]}}
   - Laid-back
   - Nosy
   - Teasing
-  #### A _{{g.speciesList[2]}}_
+  #### A {{g.speciesList[2]}}: {{g.nameList[2]}}; {{g.nameDetail[2]}}
   - Chaotic
   - Playful
   - Impulsive

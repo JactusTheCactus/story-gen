@@ -20,28 +20,45 @@ function createPerson(
 		const patterns = [
 			/^([^(\[\]]+)/,
 			/\(([^)]+)\)/,
-			/\[([^\]]+)\]/
+			/\[([^\]]+)\]/,
+			/\{([^\}]+)\}/
 		];
 		normalized[`${type}Parts`] = {};
 		[
 			"simple",
 			"special",
-			"list"
+			"list",
+			"detail"
 		].forEach(
 			(item, i) => {
 				normalized[`${type}Parts`][item] = (
 					normalized[`${type}Long`].match(patterns[i]) || []
 				)[1]?.trim() || null
 			});
-		const test = normalized[`${type}Parts`].list ? normalized[`${type}Parts`].list.split(/\s*,\s*/).map(item => item.trim()) : [];
 		normalized[`${type}`] = normalized[`${type}Parts`].simple;
 		normalized[`${type}First`] = normalized[`${type}Parts`].simple[0];
 		normalized[`${type}Upper`] = normalized[type].toUpperCase();
 		normalized[`${type}Lower`] = normalized[type].toLowerCase();
 		normalized[`${type}End`] = normalized[`${type}Parts`].special;
-		if (test) {
-			for (i = 0; i < test.length; i++) {
-				normalized[`${type}List[${i}]`] = `${test[i]}`
+		const testList =
+			normalized[`${type}Parts`].list
+				?
+				normalized[`${type}Parts`].list
+					.split(/,?\s+/)
+					.map(
+						item => item.trim()
+					)
+				:
+				[];
+		if (testList) {
+			for (i = 0; i < testList.length; i++) {
+				normalized[`${type}List[${i}]`] = `${testList[i]}`
+			}
+		};
+		const testDetail = normalized[`${type}Parts`].detail ? normalized[`${type}Parts`].detail.split(/[\s,]+/).map(item => item.trim()) : [];
+		if (testDetail) {
+			for (i = 0; i < testDetail.length; i++) {
+				normalized[`${type}Detail[${i}]`] = `${testDetail[i]}`
 			}
 		};
 		normalized[`${type}Specific`] = `${normalized[`${type}Parts`].simple} (${normalized[`${type}Parts`].special})`.replace(/ \(null\)/, "")
@@ -101,7 +118,11 @@ function reverse(text) {
 		replacements[i].forEach(item => {
 			item = `${pattern[0]}${replacements[i][1]}${pattern[1]}`;
 		});
-		const replacementList = [replacements[i][0], `${pattern[0]}${i}${pattern[1]}`, replacements[i][1]]
+		const replacementList = [
+			replacements[i][0],
+			`${pattern[0]}${i}${pattern[1]}`,
+			replacements[i][1]
+		]
 		output = output
 			.replace(replacementList[0], replacementList[1])
 			.replace(replacementList[2], replacementList[0])
@@ -136,11 +157,7 @@ class Story {
 			plot: "Plot",
 			notes: "Notes"
 		};
-		this.style = `<style>
-body {
-	font: 15px Verdana
-};
-</style>`;
+		this.style = `<style>body{font:15px"Verdana"};</style>`;
 		Story.instances.push(this);
 	};
 	get characters() {
@@ -150,12 +167,13 @@ body {
 - ${this.boy.name}
 	- ${this.boy.speciesSpecific}
 `
-			.replace(/- name\n\t- species/gi, "");
+			.replace(/- (?:girl|boy)\n\t- species/gi, "");
 	};
 	write() {
 		this.output = `${this.style}
 
-${this.labels.header}\n${"*".repeat(this.labels.header.length)}`;
+${this.labels.header}
+${"*".repeat(this.labels.header.length)}`;
 		[
 			"title",
 			"characters",
@@ -191,8 +209,7 @@ ${`${section === "title" ? "=" : "-"
 		fs.writeFile(
 			path.join(
 				"stories",
-				`${fileName(this.title)
-				}.md`
+				`${fileName(this.title)}.md`
 			),
 			this.output,
 			(err) => {
@@ -252,7 +269,6 @@ const lineBreak = "●".repeat(40);
 			} = story;
 			const titlePadding = "-=:|";
 			const logOutput = `${lineBreak}
-
 \x1b[1m\x1b[35m${titlePadding}\x1b[4m"${title}"\x1b[0m\x1b[1m\x1b[35m${reverse(titlePadding)}\x1b[0m
 ${plot.replace(/\s/g, "") ? `
 __Plot__
@@ -262,8 +278,7 @@ __Notes__
 ${notes}` : ""}
 ${lineBreak}`;
 			if (
-				//true
-				false
+				args.includes("verbose")
 			) {
 				console.log(logOutput
 					.replace(/(?:\t| {2})/g, " ".repeat(4))
@@ -274,8 +289,8 @@ ${lineBreak}`;
 						g.name,
 						g.species,
 						b.name,
-						b.species
-					].map(item => item.replace(/\s/g, "")).join("|")
+						b.species,
+					].filter(Boolean).flat().map(item => item.replace(/\s/g, "")).join("|")
 						})\\b[a-z'!.,]*)`, "gi"), "\x1b[33m\x1b[4m$1\x1b[0m")
 					.replace(/\s+\n{2,}/g, "\n".repeat(2))
 					.replace(/\s*$/g, "")

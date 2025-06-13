@@ -9,8 +9,6 @@ Characters
 ----------
 - Lia
 	- Human
-- Boy
-	- Species
 
 Plot
 ----
@@ -23,6 +21,8 @@ Plot
 	- Eyes turn gold
 		- The _metal_,
 			not the _colour_
+	- Sinks several inches into the ground,
+		due to her _exponentiated mass_
 	- Speed almost looks like teleportation
 		- Each step causes a _thundercrack_
 
@@ -32,3 +32,8 @@ Notes
 	the party entered a defiled church
 	- Lia seemed reluctant to enter
 		- _odd_
+	- Due to it being a _defiled_ church,
+		Lia felt safe entering
+		- __very odd__
+- This is a known ability in this world
+	- It is of _deific_ rarity

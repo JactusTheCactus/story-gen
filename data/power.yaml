@@ -1,7 +1,6 @@
 title: Power
 girl:
   name: Lia
-  species: Human
 plot: |
   - {{g.name}} is the {{g.species}} bard of an adventuring party
   - she always avoids fighting
@@ -12,6 +11,8 @@ plot: |
     - eyes turn gold
       - the _metal_,
         not the _colour_
+    - sinks several inches into the ground,
+      due to her _exponentiated mass_
     - speed almost looks like teleportation
       - each step causes a _thundercrack_
 notes: |
@@ -19,3 +20,8 @@ notes: |
     the party entered a defiled church
     - {{g.name}} seemed reluctant to enter
       - _odd_
+    - due to it being a _defiled_ church,
+      {{g.name}} felt safe entering
+      - __very odd__
+  - This is a known ability in this world
+    - It is of _deific_ rarity

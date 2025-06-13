@@ -9,6 +9,7 @@ on:
         description: "Choose A File To Run"
         type: choice
         options:
+          - none
           - dorm_life
           - her_majesty
           - lucky
@@ -19,10 +20,22 @@ on:
           - tick_tock
           - vampire
           - wakeup_call
+      verbosity:
+        description: "Log Output?"
+        type: boolean
+        default: false
 jobs:
   main:
     runs-on: ubuntu-latest
     steps:
+      - name: Set Log Verbosity
+        id: set-verbosity
+        run: |
+          if [ "${{ github.event.inputs.verbosity }}" = "true" ]; then
+            echo "VERBOSITY=verbose" >> $GITHUB_ENV
+          else
+            echo "VERBOSITY=" >> $GITHUB_ENV
+          fi
       - name: Checkout Repository
         uses: actions/checkout@v4
       - name: Use Node.js LTS
@@ -32,8 +45,8 @@ jobs:
           cache: "npm"
       - run: npm ci
       - run: |
-          FILE_INPUT=${{ github.event.inputs.file || 'shapeshifter' }}
-          npm run main -- "$FILE_INPUT"
+          FILE_INPUT=${{ github.event.inputs.file || 'none' }}
+          npm run main -- "$VERBOSITY" "$FILE_INPUT"
       - name: Configure Git
         run: |
           git config --global user.name "github-gremlin"

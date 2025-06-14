@@ -16,3 +16,15 @@ Story Ideas
 		- As F watches M's fearful response,
 			it seems more and more unlikely that she'll be able to earn his trust
 			- F is terrified that she'll be forced to __Kill This Beautiful Boy__
+- Pred is Prey's friend
+	(at least,
+		_she_ thinks she is)
+	- everyday,
+		after school,
+		she eats and digests him
+		- he reforms back at his home,
+			unharmed
+	- one day,
+		he reforms at _her_ home
+		- Pred's sister _&_ mother also eat him
+	- He avoids Pred like the plague for a concerning amount of time after that

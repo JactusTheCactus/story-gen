@@ -157,7 +157,7 @@ class Story {
 			plot: "Plot",
 			notes: "Notes"
 		};
-		this.style = `\t<style>body{font:15px"Verdana"};</style>`;
+		this.style = `<style>\nbody {\n\tfont: 15px Verdana\n};\n</style>`;
 		Story.instances.push(this);
 	};
 	get characters() {

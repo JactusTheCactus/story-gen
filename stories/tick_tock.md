@@ -23,13 +23,13 @@ Plot
 > you know what?
 >
 > You're actually pretty cute,
-> so I'll make you a deal;\
-> if you're still alive and undigested by morning,
-> I'll let you out.
+so I'll make you a deal;\
+if you're still alive and undigested by morning,
+I'll let you out.
 >
 > If not?
-> Well...
-> You get to be my breakfast!~
+Well...
+You get to be my breakfast!~
 
 ### _MORNING_
 
@@ -49,7 +49,7 @@ __Nor were her spirits__
 > Eli?
 >
 > H-Hey... Eli...?
-> Buddy...?
+Buddy...?
 >
 > You still alive in there?
 >
@@ -60,28 +60,28 @@ __Nor were her spirits__
 > fuck...
 >
 > I'm sorry, Eli...
-> You would've made a pretty good boyfriend...
-> A _cute_ one too...
+You would've made a pretty good boyfriend...
+A _cute_ one too...
 >
 > __Stupid__ _metabolism_...
 
 > w-wha-?\
-> _cough_
-> _cough_
-> _wheeze_
+_cough_
+_cough_
+_wheeze_
 >
 > V-Vera?
 >
 > Am I...
-> D-Dead...?
+D-Dead...?
 
 > Eli!
-> You're okay!!
+You're okay!!
 >
 > __Perfect!__
 > ***
 > To make up for _almost_ digesting you,
-> I'm taking you on a date!
+I'm taking you on a date!
 >
 > You'll love this, I __Promise__!~
 

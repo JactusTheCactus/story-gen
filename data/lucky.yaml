@@ -11,11 +11,11 @@ plot: |
     - it makes {{g.name}} feel great
   - {{g.name}} decides not to digest {{b.name}}
     > You know,
-    > you actually feel _great_ in there,
-    > so I __won't__ digest you~
+    you actually feel _great_ in there,
+    so I __won't__ digest you~
     >
     > I'm going to keep you around,
-    > so I can eat you again whenever I want~
+    so I can eat you again whenever I want~
     >
     > _Lucky boy~_
     >

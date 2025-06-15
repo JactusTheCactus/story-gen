@@ -10,10 +10,9 @@
 			],
 			"program": "script.js",
 			"args": [
-				"verbose",
-				//"power"
-				//"surprise"
-				"00"
+				//"verbose",
+				//"00,
+				"01"
 			]
 		}
 	]

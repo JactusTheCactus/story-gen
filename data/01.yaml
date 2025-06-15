@@ -1,0 +1,108 @@
+title: "01"
+girl:
+  name: |
+    Girls
+    [
+      Tess
+      Lila
+    ]
+  species: |
+    Pred & Human
+    [
+      Pred
+      Human
+    ]
+boy:
+  name: Alex
+  species: Human
+plot: |
+  - {{g.nameList[0]}} eats {{g.nameList[1]}}
+  - {{g.nameList[0]}} doesn't know who {{g.nameList[1]}} is
+    > Let me OUT!
+
+    > Why would I do that,
+    hmm?~
+    >
+    > You're just a __Meal__~
+    >
+    > Now _shut up_ and __Digest__~
+
+    *{{g.nameList[1]}} realizes {{g.nameList[0]}} isn't gonna let her out*
+    > U-uhh,
+    w-when {{b.name}} finds out about this,
+    he'll...
+    h-he'll,
+    uhmm...
+    >
+    > _oh, f-fuck..._
+
+    > Why would _{{b.name}}_ help you?
+
+    > Because he's...
+    my _brother_...
+    >
+    > Please let me out...
+    >
+    > {{b.name}}'ll miss me...
+
+    > You're {{b.name}}'s __sister__??
+  - {{g.nameList[0]}} panics and lets {{g.nameList[1]}} out
+    > _Please_, don't let {{b.name}} find out,
+    I'm _begging_ you...
+    >
+    > I'll do _anything_,
+    just please don't tell him that I ate you...
+
+    > W-why would I do that...?
+    
+    *{{g.nameList[0]}} glares threateningly*
+    > _Eep!_
+    >
+    > S-sorry,
+    I won't tell him!
+    >
+    > _Please_,
+    don't eat me again...!
+  ***
+  - not long after,
+    {{g.nameList[0]}} goes to ask {{b.name}} on a date
+    > H-hey,
+    {{b.name}}...
+    >
+    > You,
+    uhh...
+    You busy tonight?
+    >
+    > I was thinking,
+    maybe...
+    you might want to see a movie with me tonight...?
+
+    > Didn't you _eat {{g.nameList[1]}}_?
+
+    > I-I,
+    uhh,
+    I...
+    >
+    > . . .
+    >
+    > h-how do you know about that...?
+    
+    *{{g.nameList[0]}} is internally*
+    *__(and a little externally)__*
+    *panicking,*
+    *terrified that her chances with {{b.name}} are ruined*
+
+    *{{b.name}} turns to leave,*
+    *but {{g.nameList[0]}} grabs his arm*
+    > _PLEASE_,
+    don't go!
+    >
+    > I-I promise to make it up to you...
+    s-somehow...
+    >
+    > Just...
+    please,
+    see that movie with me...?
+notes: |
+  - {{g.nameList[0]}} has a _huge_ crush on {{b.name}}
+    - eating {{b.name}}'s sister is __not__ going to help her chances with him

@@ -28,18 +28,13 @@ plot: |
     > Now _shut up_ and __Digest__~
 
     *{{g.nameList[1]}} realizes {{g.nameList[0]}} isn't gonna let her out*
-    > U-uhh,
-    w-when {{b.name}} finds out about this,
-    he'll...
-    h-he'll,
-    uhmm...
+    > U-uhh, w-when {{b.name}} finds out about this, he'll... h-he'll, uhmm...
     >
     > _oh, f-fuck..._
 
     > Why would _{{b.name}}_ help you?
 
-    > Because he's...
-    my _brother_...
+    > Because he's... my _brother_...
     >
     > Please let me out...
     >
@@ -56,22 +51,18 @@ plot: |
     > W-why would I do that...?
     
     *{{g.nameList[0]}} glares threateningly*
+
     > _Eep!_
     >
-    > S-sorry,
-    I won't tell him!
+    > S-sorry, I won't tell him!
     >
-    > _Please_,
-    don't eat me again...!
+    > _Please_, don't eat me again...!
   ***
   - not long after,
     {{g.nameList[0]}} goes to ask {{b.name}} on a date
-    > H-hey,
-    {{b.name}}...
+    > H-hey, {{b.name}}...
     >
-    > You,
-    uhh...
-    You busy tonight?
+    > You, uhh... You busy tonight?
     >
     > I was thinking,
     maybe...
@@ -79,30 +70,23 @@ plot: |
 
     > Didn't you _eat {{g.nameList[1]}}_?
 
-    > I-I,
-    uhh,
-    I...
+    *{{g.nameList[0]}}'s smile disappeared completely, replaced by fear*
+
+    > I-I, uhh, I...
     >
     > . . .
     >
     > h-how do you know about that...?
     
-    *{{g.nameList[0]}} is internally*
-    *__(and a little externally)__*
-    *panicking,*
-    *terrified that her chances with {{b.name}} are ruined*
+    *{{g.nameList[0]}} is internally __(and a little externally)__ panicking, terrified that her chances with {{b.name}} are ruined*
 
-    *{{b.name}} turns to leave,*
-    *but {{g.nameList[0]}} grabs his arm*
-    > _PLEASE_,
-    don't go!
+    *{{b.name}} turns to leave, but {{g.nameList[0]}} grabs his arm*
+
+    > _PLEASE_, don't go!
     >
-    > I-I promise to make it up to you...
-    s-somehow...
+    > I-I promise to make it up to you... s-somehow...
     >
-    > Just...
-    please,
-    see that movie with me...?
+    > Just... please, see that movie with me...?
 notes: |
   - {{g.nameList[0]}} has a _huge_ crush on {{b.name}}
     - eating {{b.name}}'s sister is __not__ going to help her chances with him

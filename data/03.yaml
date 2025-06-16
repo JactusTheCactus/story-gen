@@ -45,4 +45,22 @@ notes: |
       - smarter
       - faster
     - skin is a slight __Bronze__ / __Tan__ colour
-  - the average {{g.species}} in _Grade 7 of Primary School_ is equivalent to a _Human Highschool Sophomore Linebacker_
+  - the average {{g.species}} in Late Primary School / Early Middle School is equivalent to a Human Linebacker in Early High School
+    ```js
+    const pred = {
+      species: "Pred",
+      school: [
+        "Late Primary",
+        "Early Middle"
+      ],
+      extra: none
+    };
+    const human = {
+      species: "Human",
+      school: [
+        "Early High"
+      ],
+      extra: "Linebacker"
+    };
+    console.log(pred === human) // true
+    ```

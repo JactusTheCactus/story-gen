@@ -1,6 +1,9 @@
 title: "03"
 girl:
+  name: Alice
   species: Pred
+boy:
+  name: Felix
 plot: |
   - {{b.name}} is at a club
   - over the last couple hours,

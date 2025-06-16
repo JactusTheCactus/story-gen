@@ -1,0 +1,7 @@
+title: "02"
+girl:
+  species: Genie
+notes: |
+  - {{g.name}} grants wishes based on what she thinks of the person making the wish
+    - if she likes them, she'll grant the wish to the letter and spirit of the request
+    - if she __doesn't__ like them, "Monkey's Paw" is in _full effect_

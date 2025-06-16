@@ -24,7 +24,7 @@ on:
       verbosity:
         description: "Log Output?"
         type: boolean
-        default: false
+        default: true
 jobs:
   main:
     runs-on: ubuntu-latest

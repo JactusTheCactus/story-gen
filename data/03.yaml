@@ -1,0 +1,16 @@
+title: "03"
+girl:
+  species: Pred
+plot: |
+  - {{b.name}} is at a club
+  - over the last couple hours,
+    - he met a beautiful girl
+    - they:
+      - danced
+      - drank
+      - flirted
+      - __fell in love__
+  - her name is {{g.name}}
+  - she's now fallen asleep in his lap, still in the club
+  - next week, she's taking him to an expensive restaurant (turns out, she's __loaded__)
+  - but there's a problem. she's almost _definitely_ a {{g.species}}

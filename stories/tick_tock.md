@@ -1,9 +1,9 @@
-<style>
-	body {
-		font-size: 15px;
-		font-family: Verdana;
+<Style>
+	Body {
+		Font-size: 15px;
+		Font-family: Verdana;
 	};
-</style>
+</Style>
 
 Write Me A Story
 ****************
@@ -25,7 +25,7 @@ Plot
 
 ***
 
-> you know what?
+> You know what?
 >
 > You're actually pretty cute,
 so I'll make you a deal;\
@@ -39,13 +39,13 @@ You get to be my breakfast!~
 ### _MORNING_
 
 Vera woke up bright and early, _actually_ __excited__ about asking Eli out on a date.
-(she didn’t get much sleep, because she couldn’t stop herself from planning out the date she would take him on the next day)
+(She didn’t get much sleep, because she couldn’t stop herself from planning out the date she would take him on the next day)
 
 > Hey, Eli-...
 >
-> _oh, no..._
+> _Oh, no..._
 
-but, when Vera looked at her belly, it was a little softer, a little rounder.
+But, when Vera looked at her belly, it was a little softer, a little rounder.
 Eli _might've_ survived, sure.
 But Vera's hopes weren't high.
 
@@ -62,7 +62,7 @@ Buddy...?
 >
 > ...Please...?
 >
-> fuck...
+> Fuck...
 >
 > I'm sorry, Eli...
 You would've made a pretty good boyfriend...
@@ -70,10 +70,10 @@ A _cute_ one too...
 >
 > __Stupid__ _metabolism_...
 
-> w-wha-?\
-_cough_
-_cough_
-_wheeze_
+> W-wha-?\
+_Cough_
+_Cough_
+_Wheeze_
 >
 > V-Vera?
 >

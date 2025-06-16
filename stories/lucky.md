@@ -1,9 +1,9 @@
-<style>
-	body {
-		font-size: 15px;
-		font-family: Verdana;
+<Style>
+	Body {
+		Font-size: 15px;
+		Font-family: Verdana;
 	};
-</style>
+</Style>
 
 Write Me A Story
 ****************
@@ -24,11 +24,11 @@ Plot
 	- It makes Girl feel great
 - Girl decides not to digest Boy
 	> You know,
-	you actually feel _great_ in there,
-	so I __won't__ digest you~
+	You actually feel _great_ in there,
+	So I __won't__ digest you~
 	>
 	> I'm going to keep you around,
-	so I can eat you again whenever I want~
+	So I can eat you again whenever I want~
 	>
 	> _Lucky boy~_
 	>

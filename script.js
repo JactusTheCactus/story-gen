@@ -226,7 +226,9 @@ ${`${section === "title" ? "=" : "-"
 			.replace(/([\t {4}]?)- (.)/g, (match, p1, p2) => `${p1}- ${p2.toUpperCase()}`)
 			.replace(/\n{3,}/g, "\n".repeat(2))
 			.replace(/(\d+'(?:\d+")?)/g, "`$1`")
-			.replace(/(\s*- [^a-z]+?[a-z])/gi, (_, g1) => g1.toUpperCase())
+			.replace(/(^[^a-z]+?[a-z])/gim, (_, g1) => g1.toUpperCase())
+			.replace(/\^(.*)\^/g, "<sup>$1</sup>")
+			.replace(/~(.*)~/g, "<sub>$1</sub>")
 		fs.writeFile(
 			path.join(
 				"stories",

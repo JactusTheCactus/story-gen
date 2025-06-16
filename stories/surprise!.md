@@ -1,9 +1,9 @@
-<style>
-	body {
-		font-size: 15px;
-		font-family: Verdana;
+<Style>
+	Body {
+		Font-size: 15px;
+		Font-family: Verdana;
 	};
-</style>
+</Style>
 
 Write Me A Story
 ****************
@@ -21,16 +21,16 @@ Plot
 ----
 - Lily and her best friend,
 	Iris,
-	are enjoying a movie late at night
+	Are enjoying a movie late at night
 - Iris doesn't know that Lily is a Pred
 	- _(Yet)_
 - Lily slowly leans into Iris
 	> _(God,_
 		Iris,
-		_why do you smell_ __so good__*???)*
+		_Why do you smell_ __so good__*???)*
 	- Iris hasn't noticed yet
 - Lily slowly opens her mouth,
-	drool slowly dripping onto the Pred's shirt
+	Drool slowly dripping onto the Pred's shirt
 - Iris turns to Lily
 	- Iris sees that Lily is about to eat her
 		- Iris slaps Lily
@@ -46,7 +46,7 @@ Plot
 			I-...!
 		>
 		> You just looked so tasty,
-			and I-...
+			And I-...
 
 		> Since when are you a __PRED__!?
 
@@ -60,25 +60,25 @@ Plot
 
 		> You're not gonna...
 			_Eat Me_,
-			right?
+			Right?
 
 		> __NO!!__
 		>
 		> That was just...
-			a _moment of weakness_...
+			A _moment of weakness_...
 		>
 		> I could never eat my best friend...
-			_even if you do smell..._
-			__delicious...__
+			_Even if you do smell..._
+			__Delicious...__
 
 		> LILY!
 		>
 		> Stop it!
 
-		> sorry...
+		> Sorry...
 		>
-		> you just smell so-
+		> You just smell so-
 
 		> Lily.
 
-		> s-sorry.
+		> S-sorry.

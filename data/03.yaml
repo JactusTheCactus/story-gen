@@ -15,15 +15,17 @@ plot: |
       - flirted
       - __fell in love__
   - her name is {{g.name}}
-  - she's now fallen asleep in his lap, still in the club
-  - next week, she's taking him to an expensive restaurant (turns out, she's __loaded__)
+  - she's now fallen asleep, head in his lap, still in the club
+  - next week, she's taking him to an _expensive_ restaurant
+    - {{g.name}} is paying
+    - turns out, she's _super_ rich
   - but there's a small problem. she's almost _definitely_ a {{g.species}}
     - actually, that's a _huge_ problem
       - a dealbreaker
         - but she seemed so nice
         - and she seemed to _really_ like him
-        - _and_ she seemed excited about the date they'd planned
-          - _she_* planned; she was too giddy and excited to let him get more than a couple words in. it was cute at the time. before he thought she could __eat him__
+        - _and_ she seemed excited about the date they'd^[1]^ planned
+          - ^[1]^_she_ planned; she was too giddy and excited to let him get more than a couple words in. it was cute at the time. before he thought she could __eat him__
         - _she wouldn't eat him, right?_
           - he can't ask her.
             - if she's _not_ a {{g.species}}, they'll laugh it off and forget about it
@@ -35,3 +37,10 @@ notes: |
   - swallow humans whole
   - complete digestion in < 1 hour
   - psychologically incapable of being empathetic of Prey
+  #### appearance
+  - identical to {{b.species}}s, except:
+    - gold eyes
+    - naturally:
+      - much stronger
+      - more attractive
+    - skin is a slight __Bronze__ / __Tan__ colour

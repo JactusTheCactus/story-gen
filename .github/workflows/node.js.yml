@@ -24,7 +24,7 @@ on:
       verbosity:
         description: "Log Output?"
         type: boolean
-        default: true
+        default: false
 jobs:
   main:
     runs-on: ubuntu-latest
@@ -35,7 +35,7 @@ jobs:
           if [ "${{ github.event.inputs.verbosity }}" = "true" ]; then
             echo "VERBOSITY=verbose" >> $GITHUB_ENV
           else
-            echo "VERBOSITY=" >> $GITHUB_ENV
+            echo "VERBOSITY=verbose" >> $GITHUB_ENV
           fi
       - name: Checkout Repository
         uses: actions/checkout@v4

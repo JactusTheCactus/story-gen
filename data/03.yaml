@@ -53,7 +53,7 @@ notes: |
         "Late Primary",
         "Early Middle"
       ],
-      \extra: none
+      \extra: null
     };
     \const human = {
       \species: "Human",

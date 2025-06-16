@@ -209,7 +209,7 @@ ${`${section === "title" ? "=" : "-"
 					].includes(section) ? `
 ` : ""
 					}${section !== "title" ? this[section] : `\n`}`
-					.replace(/(?:\n|\s)*?\/{2}(.*)$/gm, "<!--$1-->")
+					.replace(/(?:\n|\s)*?(?<!\\)\/{2}(.*)$/gm, "<!--$1-->")
 					.replace(/\/\*/g, "<!--")
 					.replace(/\*\//g, "-->")
 					.replace(/\s,\s/g, "")

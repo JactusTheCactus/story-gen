@@ -1,7 +1,8 @@
 <style>
-body {
-	font: 15px Verdana
-};
+	body {
+		font-size: 15px;
+		font-family: Verdana;
+	};
 </style>
 
 Write Me A Story
@@ -11,10 +12,10 @@ Write Me A Story
 
 Characters
 ----------
-- Ashley
-	- Pred
-- Teddy
-	- Human
+- ASHLEY
+	- PRED
+- TEDDY
+	- HUMAN
 
 Plot
 ----
@@ -41,8 +42,8 @@ Plot
 												- All in good fun _(but not for whatever unfortunate boy_ Ashley _ate)_
 ### The Next Day
 - After avoiding her all day, Ashley corners Teddy in the school hallway, trying to figure out why he left
-		- _she_ thought they were having __Fun__
-		- _he_ __genuinely__ thought his "Best Friend" was going to __kill him__
+		- _She_ thought they were having __Fun__
+		- _He_ __genuinely__ thought his "Best Friend" was going to __kill him__
 				- Teddy was fearing for his life
 				- He thought he was going to die
 - When she finds out why he left, Ashley starts to __cry__

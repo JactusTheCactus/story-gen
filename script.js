@@ -3,6 +3,12 @@ const fsp = fs.promises;
 const path = require("path");
 const YAML = require("yaml");
 const args = process.argv.slice(2);
+function removeItems(array, items) {
+	return array.filter(item => !items.includes(item))
+};
+function getType(val) {
+	return Object.prototype.toString.call(val);
+}
 function createPerson(
 	person = {
 		name: defName,
@@ -42,18 +48,22 @@ function createPerson(
 		normalized[`${type}End`] = normalized[`${type}Parts`].special;
 		const testList =
 			normalized[`${type}Parts`].list
-				?
-				normalized[`${type}Parts`].list
-					.split(/,?\s+/)
-					.map(
-						item => item.trim()
-					)
-				:
-				[];
+				? normalized[`${type}Parts`].list
+					.split(/,?\s+/).map(item => item.trim())
+				: [];
 		if (testList) {
 			for (i = 0; i < testList.length; i++) {
 				normalized[`${type}List[${i}]`] = `${testList[i]}`
 			}
+			normalized[`${type}ListFormatted`] = `
+\`\`\`
+${normalized[type]}
+[
+	${testList.join(",\n\t")}
+]
+\`\`\`
+`.trim()
+			normalized[`${type}List`] = `[ ${testList.join(", ")} ]`
 		};
 		const testDetail = normalized[`${type}Parts`].detail ? normalized[`${type}Parts`].detail.split(/[\s,]+/).map(item => item.trim()) : [];
 		if (testDetail) {
@@ -131,7 +141,6 @@ function reverse(text) {
 	return output;
 };
 class Story {
-	static instances = [];
 	constructor(
 		title = "Title",
 		{
@@ -157,15 +166,21 @@ class Story {
 			plot: "Plot",
 			notes: "Notes"
 		};
-		this.style = `<style>\nbody {\n\tfont: 15px Verdana\n};\n</style>`;
-		Story.instances.push(this);
+		this.style = `
+<style>
+	body {
+		font-size: 15px;
+		font-family: Verdana;
+	};
+</style>
+`.trim();
 	};
 	get characters() {
 		return `
-- ${this.girl.name}
-	- ${this.girl.speciesSpecific}
-- ${this.boy.name}
-	- ${this.boy.speciesSpecific}
+- ${this.girl.nameUpper}
+	- ${this.girl.speciesSpecific.toUpperCase()}
+- ${this.boy.nameUpper}
+	- ${this.boy.speciesSpecific.toUpperCase()}
 `
 			.replace(/- (?:girl|boy)\n\t- species/gi, "");
 	};
@@ -194,6 +209,10 @@ ${`${section === "title" ? "=" : "-"
 					].includes(section) ? `
 ` : ""
 					}${section !== "title" ? this[section] : `\n`}`
+					.replace(/(?:\n|\s)*?\/{2}(.*)$/gm, "<!--$1-->")
+					.replace(/\/\*/g, "<!--")
+					.replace(/\*\//g, "-->")
+					.replace(/\s,\s/g, "")
 			};
 		});
 		this.output = this.output
@@ -206,6 +225,8 @@ ${`${section === "title" ? "=" : "-"
 			.replace(/COMMENT-END/g, "-->")
 			.replace(/([\t {4}]?)- (.)/g, (match, p1, p2) => `${p1}- ${p2.toUpperCase()}`)
 			.replace(/\n{3,}/g, "\n".repeat(2))
+			.replace(/(\d+'(?:\d+")?)/g, "`$1`")
+			.replace(/(\s*- [^a-z]+?[a-z])/gi, (_, g1) => g1.toUpperCase())
 		fs.writeFile(
 			path.join(
 				"stories",
@@ -227,7 +248,14 @@ const lineBreak = "●".repeat(40);
 	function fillTemplate(template, context) {
 		return template.replace(/\{\{\s*([^\s}]+)\s*\}\}/g, (_, expr) => {
 			try {
-				return expr.split(".").reduce((acc, key) => acc[key], context);
+				const outputInitial = expr.split(".").reduce((acc, key) => acc[key], context);
+				if (getType(outputInitial) === "[object Array]") {
+					console.log(outputInitial.match(/^\/\/.+$/g));
+					output = `[ ${outputInitial} ]`
+				} else if (getType(outputInitial) === "[object String]") {
+					output = `${outputInitial}`
+				}
+				return output
 			} catch {
 				return `{{ ${expr} }}`;
 			}
@@ -277,9 +305,7 @@ ${notes.replace(/\s/g, "") ? `
 __Notes__
 ${notes}` : ""}
 ${lineBreak}`;
-			if (
-				args.includes("verbose")
-			) {
+			if (args.includes("verbose")) {
 				console.log(logOutput
 					.replace(/(?:\t| {2})/g, " ".repeat(4))
 					.replace(/([_\*]{2})(.+?)\1/g, "\x1b[31m\x1b[1m$2\x1b[0m")

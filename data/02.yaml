@@ -1,7 +1,31 @@
 title: "02"
 girl:
+  name: Alia
   species: Genie
+boy:
+  name: Sammy
+plot: |
+  - {{g.name}}'s lamp is discovered by {{b.name}}
+    - {{g.name}} thinks he's cute
+      - ergo, she likes him; she'll grant his wish properly
 notes: |
   - {{g.name}} grants wishes based on what she thinks of the person making the wish
-    - if she likes them, she'll grant the wish to the letter and spirit of the request
+    - if she likes them, she'll grant the wish as expected
+      - to the letter
+      - to the spirit of the wish
+      - no "Monkey's Paw"
     - if she __doesn't__ like them, "Monkey's Paw" is in _full effect_
+      - {{g.name}} can be extremely vicious with people she doesn't like
+        - she has no problems with using someone's wish to __kill__ them
+          - she finds it _funny_
+  - {{g.nameUpper}}
+    - 9'0" tall
+    - fuchsia skin
+    - very beautiful
+    - with people she likes ({{b.name}}):
+      - _very_:
+        - flirty
+        - sexual
+        - sensual
+        - horny
+        - seductive

@@ -1,7 +1,8 @@
 <style>
-body {
-	font: 15px Verdana
-};
+	body {
+		font-size: 15px;
+		font-family: Verdana;
+	};
 </style>
 
 Write Me A Story
@@ -11,19 +12,19 @@ Write Me A Story
 
 Characters
 ----------
-- Ashley
-	- Pred
-- Lola
-	- Human
+- ASHLEY
+	- PRED
+- LOLA
+	- HUMAN
 
 Plot
 ----
 - Ashley is:
-	- _very_ hot
-	- _hungover_
+	- _Very_ hot
+	- _Hungover_
 	- Shameless
 - Lola is:
-	- _very_ cute
+	- _Very_ cute
 - Ashley wakes up next to Lola
 	- Ashley just considers Lola her "Breakfast In Bed"
 		- Lola has to negotiate her __survival__

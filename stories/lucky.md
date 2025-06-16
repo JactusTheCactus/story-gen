@@ -1,7 +1,8 @@
 <style>
-body {
-	font: 15px Verdana
-};
+	body {
+		font-size: 15px;
+		font-family: Verdana;
+	};
 </style>
 
 Write Me A Story
@@ -11,10 +12,10 @@ Write Me A Story
 
 Characters
 ----------
-- Girl
-	- Pred
-- Boy
-	- Human
+- GIRL
+	- PRED
+- BOY
+	- HUMAN
 
 Plot
 ----

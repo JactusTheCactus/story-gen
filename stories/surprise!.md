@@ -1,7 +1,8 @@
 <style>
-body {
-	font: 15px Verdana
-};
+	body {
+		font-size: 15px;
+		font-family: Verdana;
+	};
 </style>
 
 Write Me A Story
@@ -11,10 +12,10 @@ Write Me A Story
 
 Characters
 ----------
-- Lily
-	- Pred
-- Iris
-	- Human
+- LILY
+	- PRED
+- IRIS
+	- HUMAN
 
 Plot
 ----
@@ -22,7 +23,7 @@ Plot
 	Iris,
 	are enjoying a movie late at night
 - Iris doesn't know that Lily is a Pred
-	- _(yet)_
+	- _(Yet)_
 - Lily slowly leans into Iris
 	> _(God,_
 		Iris,

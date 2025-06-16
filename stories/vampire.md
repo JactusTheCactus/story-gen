@@ -7,16 +7,12 @@ Write Me A Story
 
 Characters
 ----------
-- Melina
+- Girl
 	- Vampire
 - Teddy
 	- Human
 
 Plot
 ----
-<!--Placeholder-->
-|Name|Species|
-|:-|:-|
-|Melina|Vampire|
-|Teddy|Human|
-<!--Placeholder-->
+- Teddy is at a bar, alone, when two beautiful women sit next to him
+	- Melina & Vampire02

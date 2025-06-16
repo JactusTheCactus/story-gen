@@ -1,14 +1,15 @@
 title: Vampire
 girl:
-  name: Melina
+  name: |
+    Girl
+    [
+      Melina
+      Vampire02
+    ]
   species: Vampire
 boy:
   name: Teddy
   species: Human
 plot: |
-  <!--Placeholder-->
-  |Name|Species|
-  |:-|:-|
-  |{{g.name}}|{{g.species}}|
-  |{{b.name}}|{{b.species}}|
-  <!--Placeholder-->
+  - {{b.name}} is at a bar, alone, when two beautiful women sit next to him
+    - {{g.nameList[0]}} & {{g.nameList[1]}}

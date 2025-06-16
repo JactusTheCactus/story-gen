@@ -1,10 +1,10 @@
-title: Vampire
+title: Vampires
 girl:
   name: |
-    Girl
+    Vampire Girls
     [
       Melina
-      Vampire02
+      Elena
     ]
   species: Vampire
 boy:
@@ -12,4 +12,7 @@ boy:
   species: Human
 plot: |
   - {{b.name}} is at a bar, alone, when two beautiful women sit next to him
-    - {{g.nameList[0]}} & {{g.nameList[1]}}
+    - Sisters
+      - {{g.nameList[0]}}
+      - {{g.nameList[1]}}
+    - {{g.species}}s ({{b.name}} doesn't know that)

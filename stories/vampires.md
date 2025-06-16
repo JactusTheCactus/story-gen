@@ -6,12 +6,12 @@ body {
 
 Write Me A Story
 ****************
-"Vampire"
-=========
+"Vampires"
+==========
 
 Characters
 ----------
-- Girl
+- Vampire Girls
 	- Vampire
 - Teddy
 	- Human
@@ -19,4 +19,7 @@ Characters
 Plot
 ----
 - Teddy is at a bar, alone, when two beautiful women sit next to him
-	- Melina & Vampire02
+	- Sisters
+		- Melina
+		- Elena
+	- Vampires (Teddy doesn't know that)

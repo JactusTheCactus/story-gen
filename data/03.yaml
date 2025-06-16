@@ -62,5 +62,5 @@ notes: |
       ],
       \extra: "Linebacker"
     };
-    \console.log(pred === human) // true
+    \console.log(pred === human) \// true
     ```

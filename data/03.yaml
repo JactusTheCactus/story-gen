@@ -65,7 +65,7 @@ notes: |
       - faster
     - skin is a slight __Bronze__ / __Tan__ colour
   - the average {{g.species}} in Late Primary School / Early Middle School is equivalent to a Human Linebacker in Early High School
-    ```js
+    ```\js
     \const pred = {
       \species: "Pred",
       \school: [

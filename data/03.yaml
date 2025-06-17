@@ -56,6 +56,8 @@ notes: |
   - swallow humans whole
   - complete digestion in < 1 hour
   - psychologically incapable of being empathetic of Prey
+    - they are completely incapable of seeing Prey as people. they are nothing but _meat_
+    - feeling someone melt is _entertaining_
   - identical to {{b.species}}s, except:
     - gold eyes
     - naturally:
@@ -65,21 +67,3 @@ notes: |
       - faster
     - skin is a slight __Bronze__ / __Tan__ colour
   - the average {{g.species}} in Late Primary School / Early Middle School is equivalent to a Human Linebacker in Early High School
-    ```\js
-    \const pred = {
-      \species: "Pred",
-      \school: [
-        "Late Primary",
-        "Early Middle"
-      ],
-      \extra: null
-    };
-    \const human = {
-      \species: "Human",
-      \school: [
-        "Early High"
-      ],
-      \extra: "Linebacker"
-    };
-    \console.log(pred === human) \// true
-    ```

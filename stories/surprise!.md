@@ -20,65 +20,65 @@ Characters
 Plot
 ----
 - Lily and her best friend,
-	Iris,
-	Are enjoying a movie late at night
+    Iris,
+    Are enjoying a movie late at night
 - Iris doesn't know that Lily is a Pred
-	- _(Yet)_
+    - _(Yet)_
 - Lily slowly leans into Iris
-	> _(God,_
-		Iris,
-		_Why do you smell_ __so good__*???)*
-	- Iris hasn't noticed yet
+    > _(God,_
+        Iris,
+        _Why do you smell_ __so good__*???)*
+    - Iris hasn't noticed yet
 - Lily slowly opens her mouth,
-	Drool slowly dripping onto the Pred's shirt
+    Drool slowly dripping onto the Pred's shirt
 - Iris turns to Lily
-	- Iris sees that Lily is about to eat her
-		- Iris slaps Lily
-		> __OW!!__
+    - Iris sees that Lily is about to eat her
+        - Iris slaps Lily
+        > __OW!!__
 
-		> LILY!!
-		>
-		> Were you about to __Eat Me__!?
+        > LILY!!
+        >
+        > Were you about to __Eat Me__!?
 
-		> Wha-!?
-		>
-		> No,
-			I-...!
-		>
-		> You just looked so tasty,
-			And I-...
+        > Wha-!?
+        >
+        > No,
+            I-...!
+        >
+        > You just looked so tasty,
+            And I-...
 
-		> Since when are you a __PRED__!?
+        > Since when are you a __PRED__!?
 
-		> . . .
-		>
-		> It's been _a few months_...
-		>
-		> I didn't want you to find out...
-		>
-		> Especially not like _this_...
+        > . . .
+        >
+        > It's been _a few months_...
+        >
+        > I didn't want you to find out...
+        >
+        > Especially not like _this_...
 
-		> You're not gonna...
-			_Eat Me_,
-			Right?
+        > You're not gonna...
+            _Eat Me_,
+            Right?
 
-		> __NO!!__
-		>
-		> That was just...
-			A _moment of weakness_...
-		>
-		> I could never eat my best friend...
-			_Even if you do smell..._
-			__Delicious...__
+        > __NO!!__
+        >
+        > That was just...
+            A _moment of weakness_...
+        >
+        > I could never eat my best friend...
+            _Even if you do smell..._
+            __Delicious...__
 
-		> LILY!
-		>
-		> Stop it!
+        > LILY!
+        >
+        > Stop it!
 
-		> Sorry...
-		>
-		> You just smell so-
+        > Sorry...
+        >
+        > You just smell so-
 
-		> Lily.
+        > Lily.
 
-		> S-sorry.
+        > S-sorry.

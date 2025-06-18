@@ -28,3 +28,23 @@ Story Ideas
 		he reforms at _her_ home
 		- Pred's sister _&_ mother also eat him
 	- He avoids Pred like the plague for a concerning amount of time after that
+- F is into M
+    - M is oblivious
+    - F needs to be more obvious about her interest
+- F is a killer
+    - F is in love with M
+    - M does not know that F is a killer
+- F1 is a Pred
+    - F1 _would've_ wanted to be F2's GF, if F1 wasn't a Pred
+    - F2 must convince F1 that they can be together, lest F2 get digested
+- F has a crush on M
+    - M walked in on F while she's digesting someone
+    - F doesn't want to eat M, but she can't let her secret get out
+- F is M's boss
+    - F is:
+        - a Pred
+        - the richest woman on earth
+    - M is:
+        - a human
+        - working minimum wage
+    - F calls M into her office at the start of his shift

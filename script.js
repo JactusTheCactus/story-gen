@@ -258,7 +258,7 @@ ${`${section === "title" ? "=" : "-"
 			.replace(/\^(.*)\^/g, "<sup>$1</sup>")
 			.replace(/~(.*)~/g, "<sub>$1</sub>")
 .replace(/\t/g," ".repeat(4))
-[fnA, fnB] = getFootnotes(this.output)
+const [fnA, fnB] = getFootnotes(this.output)
 this.output = `
 ${fnA}
 ***

@@ -3,6 +3,30 @@ const fsp = fs.promises;
 const path = require("path");
 const YAML = require("yaml");
 const args = process.argv.slice(2);
+function getFootnotes(input){
+const textList = Array.from(
+  input.matchAll(
+  /\[\^(.*?)\^\]/g
+  )
+  );
+let replaceList = [];
+textList.forEach((item, index) => {
+  replaceList.push([index+1, item[1]])
+})
+let footnoteList = []
+let textOutput = `${input}`
+replaceList.forEach(([index, item]) => {
+  textOutput = textOutput
+  .replace(new RegExp(`\\[\\^${item}\\^\\]`,"g"), `[^${index}]`)
+  footnoteList.push(item)
+})
+let footnotes = ""
+footnoteList.forEach((item, i) => {
+  footnotes += `[^${i+1}]: ${item}\n`
+})
+footnotes = footnotes.trim()
+return [textOutput, footnotes]
+}
 function removeItems(array, items) {
 	return array.filter(item => !items.includes(item))
 };

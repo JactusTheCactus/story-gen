@@ -40,3 +40,5 @@ Notes
         - Most of Tess's potential suitors have been a meal for __The Queen__
 - Alex is low-middle class
 - Tess is kept from the public eye, hence why Alex didn't recognize her as __The Princess__
+***
+# Footnotes

@@ -42,3 +42,5 @@ Notes
         - __Very odd__
 - This is a known ability in this world
     - It is of _deific_ rarity
+***
+# Footnotes

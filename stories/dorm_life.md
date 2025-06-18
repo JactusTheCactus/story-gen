@@ -35,3 +35,5 @@ Plot
                 - Due to a concerning amount of Preds in politics, __Vore__ is not legally __Homicide__ or __Cannibalism__
             - There are __no such rules__ for the people in _other dorm rooms_
         - Plus, Bella's Roommates seem to _like_ her, so she doesn't think they'd eat her anyways
+***
+# Footnotes

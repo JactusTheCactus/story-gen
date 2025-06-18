@@ -29,3 +29,5 @@ Plot
     - Ashley just considers Lola her "Breakfast In Bed"
         - Lola has to negotiate her __survival__
             - Lola has to be more likeable / useful than she would be as Ashley's meal
+***
+# Footnotes

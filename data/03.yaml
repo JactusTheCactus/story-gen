@@ -25,8 +25,7 @@ plot: |
       - a dealbreaker
         - but she seemed so nice
         - and she seemed to _really_ like him
-        - _and_ she seemed excited about the date they'd^[1]^ planned
-          - ^[1]^_she_ planned; she was too giddy and excited to let him get more than a couple words in. it was cute at the time. before he thought she could __eat him__
+        - _and_ she seemed excited about the date they'd[^_she_ planned; she was too giddy and excited to let him get more than a couple words in. it was cute at the time. before he thought she could __eat him__^] planned
         - _she wouldn't eat him, right?_
           - he can't ask her.
             - if she's _not_ a {{g.species}}, they'll laugh it off and forget about it

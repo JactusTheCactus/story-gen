@@ -22,7 +22,10 @@ function createPerson(
 		nameLong: person?.name || defName,
 		speciesLong: person?.species || defSpecies,
 	};
-	["name", "species"].forEach(type => {
+	[
+"name",
+"species"
+].forEach(type => {
 		const patterns = [
 			/^([^(\[\]]+)/,
 			/\(([^)]+)\)/,
@@ -217,7 +220,7 @@ ${`${section === "title" ? "=" : "-"
 			};
 		});
 		this.output = this.output
-			.replace(/ {2}/g, "\t")
+			.replace(/ {2}/g, " ".repeat(4))
 			.replace(/(?:^\s+|\s+$)/g, "")
 			.replace(/<!--/g, "COMMENT-START")
 			.replace(/-->/g, "COMMENT-END")

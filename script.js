@@ -255,8 +255,6 @@ ${`${section === "title" ? "=" : "-"
 			.replace(/\n{3,}/g, "\n".repeat(2))
 			.replace(/(\d+'(?:\d+")?)/g, "`$1`")
 			.replace(/(^[^a-z\\]+?)([a-z\\])/gim, (_, g1, g2) => `${g1}${g2.replace(/\\/g,"")}`.toUpperCase())
-			.replace(/\^(.*)\^/g, "<sup>$1</sup>")
-			.replace(/~(.*)~/g, "<sub>$1</sub>")
 .replace(/\t/g," ".repeat(4))
 const [fnA, fnB] = getFootnotes(this.output)
 this.output = `
@@ -267,6 +265,8 @@ ${fnB ? `
 ${fnB}
 `.trim() : ""}
 `.trim()
+			.replace(/\^(.*)\^/g, "<sup>$1</sup>")
+			.replace(/~(.*)~/g, "<sub>$1</sub>")
 		fs.writeFile(
 			path.join(
 				"stories",

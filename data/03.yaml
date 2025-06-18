@@ -32,25 +32,6 @@ plot: |
             - if she _is_ a {{g.species}}, she might eat him on the spot
               - other people __cannot__ know she's a {{g.species}}
                 - no matter what she thinks, her nature is something that __must__ stay _secret_
-  - when she wakes up, {{b.name}} is gone
-  - luckily, they exchanged numbers early on
-    > Hey, {{b.name}}, where'd you go?
-    >
-    > Was I too much for you, hm?~
-
-    _{{g.name}}'s tone is flirty, oblivious to the issue_
-
-    > {{g.name}}... you're not... a __{{g.species}}__, are you...?
-
-    _she responds in the smallest, softest voice he's ever heard. __she's scared.___
-
-    > w-what...?
-    >
-    > no, I-...
-    >
-    > o-of course, I'm not-...!
-
-    _{{g.name}} is now panicking. if he knows she's a {{g.species}}, then he __definitely__ won't want to go out to dinner with her. the thought of __protecting her secret__ doesn't even occur to her._
 notes: |
   ### {{g.species}}s
   - swallow humans whole

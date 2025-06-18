@@ -1,8 +1,8 @@
 <Style>
-	Body {
-		Font-size: 15px;
-		Font-family: Verdana;
-	};
+    Body {
+        Font-size: 15px;
+        Font-family: Verdana;
+    };
 </Style>
 
 Write Me A Story
@@ -13,9 +13,9 @@ Write Me A Story
 Characters
 ----------
 - MERA
-	- PRED
+    - PRED
 - DANI
-	- HUMAN
+    - HUMAN
 
 Plot
 ----

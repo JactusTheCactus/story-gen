@@ -53,5 +53,3 @@ Plot
 Notes
 -----
 - Ashley is _super_ __Gay__
-***
-# Footnotes

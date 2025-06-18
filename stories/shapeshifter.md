@@ -30,5 +30,3 @@ Notes
 - A Changeling must kill a Human to copy their form
     - The Changeling absorbs the victim, leaving no evidence
     - Changelings are _psychologically incapable_ of feeling remorse for their victims
-***
-# Footnotes

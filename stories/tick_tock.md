@@ -92,5 +92,3 @@ I'm taking you on a date!
 
 Eli was clearly too weak to move, but still alive.
 Vera was going to have to get him out on her own &mdash; not like she was ever going to _struggle_ with that.
-***
-# Footnotes

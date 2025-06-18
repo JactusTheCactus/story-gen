@@ -77,5 +77,3 @@ Plot
         Crying
 - Mera begged Dani to "give [her] a chance"
     - She looked like that tiny girl that left 4 years ago
-***
-# Footnotes

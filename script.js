@@ -261,9 +261,11 @@ ${`${section === "title" ? "=" : "-"
 const [fnA, fnB] = getFootnotes(this.output)
 this.output = `
 ${fnA}
+${fnB ? `
 ***
 # Footnotes
 ${fnB}
+`.trim() : ""}
 `.trim()
 		fs.writeFile(
 			path.join(

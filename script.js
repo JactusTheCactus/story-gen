@@ -220,7 +220,7 @@ ${`${section === "title" ? "=" : "-"
 			};
 		});
 		this.output = this.output
-			.replace(/ {2}/g, " ".repeat(4))
+			.replace(/ {2}/g, "\t")
 			.replace(/(?:^\s+|\s+$)/g, "")
 			.replace(/<!--/g, "COMMENT-START")
 			.replace(/-->/g, "COMMENT-END")
@@ -233,6 +233,7 @@ ${`${section === "title" ? "=" : "-"
 			.replace(/(^[^a-z\\]+?)([a-z\\])/gim, (_, g1, g2) => `${g1}${g2.replace(/\\/g,"")}`.toUpperCase())
 			.replace(/\^(.*)\^/g, "<sup>$1</sup>")
 			.replace(/~(.*)~/g, "<sub>$1</sub>")
+.replace(/\t/g," ".repeat(4))
 		fs.writeFile(
 			path.join(
 				"stories",

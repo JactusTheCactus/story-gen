@@ -1,0 +1,14 @@
+title: "04"
+girl:
+  species: Pred
+plot: |
+  - {{g.name}} has a crush on {{b.name}}
+  - she _knows_ he won't date her, knowing she's a Pred
+  - Solution?
+    1. Eat {{b.name}}
+    1. Convince {{b.name}} that he'll be digested if he doesn't go out with her
+    1. Get him to agree to a date
+    1. Let him out of her stomach
+    1. Go out with {{b.name}} on that date
+    1. Earn his trust + affection
+    1. __Profit!__

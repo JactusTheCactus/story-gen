@@ -1,5 +1,6 @@
 title: "04"
 girl:
+  name: Dollie
   species: Pred
 plot: |
   - {{g.name}} has a crush on {{b.name}}

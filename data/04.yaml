@@ -13,3 +13,5 @@ plot: |
     1. Go out with {{b.name}} on that date
     1. Earn his trust + affection
     1. __Profit!__
+  - _Easier said than done_
+    - {{g.name}} failed to account for the fact that {{b.name}} would think she wanted to __kill__ him.

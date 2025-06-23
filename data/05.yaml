@@ -1,0 +1,23 @@
+title: "05"
+girl:
+  name: Manager
+  species: Pred
+boy:
+  name: Employee
+plot: |
+  - {{b.name}} finally got his first job
+  - his manager is {{g.name}}
+  - everyone is terrified of her
+    - she is a Pred
+    - she has a history of eating employees for any reason:
+      - they made a slight mistake
+      - they looked at her funny
+      - she was just hungry
+  - he's now realizing why this place has a high turnover rate
+  - {{b.name}} starts trying to avoid {{g.name}} like the plague
+  - this is almost impossible because she seems to have decided _he's_ next on her menu
+    - {{b.name}} is now terrified of going to work, but he knows he can't avoid it
+      - he needs this job
+notes: |
+  - {{g.name}} has a crush on {{b.name}}, but she doesn't know how to show it
+  - she has no idea that {{b.name}} thinks she wants to eat him

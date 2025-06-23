@@ -2,6 +2,8 @@ title: "04"
 girl:
   name: Dollie
   species: Pred
+boy:
+  name: Pierce
 plot: |
   - {{g.name}} has a crush on {{b.name}}
   - she _knows_ he won't date her, knowing she's a Pred

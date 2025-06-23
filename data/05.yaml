@@ -1,9 +1,9 @@
 title: "05"
 girl:
-  name: Manager
+  name: Alice
   species: Pred
 boy:
-  name: Employee
+  name: Liam
 plot: |
   - {{b.name}} finally got his first job
   - his manager is {{g.name}}

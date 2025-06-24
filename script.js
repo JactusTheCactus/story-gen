@@ -3,29 +3,29 @@ const fsp = fs.promises;
 const path = require("path");
 const YAML = require("yaml");
 const args = process.argv.slice(2);
-function getFootnotes(input){
-const textList = Array.from(
-  input.matchAll(
-  /\[\^(.*?)\^\]/g
-  )
-  );
-let replaceList = [];
-textList.forEach((item, index) => {
-  replaceList.push([index+1, item[1]])
-})
-let footnoteList = []
-let textOutput = `${input}`
-replaceList.forEach(([index, item]) => {
-  textOutput = textOutput
-  .replace(new RegExp(`\\[\\^${item}\\^\\]`,"g"), `[^${index}]`)
-  footnoteList.push(item)
-})
-let footnotes = ""
-footnoteList.forEach((item, i) => {
-  footnotes += `[^${i+1}]: ${item}\n`
-})
-footnotes = footnotes.trim()
-return [textOutput, footnotes]
+function getFootnotes(input) {
+	const textList = Array.from(
+		input.matchAll(
+			/\[\^(.*?)\^\]/g
+		)
+	);
+	let replaceList = [];
+	textList.forEach((item, index) => {
+		replaceList.push([index + 1, item[1]])
+	})
+	let footnoteList = []
+	let textOutput = `${input}`
+	replaceList.forEach(([index, item]) => {
+		textOutput = textOutput
+			.replace(new RegExp(`\\[\\^${item}\\^\\]`, "g"), `[^${index}]`)
+		footnoteList.push(item)
+	})
+	let footnotes = ""
+	footnoteList.forEach((item, i) => {
+		footnotes += `[^${i + 1}]: ${item}\n`
+	})
+	footnotes = footnotes.trim()
+	return [textOutput, footnotes]
 }
 function removeItems(array, items) {
 	return array.filter(item => !items.includes(item))
@@ -47,9 +47,9 @@ function createPerson(
 		speciesLong: person?.species || defSpecies,
 	};
 	[
-"name",
-"species"
-].forEach(type => {
+		"name",
+		"species"
+	].forEach(type => {
 		const patterns = [
 			/^([^(\[\]]+)/,
 			/\(([^)]+)\)/,
@@ -251,13 +251,15 @@ ${`${section === "title" ? "=" : "-"
 			.replace(/([^\-])\-{2}([^\-])/g, "$1&mdash;$2")
 			.replace(/COMMENT-START/g, "<!--")
 			.replace(/COMMENT-END/g, "-->")
-			.replace(/([\t {4}]?)- (.)/g, (match, p1, p2) => `${p1}- ${p2.toUpperCase()}`)
+			.replace(/([\t {4}]?)- (.)/g, (_, g1, g2) => `${g1}- ${g2.toUpperCase()}`)
 			.replace(/\n{3,}/g, "\n".repeat(2))
 			.replace(/(\d+'(?:\d+")?)/g, "`$1`")
-			.replace(/(^[^a-z\\]+?)([a-z\\])/gim, (_, g1, g2) => `${g1}${g2.replace(/\\/g,"")}`.toUpperCase())
-.replace(/\t/g," ".repeat(4))
-const [fnA, fnB] = getFootnotes(this.output)
-this.output = `
+			.replace(/(^[^a-z\\]+?)([a-z\\])/gim, (_, g1, g2) => `${g1}${g2.replace(/\\/g, "")}`.toUpperCase())
+			.replace(/\t/g, " ".repeat(4))
+			.replace(/(\W)i(\W)/g, "$1I$2")
+			.replace(/&([\w\d]+);/g, (_, g1) => `&${g1.toLowerCase()};`)
+		const [fnA, fnB] = getFootnotes(this.output)
+		this.output = `
 ${fnA}
 ${fnB ? `
 ***

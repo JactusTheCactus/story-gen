@@ -34,7 +34,7 @@ I'll let you out.
 >
 > If not?
 Well...
-You get to be my breakfast!~
+You get to be my breakfast!\~
 
 ### _MORNING_
 
@@ -88,7 +88,7 @@ You're okay!!
 > To make up for _almost_ digesting you,
 I'm taking you on a date!
 >
-> You'll love this, I __Promise__!~
+> You'll love this, I __Promise__!\~
 
 Eli was clearly too weak to move, but still alive.
 Vera was going to have to get him out on her own &mdash; not like she was ever going to _struggle_ with that.

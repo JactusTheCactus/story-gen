@@ -25,11 +25,11 @@ Plot
 - Girl decides not to digest Boy
     > You know,
     You actually feel _great_ in there,
-    So I __won't__ digest you~
+    So I __won't__ digest you\~
     >
     > I'm going to keep you around,
-    So I can eat you again whenever I want~
+    So I can eat you again whenever I want\~
     >
-    > _Lucky boy~_
+    > _Lucky boy\~_
     >
-    > Most _snacks_ get __digested__~
+    > Most _snacks_ get __digested__\~

@@ -1,11 +1,11 @@
 title: "06"
 girl:
   name: Delilah
-  species: Pred
+  species: Vampire
 boy:
   name: Sam
 plot: |
-  - {{g.name}} just swallowed you whole
+  - {{g.name}} just pinned you to the wall and sank her long fangs into your neck
   - she's teasing you and mocking you
   - you're not even a person to her; __just a meal__
   - you beg and plead for her to show even an ounce of mercy, but she just laughs
@@ -32,9 +32,9 @@ plot: |
   - but now?
   - _now_ she was actually curious about how you felt about her
     - if you were just another horny boy trying to fuck her,
-      - she'd just stop listening and continue digesting you
+      - she'd just stop listening and continue draining you
     - but, if she thought you were worth it,
-      - she _might_ consider __not__ digesting you and even letting you out
+      - she _might_ consider __not__ bleeding you dry
     - you don't know any of this. she just says;
     > __{{g.name}}__
     >

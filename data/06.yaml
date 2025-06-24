@@ -1,0 +1,42 @@
+title: "06"
+girl:
+  name: Delilah
+  species: Pred
+boy:
+  name: Sam
+plot: |
+  - {{g.name}} just swallowed you whole
+  - she's teasing you and mocking you
+  - you're not even a person to her; __just a meal__
+  - you beg and plead for her to show even an ounce of mercy, but she just laughs
+  - after nearly _10 minutes_ of pleading, you accept you fate and start to cry
+  - she seems __Amused__
+  > __{{g.name}}__
+  >
+  > oh, finally giving up, hm?~\
+  > took you long enough~
+  - you give up and start to lament
+  > __{{b.name}}__
+  >
+  > and i was even going to _ask you out_ sometime in the next few days...
+
+  > __{{g.name}}__
+  >
+  > ...you were going to _what_?
+  - you don't hear {{g.name}}'s response of confusion
+  > __{{b.name}}__
+  >
+  > i'm an idiot...\
+  > like you'd ever want _me_...
+  - until now, you weren't even _worthy_ of being a person to {{g.name}}
+  - but now?
+  - _now_ she was actually curious about how you felt about her
+    - if you were just another horny boy trying to fuck her,
+      - she'd just stop listening and continue digesting you
+    - but, if she thought you were worth it,
+      - she _might_ consider __not__ digesting you and even letting you out
+    - you don't know any of this. she just says;
+    > __{{g.name}}__
+    >
+    > and what if i _did_, hm?~\
+    > what would you do to me?~

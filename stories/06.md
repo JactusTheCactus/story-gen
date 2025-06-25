@@ -1,9 +1,9 @@
-<Style>
-    Body {
-        Font-size: 15px;
-        Font-family: Verdana;
+<style>
+    body {
+        font-size: 15px;
+        font-family: verdana;
     };
-</Style>
+</style>
 
 Write Me A Story
 ****************

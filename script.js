@@ -259,6 +259,8 @@ ${`${section === "title" ? "=" : "-"
 			.replace(/(\W)i(\W)/g, "$1I$2")
 			.replace(/&([\w\d]+);/g, (_, g1) => `&${g1.toLowerCase()};`)
 			.replace(/(?<!~)(\b.+)(?=~)/g, "$1\\")
+			.replace(/(<\/?.+>)/g, (_, g1) => `${g1}`.toLowerCase())
+			.replace(/(?<=\<.+\>)([\s\S]*?)(?=<\/.+>)/g, (_, g1) => `${g1}`.toLowerCase())
 		const [fnA, fnB] = getFootnotes(this.output)
 		this.output = `
 ${fnA}

@@ -261,6 +261,7 @@ ${`${section === "title" ? "=" : "-"
 			.replace(/(?<!~)(\b.+)(?=~)/g, "$1\\")
 			.replace(/(<\/?.+>)/g, (_, g1) => `${g1}`.toLowerCase())
 			.replace(/(?<=\<.+\>)([\s\S]*?)(?=<\/.+>)/g, (_, g1) => `${g1}`.toLowerCase())
+			.replace(new RegExp(`(\\s*)> ?_*(${[this.girl.name,this.boy.name].join("|")})_*$`,"gim"), "$1> __$2__")
 		const [fnA, fnB] = getFootnotes(this.output)
 		this.output = `
 ${fnA}
@@ -272,6 +273,7 @@ ${fnB}
 `.trim()
 			.replace(/\^(.*)\^/g, "<sup>$1</sup>")
 			.replace(/~(.*)~/g, "<sub>$1</sub>")
+			.replace(/([_*]+) \1/g, " ")
 		fs.writeFile(
 			path.join(
 				"stories",

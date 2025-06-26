@@ -43,7 +43,7 @@ Plot
 ### The Next Day
 - After avoiding her all day, Ashley corners Teddy in the school hallway, trying to figure out why he left
         - _She_ thought they were having __Fun__
-        - _He_ __genuinely__ thought his "Best Friend" was going to __kill him__
+        - _He _genuinely__ thought his "Best Friend" was going to __kill him__
                 - Teddy was fearing for his life
                 - He thought he was going to die
 - When she finds out why he left, Ashley starts to __cry__
@@ -52,4 +52,4 @@ Plot
 
 Notes
 -----
-- Ashley is _super_ __Gay__
+- Ashley is _super _Gay__

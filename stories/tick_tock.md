@@ -38,7 +38,7 @@ You get to be my breakfast!\~
 
 ### _MORNING_
 
-Vera woke up bright and early, _actually_ __excited__ about asking Eli out on a date.
+Vera woke up bright and early, _actually _excited__ about asking Eli out on a date.
 (She didn’t get much sleep, because she couldn’t stop herself from planning out the date she would take him on the next day)
 
 > Hey, Eli-...
@@ -68,7 +68,7 @@ Buddy...?
 You would've made a pretty good boyfriend...
 A _cute_ one too...
 >
-> __Stupid__ _metabolism_...
+> __Stupid_ metabolism_...
 
 > W-wha-?\
 _Cough_

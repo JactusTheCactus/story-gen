@@ -21,7 +21,7 @@ Plot
 ----
 - Bella moves into a __College Dorm__
     - All her Roommates are _Female_
-        - And _very_ __Hot__
+        - And _very _Hot__
             - Curvy in all the right ways
     - By the end of __Week 1__, Bella has realized that __All 5 Of Her Roommates Are Preds__
         - Preds:

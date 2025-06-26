@@ -22,7 +22,7 @@ Plot
 - Alex has somehow found himself at a party held by __The Royal Family__
 - Obviously, he's been keeping his distance from the _important_ people;
     - Barons, baronesses, dukes, duchess, etc.
-    - _Especially_ the __Royals__ (__Big__ _No-No_)
+    - _Especially_ the __Royals__ (__Big_ No-No_)
 - Alex has, however, made a friend at this party, by the name of Tess
 - She's a _small_, _beautiful_ girl, and a _lovely_ dancer
 - Better yet, she seems completely enamoured with him

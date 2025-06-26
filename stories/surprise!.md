@@ -27,7 +27,7 @@ Plot
 - Lily slowly leans into Iris
     > _(God,_
         Iris,
-        _Why do you smell_ __so good__*???)*
+        _Why do you smell _so good__*???)*
     - Iris hasn't noticed yet
 - Lily slowly opens her mouth,
     Drool slowly dripping onto the Pred's shirt

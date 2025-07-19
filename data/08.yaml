@@ -1,5 +1,6 @@
 title: "08"
 girl:
+  name: Ashley
   species: Pred
 plot: |
   - {{g.name}} and {{b.name}} met at the bar
@@ -8,13 +9,13 @@ plot: |
   - they're both naked
   - {{g.name}} is on top of {{b.name}}
 
-  > __{{g.name}}__:
+  > __{{g.name}}:__
   > you know, you're so lucky I like you~
 
-  > __{{b.name}}__:
+  > __{{b.name}}:__
   > oh yeah? why's that?
 
-  > __{{g.name}}__:
+  > __{{g.name}}:__
   > because I'm a __Pred__, and you're in the _perfect_ position to be a meal~
 
   - {{b.name}} is now fearing for her life

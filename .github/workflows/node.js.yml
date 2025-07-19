@@ -46,7 +46,7 @@ jobs:
           cache: "npm"
       - run: npm ci
       - run: |
-          FILE_INPUT=${{ github.event.inputs.file || '03' }}
+          FILE_INPUT=${{ github.event.inputs.file || '08' }}
           npm run main -- "$VERBOSITY" "$FILE_INPUT"
       - name: Configure Git
         run: |

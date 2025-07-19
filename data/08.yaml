@@ -2,6 +2,8 @@ title: "08"
 girl:
   name: Ashley
   species: Pred
+boy:
+  name: Allie
 plot: |
   - {{g.name}} and {{b.name}} met at the bar
   - the had a great night, dancing, drinking, flirting
